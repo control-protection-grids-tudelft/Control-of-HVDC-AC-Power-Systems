@@ -1,0 +1,70 @@
+{
+  "CRESYM": [
+    {
+      "name": "colib0.github.io",
+      "url": "https://github.com/CRESYM/colib0.github.io",
+      "desc": "Collaborative dynamic library",
+      "stars": 14
+    },
+    {
+      "name": "BiGER",
+      "url": "https://github.com/CRESYM/BiGER",
+      "desc": "contains dynamic test cases and models for BiGER project",
+      "stars": 1
+    },
+    {
+      "name": "LARISA",
+      "url": "https://github.com/CRESYM/LARISA",
+      "desc": "LArge Res Integration Stability Analysis - Slovenian network study",
+      "stars": 0
+    },
+    {
+      "name": "Harmony",
+      "url": "https://github.com/CRESYM/Harmony",
+      "desc": "HARMONic stabilitY assessment of PE-penetrated power systems",
+      "stars": 3
+    },
+    {
+      "name": "WOLF-I",
+      "url": "https://github.com/CRESYM/WOLF-I",
+      "desc": "Wide-area Oscillations of Low Frequency & IBRs",
+      "stars": 8
+    },
+    {
+      "name": "Harmony-Doc",
+      "url": "https://github.com/CRESYM/Harmony-Doc",
+      "desc": "",
+      "stars": 0
+    },
+    {
+      "name": "ACDC_OPF",
+      "url": "https://github.com/CRESYM/ACDC_OPF",
+      "desc": "",
+      "stars": 9
+    },
+    {
+      "name": "Colib_Quarto.github.io",
+      "url": "https://github.com/CRESYM/Colib_Quarto.github.io",
+      "desc": "migration of colib website to quarto",
+      "stars": 4
+    },
+    {
+      "name": "sankeypf",
+      "url": "https://github.com/CRESYM/sankeypf",
+      "desc": "SankeyPF.jl is a Julia package for visualizing power flow data using interactive Sankey diagrams.",
+      "stars": 5
+    },
+    {
+      "name": "python-boilerplate",
+      "url": "https://github.com/CRESYM/python-boilerplate",
+      "desc": "This boilerplate repository can be used to kickstart projects",
+      "stars": 1
+    },
+    {
+      "name": "OSCC",
+      "url": "https://github.com/CRESYM/OSCC",
+      "desc": "CRESYM OSPO - Open Source Competency Centre",
+      "stars": 0
+    }
+  ]
+}

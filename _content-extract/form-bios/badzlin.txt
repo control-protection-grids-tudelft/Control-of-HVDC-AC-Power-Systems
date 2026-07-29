@@ -1,0 +1,33 @@
+// Please follow the following format:
+// Font: Arial
+// Font color: black
+// Font size: 11
+”””________________ PhD/Postdoc Project template ________________”””
+General information:
+Type: PhD [  ]  or  Postdoc  [  ]
+PhD/Postdoc researcher name: Tuanku Badzlin Hashfi
+PhD/ Postdoc project name: Inter-oPEn
+Staring year: June 2024
+Funder organization/Project: Horizon Europe MSCA program
+Project description
+The increasing integration of large-scale offshore wind farms into future power-electronics-dominated power systems requires reliable HVDC transmission solutions that can operate without depending on a strong external AC grid. In this context, grid-forming are expected to establish and regulate the AC voltage and frequency, especially during islanded operation, black start, and weak-grid conditions. At the same time, MMC-based multi-terminal HVDC systems are key technologies for transferring offshore wind power to onshore grids, but their performance can be affected by external disturbance (AC-, DC-faults), and internal submodule failures. Therefore, the main problem of this research is how to ensure stable, reliable, and internal submodule fault-tolerant operation of MMC-based HVDC systems for offshore wind integration. The three main research questions are: 
+How can GFM-based OWFs within HVDC network establish voltage and frequency? 
+How can an advanced control strategies handle the effect of the unbalanced internal voltage due to internal submodules (SMs) faults (per SM and Cluster SM) of MMC in HVDC network?
+How can the proposed control be validated under realistic operating conditions using PHIL?
+Future offshore wind farms may operate in weak or isolated AC networks, where conventional grid-following (GFL) control is not sufficient because there may be no strong voltage and frequency reference. So, the GFM control structure and operation must replace the conventional GFL. Second, MMC-based HVDC systems have complex internal dynamics, including arm currents, submodule capacitor voltage balancing, circulating currents, and energy dynamics, which become more critical during internal submodule faults. Internal submodule faults can degrade the converter voltage capability, reduce modulation margins, create imbalance among converter arms, and affect the stability of the overall HVDC network. Then, simulation alone may not fully capture practical converter behavior such as controller implementation effects, measurement delay, and hardware limitations. So, the accuracy of real-time interaction between the physical converter and the simulated power system is main challenge to perform PHIL.
+This research will develop and assess control strategies for grid-forming offshore wind farms integrated with MMC-based HVDC systems. The first approach is to design grid-forming control for wind turbine converters so that the offshore wind farm can regulate offshore voltage and frequency and support stable operation during islanded, weak-grid, and fault conditions. The second approach is to study the impact of internal MMC faults and develop fault-tolerant control strategies to maintain converter operation and reduce performance degradation after submodule failures. The third approach is to validate the proposed control system using Power Hardware-in-the-Loop experiments, where real converter hardware or controller hardware is interfaced with a real-time simulated HVDC network.
+Project keywords
+HVDC system, offshore wind farm, Grid-forming control, fault tolerance, Power hardware-in-the-loop test, MMC
+Intended deliverables
+GFM control framework for offshore wind farms within MMC-HVDC networks
+Development of control strategies enabling OWFs to establish and regulate offshore voltage and frequency during islanded, weak-grid, black-start, and fault conditions.
+Internal submodule fault-tolerant control for MMC-based MT-HVDC systems
+Analysis and mitigation of MMC performance degradation caused by individual and clustered submodule faults, including voltage imbalance, reduced modulation margin, and arm energy deviation.
+Real-time simulation and PHIL validation platform
+Implementation and validation of the proposed control strategies under realistic operating conditions, considering controller delay, hardware limitations, and physical interaction with the simulated HVDC network.
+Project (supervision) team
+Aleksandra Lekić and Peter Palensky
+About the PhD/Postdoc researcher
+TUANKU BADZLIN HASHFI received a B.Eng. (Hons.) degree in electrical and electronics engineering from the National University of Malaysia, Selangor, Malaysia 2015. Then, He received the M. Eng. Sc degree from the University of Malaya, Malaysia in 2021. Then, He worked at the United Emirates Arab University (UAEU) as a Research Assistant until June 2024. Currently, He is pursuing PhD at TU Delft, Netherlands. His research interests include DC/DC converters, AC/DC converters, multilevel converters, modular multilevel converters (MMC), the control strategies, renewable energy conversion and high voltage direct current (HVDC). 
+// P.S. 1 Provide a schematic that describes the PhD/Postdoc project.
+// P. S. 2 Attach the figures, logos, and photos separately.

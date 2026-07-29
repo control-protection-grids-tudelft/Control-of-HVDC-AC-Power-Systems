@@ -1,0 +1,422 @@
+Confidential                                                                        3/4/2026
+
+
+
+
+                     INTEROPERABILITY PROGRAM
+                                     Business case
+
+
+                                    By Aleksandra Lekić
+
+
+
+   1. Program organizational and industrial alignment
+On the EU level, the European Strategic Energy Technology (SET) group for HVDC & DC
+technologies [1] has defined the goals for the PE-based HVDC operation as:
+
+   •   Short term (until 2027): interoperable multi-terminal multi-vendor HVDC connection
+       in Europe;
+   •   Medium term (2027-2030): cost effective and scalable multi-terminal multi-vendor
+       HVDC system, ready to be included into a stable and resilient AC grid;
+   •   Long term (2030-2050): HVDC grid covering both offshore and onshore applications.
+
+SET plan also identifies, besides control interoperability, stability management of PE-
+dominated system together with the new modelling methods and tools to improve the overall
+system behaviour and mitigate the interactions between AC and DC parts, as the imperative
+outcomes. The same document defines the following as the top priority:
+
+“Multi-Vendor Multi Terminal Voltage Source Converter (VSC) HVDC with complimentary
+future proof AC/DC hybrid systems assessment and stability management approaches is a
+top priority to fulfil climate neutral Europe needs with ambitious aims for offshore renewable
+energy.”
+
+The scale of planned offshore energy hubs is significant, as can be seen from Fig. 1, designed
+by ENTSO-E as a part of offshore development plans. To support such developments, the
+integrated energy system must be adaptable in terms of operation, design, and expansion,
+and must also support predictive maintenance. This project emphasizes the role of
+integrated and multi-vector energy systems as key enablers of resilient and flexible HVDC-
+based energy hubs. It explicitly considers the entire energy hub, including modular multilevel
+converter (MMC) terminals and renewable energy sources such as hydrogen systems. Wind
+power park modeling and control will build on validated results from previous projects.
+Confidential                                                                                      3/4/2026
+
+
+
+
+      Fig. 1 – Plans for offshore developments in Europe, identified by ENTSO-E, picture taken from 1.
+
+Following the path proposed in my vision document, provided as the Annex 1, and following
+the ENTSO-E Interoperability Workstream [2], and, thus, the ENTSO-E Innovation Roadmap
+[3], I am proposing the establishment of the Interoperability Program as the part of IEPG/ESE.
+
+The program will directly addresses key challenges outlined in Cluster 1 of the ENTSO-E
+roadmap, specifically focusing on three areas: HVDC interconnections, offshore AC and DC
+grids, and power system resilience. It also contributes to Cluster 2 topics: digital twins, and
+AI-based technologies, as well as Cluster 3 topics such as hydrogen, RES/VRE integration
+and integrated energy systems, as identified in the ENTSO-E roadmap for the upcoming 10
+years [3]. The ENTSO-E Interoperability Workstream expects billions of euros of investments.
+
+
+
+
+             Fig. 2 – C&P in the multi-vendor multi-terminal HVDC electrical grid.
+
+
+
+
+1 ENTSO-E, Offshore Network Development Plans, available at: https://www.entsoe.eu/outlooks/offshore-
+
+hub/tyndp-ondp/
+Confidential                                                                         3/4/2026
+
+
+The concept of control & protection (C&P) within an energy hub is inherently very complex
+due to the fast dynamics introduced by power electronic (PE) converters. These converters
+operate on timescales ranging from micro- to milli-seconds, significantly faster than
+traditional power systems, which typically operate over seconds to minutes. As a result,
+effective control of PE converters requires reaction times within microseconds. In the case
+of a fault, protection systems should be capable of detecting, isolating and clearing the fault
+within just 2-3 milliseconds. This stems from the rapid rise of the DC current during faults,
+which can lead to system malfunction and, in extreme cases, even blackouts. Therefore,
+ultra-fast and reliable control and protection systems are essential for the safe and stable
+operation of PE-dominated power systems like energy hubs.
+C&P for HVDC-connected offshore energy hubs are characterized by PE converter control,
+and a protection algorithm at the DC connection of the PE converter, which identifies,
+isolates and interrupts the faulty connection. These systems require near-instantaneous
+and continuous operation. C&P must be carefully designed to be interoperable, scalable and
+adaptable. The interoperability depends on various concepts, as depicted in Fig. 2.
+Additionally, the power system must be capable of adapting to operate under varying
+conditions, supporting future expansion, and enabling effective maintenance.
+
+
+
+The Interoperability program itself would build upon a range of already made interoperability
+products, services, and results analyzed in detail in section 2, using the already existing
+infrastructure (section 4), and with the idea to be converted into IEPG-owned start-up in the
+upcoming 5-10 years.
+
+This program will be uniquely positioned as an interface for collaboration with TSOs and
+vendors. Currently it is one of two inside EU used for interoperability studies: one at RTE and
+one at TU Delft (three if The National HVDC Centre lab is considered, and five if Etch in
+Belgium, and DTU lab in Denmark get established).
+
+   2. Program portfolio
+The portfolio of products follows the vision from the Annex 1, and it can be grouped in the
+modeling, simulation and control categories. And as a type, classified as software, and
+hardware solutions, and testing procedures and setups.
+
+For each product will be given maturity level corresponding to its software/hardware TRL,
+and possible path towards the TRL increase, or for the further increase of the applicability of
+the solution.
+Confidential                                                                      3/4/2026
+
+
+Software solutions
+Software solutions can be grouped as: open-source tools, hierachical control and protection
+toolboxes, RSCAD/RTDS libraries, compliance toolboxes, and offline simulation models.
+
+ Solution name                                Current state and plans for upgrade
+ Harmony toolbox in C++, open source capable • Satisfies TRL3-4 for software.
+ of time-domain simulation using dynamic • It has funding trough industrial
+ phasors, AC/DC OPF and harmonic stability       HARMONY project (1 more year),
+ assessment                              (see    and MITIGATE-HARM (3 years).
+ https://cresym.github.io/Harmony-Doc/).
+                                              Plans to upgrade:
+                                              • Inclusion of GFM control to
+                                                 HARMONY, and definition of stability
+                                                 indices based on ENTSO-E and
+                                                 AEMO recommendation.
+                                              • Ongoing work on testing on real
+                                                 Slovenian grid which will upgrade to
+                                                 TRL5-6.
+                                              • Formulation as Linux Foundation
+                                                 ENERGY project.
+
+                                                  Future needs and plans:
+                                                  • TenneT industrial Ph.D. reseracher to
+                                                     work on GFM control.
+                                                  • Not identified future project to apply
+                                                     impedance-based              stability
+                                                     assessment in real-time.
+ ACDC-OpFlow is created as AC/DC OPF • Satisfies TRL4-5 for software.
+ toolbox in C++, Julia, Python, and MATLAB. It is
+ an open-source toolbox available here: Plans to upgrade:
+ https://github.com/CRESYM/ACDC_OPF.              • Addition of unit committment.
+                                                  • Integration inside the hierarchical
+                                                     controller for AC/DC grid control.
+
+                                               Future needs and plans:
+                                               • Toshiba        funding    for  unit
+                                                  commitment inclusion.
+                                               • Possible reaching out to power
+                                                  system simulation companies to
+                                                  offer integration.
+ DQsym toolbox is created as an open source in • Satisfies TRL4-5 for software.
+ MATLAB/Simulink, available here:              • It has funding trough industrial
+                                                  HARMONY project (2 more years).
+Confidential                                                                        3/4/2026
+
+
+ https://github.com/control-protection-grids-
+ tudelft/DP.                                       Plans to upgrade:
+                                                   • Transfer to Harmony toobox.
+                                                   • Inclusion of stability assessment
+                                                      interchangably   between    time
+                                                      domain and harmonic simulation –
+                                                      one of a kind.
+
+                                                   Future needs and plans:
+                                                   • TenneT industrial postdoc in
+                                                      combination with MITIGATE-HARM.
+                                                   • Possible reaching out to power
+                                                      system simulation companies to
+                                                      offer integration.
+ HVDC models for RTDS with ratings 2 GW,           • One-of-a-kind library, used and
+ ±525 kV, and adjusted CIGRE B4 ratings based         referenced by CIGRE B4 and EU
+ on TenneT substation and cable design. It is         project PROSECCO.
+ created for the old NovaCor 1.0.                  • Used in teaching, and for NN-library
+ Available here: https://github.com/control-          creation.
+ protection-grids-tudelft/HVDC-RTDS-models
+                                               Plans to upgrade:
+                                               • Transfer to NovaCor 2.0 as the part of
+                                                  UTOPYS project.
+ Neural network libraries for RTDS used for • One-of-a-kind libraries, advertized
+ HVDC control, available as open source. It is    by RTDS worldwide.
+ created for the old NovaCor 1.0 and:
+ • Tested for adaptive PI MMC control: Plans to upgrade:
+    https://github.com/control-protection-     • Transfer to NovaCor 2.0 as the part of
+    grids-tudelft/RTDS_NN_models                  UTOPYS project.
+ • Tested for adaptive deadbeat MPC control: • Additional MSc theses to design
+    https://github.com/control-protection-        more neural network topologies.
+    grids-tudelft/SUNRISE_MPC
+
+
+Besides software purely solutions, there are works on the integration of hierarchical control,
+protection and fault location concepts developed in projects SAFE-GRID (NWO VENI), EU
+project PROSECCO and HARMONY. The list is found in the following table.
+Confidential                                                                        3/4/2026
+
+
+ Solution name                                  Current state and plans for upgrade
+ Hierarchical control for the centralized       •   To be issued patent during summer
+ and decentralized control written in C++           2026.
+ and Julia with offline and real-time testing   •   To be deployed inside Aquila setup
+ capabilities. It includes: AC/DC OPF (from         (UK’s InterOPERA) in the upcoming 2-3
+ ACDC-OpFlow), and decentralized control            months as the vendor-agnostic solution
+ design (PI, MPC with rodust and adaptive           for one MMC terminal. It will increase
+ variants).                                         its TRL to 6.
+ Easy deployable to any real-time target
+ (FPGA, GTSOC 2.0, or microcontroller).         Plans to upgrade:
+                                                • Addition of multiple control algorithms,
+                                                   integration in PACS and DCGC.
+
+                                                Future needs and plans:
+                                                • GE is interested in the toolbox, and it
+                                                   might result in industrial project.
+ Hierarchical protection for the HVDC fault • To be issued patent by the end of 2026.
+ detection, and location. Written in Julia and
+ C++. Easy deployable to any real-time target Plans to upgrade:
+ (FPGA, GTSOC 2.0, or microcontroller).        • Addition of multiple control algorithms,
+                                                 integration in PACS and DCGC.
+
+                                                Future needs and plans:
+                                                • GE is interested in the toolbox, and it
+                                                   might result in industrial project.
+
+
+Hardware solutions
+The hardware solutions at this stage represents three products: PACS, DCGC, and DCSS.
+
+ Solution name                                  Current state and plans for the upgrade
+ PACS (Protection and Control System) is        • To be released and tested by the end of
+ designed as part of PROSECCO project. It          2026.
+ includes hierarchical control and              • To examine future plans: patent, or a
+ protection solutions integrated on the            start-up product.
+ FPGA device.                                   • No additional funding required at this
+                                                   stage.
+
+                                                Future needs and plans:
+                                                • Control and protection expandable
+                                                   solution with adaptive C&P algorithms.
+                                                   Work to be financed through EXPAND-
+Confidential                                                                      3/4/2026
+
+
+                                                  HVDC project (continuation of
+                                                  InterOPERA), which I coordinate.
+
+
+
+
+ DC Grid Controller (DCGC) will represent •       Work to be started in 2027.
+ as digital substation that includes future- •    Funding through 2-3 years TenneT
+ ready interoperability aspects [4]. It aims to   industrial postdoc (under negotiation).
+ replace the control centre system and all its
+ applications for SCADA, grid calculations
+ (EMS), load frequency control (LFC),
+ scheduling, etc., and provide those
+ capabilities and functionalities in a modular
+ way.
+ It will be based on the SEAPATH open-
+ source substation, and ACDC-OpFlow
+ integrated.
+
+
+
+
+ DC Switching Station (DCSS) represents a •       Work to be started in 2027.
+ controller of the switchyard providing the •     Funding through EXPAND-HVDC
+ communication between IEDs, and                  project which I coordinate.
+ modular connection point for the additional •    It will be patented.
+ and expandable HVDC grid.
+Confidential                                                                       3/4/2026
+
+
+Testing procedures and setups
+Setups for PHIL using Imperix MMC and Imperix 2-level VSCs, which would ensure TRL6
+testing for all different RES topologies. Namely, MMC is used for HVDC terminals, while 2-
+level converter is used for PV, BESS, wind and hydrogen connections.
+
+Currently one project (Inter-oPEn) develops PHIL setup for the GFM control of offshore wind
+farms. One more project is ongoing, named GF4EU.
+
+In the ESP lab facilities exist both MMC and 2-level VSC (borrowed from PVMD). In near future
+should be invested in purchasing two 2-level VSC to enable GSC-MSC connection, and at
+least two more power amplifiers as Triphase is outdated.
+
+
+
+
+           IEPG
+                              IEPG
+           Asset
+                              Asset
+                                                                IEPG
+                                                                Asset
+Furthermore, the efforts will be invested to preserve InterOPERA equipment by frequent
+interaction between actors in ENTSO-E interoperability workstream. New vendors will be
+contacted, e.g. Toshiba.
+
+In the upcoming project EXPAND-HVDC will be tested interoperability of protection
+solutions and IEDs.
+
+Courses and training programs
+The Interoperability program will have the training material in the format of MOOC, with
+addition of libraries, and TU Delft-owned courses with PAO outreach:
+
+   •   MOOC "Control and protection of HVDC/AC electrical grids" offered by IEEE IES and
+       the GitHub library of models following the course:
+       I am the responsible instructor for the MOOC and teach 1/3 of the course material.
+       The MOOC is recorded in co-financing of the EU project SUNRISE and IEEE IES
+Confidential                                                                       3/4/2026
+
+
+       sponsorship based on the successful proposal. I have managed to engage 15
+       lecturers in this course, both from academia and industry. The course is hosted as an
+       open-source,                free,           IEEE             IES             webinar:
+       https://resourcecenter.ies.ieee.org/education/short-courses-protection-basics.
+       The course material is also supported with the open-source RSCAD/RTDS and
+       MATLAB libraries and models, which can be found here: https://github.com/control-
+       protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-IEEE-
+       IES-MOOC.
+       This MOOC covers the teaching material currently unavailable or in the limited format
+       available at universities worldwide. It also represents a relevant topic both for
+       academia and industry. After finishing the course and passing the end quiz, attendees
+       can claim 74 PDH (equivalent to 3 ECTS).
+   •   Electrical Power Systems of the Future – EE4545, ECTS 5, MSc course – responsible
+       instructor (2023/2024-ongoing).
+       I have included teaching of the control of HVDC-based electrical grids in the course
+       material. And formulated practical sessions as RTDS hardware-in-the-loop
+       experiments. This is a completely novel approach for teaching, and having one of the
+       largest RTDS laboratories in the world helps with sharing the knowledge about real-
+       time simulations and testing feasible for our MSc studies.
+       From this year, 2026, the course is being sold as PAO.
+   •   IEPG summer school material will be offered from summer 2028.
+
+   3. Program future
+The Interoperability program will be funded through diverse projects: industrial grants, EU
+projects, national funding and industrial actions. In the upcoming 5 years, the focus will be
+given to the establishment of the stable product line, patenting, publication of results, and
+ensuring further financing.
+
+After 5 years, the program should evolve towards one start-up by applying to EIC Accelerator
+EU grant. Furthermore, with frequent collaboration with TenneT, it might be established TU
+Delft-TenneT institute.
+
+   4. Resources
+Summary of existing and list of needed resources:
+  • Lab space exists in the backyard, and it can be fully employed;
+  • Power electronics hardware: Imperix MMC (exists), Imperix 2-level converter x 2;
+  • Grid emulator: power amplifier x 2;
+  • Measurement instruments: oscilloscope, signal generator;
+  • Software licenses: PSCAD
+Confidential                                                                     3/4/2026
+
+
+   •   Servers: 2 working stations (exist);
+   •   Maintenance
+   •   Consumables
+   •   Connection to 5-10 RTDS racks in RTDS Lab (exists)
+
+ Category                                   Investment needed
+ Imperix 2-level converter x 2              200 k€
+ Oscilloscope,       signal      generator, 50 k€
+ measurement equipment
+ Power amplifier x 2                          200 k€
+ Software                                     10 k€ per year
+ Maintenance/consumables                      2-3 k€ per year
+
+The program can start operation with the currently owned resources, and increase gradually
+through project funding.
+
+
+
+
+   5. Organization
+The program will be run by:
+   • Program director – Aleksandra Lekić;
+   • Technical manager – Remko Koornneef;
+   • Research engineers;
+   • PhD students;
+   • Admin support – IT and DCC.
+Confidential                                                                        3/4/2026
+
+
+Governance structure:
+   • Reporting lines: the program director is directly reporting to the ESP Lab director and
+      department head;
+   • IP ownership policy: the results will be owned by TU Delft, with different access
+      rights depending on each different product and solution;
+   • Industry collaboration framework: goes through the program director and technical
+      manager directly with industry partners.
+
+The program’s lab space will be available for use to all ESE department members after
+detailed planning and consultation with the program director and technical manager. All lab
+users will have to adhere to guidelines for the lab access and equipment use. TU Delft owned
+equipment will be usable to anyone using the lab. However, vendor equipment under NDA,
+will be usable only to the individuals whose names are clearly specified on the NDA.
+Furthermore, at some points one or more (of three) laboratory spaces might be out of use
+due to IP protection, and NDAs (e.g. InterOPERA project).
+
+   6. Risk assessment
+               Risk                          Impact    Mitigation
+               Funding delay                 Medium    Diversify grant sources
+               Equipment underutilization    High      Industry partnerships
+               Talent shortage               High      PhD pipeline
+               Tech obsolescence             Medium    Modular infrastructure
+
+
+References
+[1] “Implementation Plan on HVDC & DC Technologies,” European Commission, SET Plan
+Secretariat, October 2021.
+[2] ENTSO-E, “Position on Offshore Development – Interoperability,” January 2021.
+[3] ENTSO-E, “RDI Roadmap 2024 – 2034, Innovation Missions to build the power system
+for a Carbon-Neutral Europe,” 2024.
+[4] ENTSO-E, Interoperability,
+https://www.entsoe.eu/technopedia/techsheets/interoperability/.
+Confidential   3/4/2026
+
+
+Annex 1
+

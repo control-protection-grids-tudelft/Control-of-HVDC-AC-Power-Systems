@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MITIGATE-HARM · HVDC/AC Control · TU Delft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="logo" href="../index.html">Control of HVDC/AC Power Systems<span>TU Delft · IEPG</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="site-nav" id="site-nav">
+        <li><a href="../index.html">Home</a></li><li><a href="../team/index.html">Team</a></li><li><a href="../projects/index.html" aria-current="page">Projects</a></li><li><a href="../publications/index.html">Publications</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../news/index.html">News</a></li><li><a href="../awards.html">Awards</a></li><li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero"><div class="wrap">
+    <div class="breadcrumbs"><a href="../projects/index.html">Projects</a> / MITIGATE-HARM</div>
+    <p class="sec-label">Current · 2026–2029</p>
+    <h1>MITIGATE-HARM</h1>
+    <p class="lede">MITIGATE HARMonics in power electronics-based power systems</p>
+  </div></section>
+  <section class="block"><div class="wrap detail-grid">
+    <aside>
+      <div class="portrait logo-card" style="aspect-ratio:16/10;background:#f7faf9;display:grid;place-items:center;padding:1.1rem">
+        <img src="../assets/projects/mitigate-harm-card.jpg" alt="MITIGATE-HARM logo" style="max-width:100%;max-height:220px;width:auto;height:auto;object-fit:contain" />
+      </div>
+      <dl class="side-meta">
+        <dt>Role at TU Delft</dt><dd>Project coordinator · WP lead</dd>
+        <dt>Funder</dt><dd>CETP Joint Call 2024 (CETP-2024-00024) · TU Delft funded by NWO</dd>
+        <dt>Period</dt><dd>2026–2029</dd>
+      </dl>
+      <div class="link-row" style="margin-top:1rem;flex-direction:column;align-items:stretch"><a class="btn btn-primary" href="https://mitigate-harm.eu/" target="_blank" rel="noopener">Official website ↗</a><a class="btn btn-outline" href="https://www.tudelft.nl/en/2026/eemcs/building-more-resilient-and-reliable-power-systems-for-the-future" target="_blank" rel="noopener">TU Delft page ↗</a><a class="btn btn-outline" href="https://www.nwo.nl/en/projects/ep160224002" target="_blank" rel="noopener">NWO ↗</a></div>
+    </aside>
+    <div class="prose">
+      <h2>Overview</h2>
+      <p>MITIGATE-HARM makes future power systems more resilient by tackling converter-driven instabilities and harmonic resonances that vendor-specific tools cannot assess quickly enough. It builds on two open-source platforms — Harmony (impedance-based) and DPsim (eigenvalue-based) — to support TSOs already at early planning stages and enable safe integration of up to 100% renewables.</p>
+      <h2>Project description</h2>
+      <p>Digitalisation and RES integration have sharply increased PE penetration. Converters introduce fast dynamics and can behave as negative resistance over wide frequencies, risking oscillations and blackouts — especially in hybrid AC/DC and multi-terminal multi-vendor HVDC systems, aggravated by limited standardisation and vendor-specific projects.</p><p>MITIGATE-HARM develops a unified mathematical framework for converter-driven stability assessment: extending Harmony (C++) for instability/resonance identification, mitigation and wideband passivity; extending DPsim for hybrid AC/DC eigenvalue analysis and OPAL-RT integration. Developments are cross-validated on IEEE 9-bus + HVDC and Nordic PE benchmarks against PSCAD, Z-tool and OPAL-RT, then applied to TenneT large-scale cases. Target KPIs include &lt;1% inaccuracy vs commercial tools, order-of-magnitude faster simulation (minutes→seconds), and &gt;30% reduction of identified instabilities via mitigation measures.</p>
+      <h2>Objectives &amp; deliverables</h2>
+      <ul><li>Advanced Harmony toolbox: instability/resonance ID, mitigation, wideband passivity (open-source C++)</li><li>Enhanced DPsim: hybrid AC/DC modelling, eigenvalue analysis, OPAL-RT integration</li><li>Open benchmarks and public datasets via CRESYM Collaborative Dynamic Library (CoLib)</li><li>Verification and application on real-life TenneT cases; pan-European scalability analysis</li><li>Dissemination: open-access papers, workshops, training; long-term LF Energy maintenance path</li></ul>
+      <h2>Partners</h2>
+      <p>Coordinator: TU Delft (NL). Partners: AUTH (GR), RWTH Aachen (DE), TenneT TSO GmbH (DE), OPAL-RT Germany GmbH (DE), CRESYM (BE).</p>
+      <h2>TU Delft role</h2>
+      <p>TU Delft coordinates the project. Team includes Aleksandra Lekić, Hao Xu, Muhammad Noman Ashraf and Robert Dimitrovski (TenneT / part-time TU Delft).</p>
+      <h2>Related portfolio</h2><ul><li><a href="../portfolio/harmony-toolbox.html">Harmony toolbox</a></li><li><a href="../portfolio/dqsym.html">DQsym</a></li><li><a href="../portfolio/acdc-opflow.html">ACDC-OpFlow</a></li></ul>
+      <h2>Team on this project</h2>
+      <div class="grid-3" style="margin-top:1rem"><a class="card person-card" href="../team/hao-xu.html"><div class="card-media"><img src="../assets/team/hao-xu.jpg" alt="" /></div><div class="card-body"><h3>Dr. Hao Xu</h3><p>Postdoctoral researcher</p></div></a><a class="card person-card" href="../team/muhammad-noman-ashraf.html"><div class="card-media"><img src="../assets/team/muhammad-noman-ashraf.jpg" alt="" /></div><div class="card-body"><h3>Dr. Muhammad Noman Ashraf</h3><p>Postdoctoral researcher</p></div></a><a class="card person-card" href="../team/aleksandra-lekic.html"><div class="card-media"><img src="../assets/team/aleksandra-lekic.jpg" alt="" /></div><div class="card-body"><h3>Dr. Dipl.-Ing. Aleksandra Lekić</h3><p>Associate Professor · Group lead</p></div></a><a class="card person-card" href="../team/robert-dimitrovski.html"><div class="card-media"><img src="../assets/team/robert-dimitrovski.jpg" alt="" /></div><div class="card-body"><h3>Dr. Robert Dimitrovski</h3><p>Postdoctoral researcher · TenneT / TU Delft</p></div></a></div>
+      <div class="link-row" style="margin-top:1.5rem">
+        <a class="btn btn-dark" href="../projects/index.html">All projects</a>
+        <a class="btn btn-outline" href="../portfolio/index.html">Portfolio</a>
+        <a class="btn btn-outline" href="../news/index.html">News</a>
+      </div>
+    </div>
+  </div></section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="brand-font">Control of HVDC/AC Power Systems</div>
+        Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="../team/index.html">Team</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../publications/index.html">Publications</a></li>
+          <li><a href="../teaching.html">Teaching</a></li>
+          <li><a href="../portfolio/index.html">Open-source portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:A.Lekic@tudelft.nl">A.Lekic@tudelft.nl</a></li>
+          <li>+31 15 27 82461</li>
+          <li>Room 36.LB 03.210</li>
+          <li><a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>

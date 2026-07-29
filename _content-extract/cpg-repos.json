@@ -1,0 +1,67 @@
+[
+  {
+    "name": "AC-asymmetric-fault-control_RTDS-models",
+    "url": "https://github.com/control-protection-grids-tudelft/AC-asymmetric-fault-control_RTDS-models",
+    "desc": "RSCAD/RTDS models for the thesis of Naajein Cherat"
+  },
+  {
+    "name": "ACDC_OPF",
+    "url": "https://github.com/control-protection-grids-tudelft/ACDC_OPF",
+    "desc": ""
+  },
+  {
+    "name": "BiGER",
+    "url": "https://github.com/control-protection-grids-tudelft/BiGER",
+    "desc": "contains dynamic test cases and models for BiGER project"
+  },
+  {
+    "name": "colib0.github.io",
+    "url": "https://github.com/control-protection-grids-tudelft/colib0.github.io",
+    "desc": "Collaborative dynamic library"
+  },
+  {
+    "name": "Control-and-protection-of-HVDC-AC-electrical-grids-IEEE-IES-MOOC",
+    "url": "https://github.com/control-protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-IEEE-IES-MOOC",
+    "desc": "The libraries for the course \"Control and protection of HVDC/AC power systems\"."
+  },
+  {
+    "name": "Control-of-HVDC-AC-Power-Systems",
+    "url": "https://github.com/control-protection-grids-tudelft/Control-of-HVDC-AC-Power-Systems",
+    "desc": "We are the Control of HVDC/AC power systems team at TU Delft, led by Dr. Aleksandra Leki\u0107. Our research focuses on the control, protection, and stability of modern AC/DC power systems, power electronics, HVDC grids, renewable energy integration, and real-time simulation. We develop open-source tools, educational resources, and research software."
+  },
+  {
+    "name": "DP",
+    "url": "https://github.com/control-protection-grids-tudelft/DP",
+    "desc": "Dynamic phasor models in MATLAB"
+  },
+  {
+    "name": "HVDC-RTDS-models",
+    "url": "https://github.com/control-protection-grids-tudelft/HVDC-RTDS-models",
+    "desc": "Real-time models of the MMC-based multi-terminal HVDC electrical grids with North Sea ratings."
+  },
+  {
+    "name": "OIPF-AC-DC-Grids",
+    "url": "https://github.com/control-protection-grids-tudelft/OIPF-AC-DC-Grids",
+    "desc": "Code for conference paper [eeeic2026]"
+  },
+  {
+    "name": "PMACDC-HD",
+    "url": "https://github.com/control-protection-grids-tudelft/PMACDC-HD",
+    "desc": "A hybrid AC/DC OPF package based on PowerModelsACDC.jl"
+  },
+  {
+    "name": "RTDS-MMC-MPC-Control-Application",
+    "url": "https://github.com/control-protection-grids-tudelft/RTDS-MMC-MPC-Control-Application",
+    "desc": "This repository contains RSCAD/RTDS model and developed Model Predictive Control (MPC) during the PhD work. "
+  },
+  {
+    "name": "RTDS_NN_models",
+    "url": "https://github.com/control-protection-grids-tudelft/RTDS_NN_models",
+    "desc": "The repository of HVDC/AC electrical grid models for RSCAD/RTDS with NNs."
+  },
+  {
+    "name": "SUNRISE_MPC",
+    "url": "https://github.com/control-protection-grids-tudelft/SUNRISE_MPC",
+    "desc": "Repository with RTDS models for model predictive controlled HVDC electrical grid."
+  }
+]

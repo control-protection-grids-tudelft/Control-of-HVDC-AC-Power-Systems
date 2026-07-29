@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier — Template C</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --stone: #e6eaee;
+      --paper: #f5f7f9;
+      --ink: #1c242c;
+      --muted: #5c6975;
+      --line: #cfd6dd;
+      --copper: #8a5a2b;
+      --green: #1f6b58;
+      --deep: #24303a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse 70% 45% at 80% -5%, #d9e4df 0%, transparent 55%),
+        radial-gradient(ellipse 50% 35% at 0% 20%, #e2e0d8 0%, transparent 50%),
+        var(--paper);
+      color: var(--ink);
+      font-family: Manrope, system-ui, sans-serif;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 2.4rem)); margin-inline: auto; }
+
+    header {
+      padding: 1.4rem 0 0;
+    }
+    .nav {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      line-height: 1.2;
+      max-width: 14rem;
+    }
+    .brand small {
+      display: block;
+      font-family: Manrope, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.35rem;
+      margin: 0.2rem 0 0;
+      padding: 0;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    nav a { text-decoration: none; }
+    nav a:hover { color: var(--green); }
+    @media (max-width: 700px) {
+      .nav { flex-direction: column; }
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 3.2rem 0 2.2rem;
+      position: relative;
+    }
+    .hero-copy { max-width: 36rem; position: relative; z-index: 1; }
+    .hero h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 1rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--green);
+      font-weight: 500;
+    }
+    .hero p {
+      margin: 0 0 1.6rem;
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 42ch;
+    }
+    .cta {
+      display: inline-flex;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 700;
+      padding: 0.8rem 1.15rem;
+      border: 1px solid var(--ink);
+    }
+    .btn-fill { background: var(--ink); color: var(--paper); }
+    .btn-ghost { background: transparent; color: var(--ink); }
+    .btn-ghost:hover { border-color: var(--green); color: var(--green); }
+
+    .hero-plane {
+      margin-top: 2.4rem;
+      position: relative;
+      height: clamp(220px, 38vw, 380px);
+      overflow: hidden;
+      background: var(--deep);
+    }
+    .hero-plane img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.88;
+    }
+    .hero-plane::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(36,48,58,0.55), transparent 45%, rgba(36,48,58,0.25));
+    }
+    .caption {
+      position: absolute;
+      left: 1.1rem;
+      bottom: 1rem;
+      z-index: 1;
+      color: #eef3f6;
+      font-size: 0.82rem;
+      font-weight: 500;
+      max-width: 28ch;
+    }
+
+    section { padding: 3.4rem 0; }
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin: 0 0 0.55rem;
+    }
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      margin: 0 0 0.6rem;
+      letter-spacing: -0.015em;
+    }
+    .lede { color: var(--muted); max-width: 52ch; margin: 0 0 1.8rem; }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    @media (max-width: 820px) { .about { grid-template-columns: 1fr; } }
+    .quote {
+      border-left: 2px solid var(--green);
+      padding-left: 1rem;
+      color: var(--muted);
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.45;
+      margin: 1.2rem 0 0;
+    }
+    .side-img {
+      width: 100%;
+      display: block;
+      border: 1px solid var(--line);
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .proj-list {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid var(--line);
+    }
+    .proj {
+      display: grid;
+      grid-template-columns: 8.5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: baseline;
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .proj:hover { background: rgba(255,255,255,0.55); }
+    @media (max-width: 700px) {
+      .proj { grid-template-columns: 1fr; gap: 0.25rem; }
+    }
+    .proj .status {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+    .proj h3 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 0.2rem;
+    }
+    .proj p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .proj .go {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--copper);
+      white-space: nowrap;
+    }
+
+    .people {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 800px) { .people { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .people { grid-template-columns: 1fr; } }
+    .person {
+      background: rgba(255,255,255,0.65);
+      border: 1px solid var(--line);
+      padding: 1.05rem 1rem;
+    }
+    .person strong {
+      display: block;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .person span { color: var(--muted); font-size: 0.88rem; }
+
+    .news-block {
+      background: var(--deep);
+      color: #e8eef2;
+      padding: 3.4rem 0;
+    }
+    .news-block .eyebrow { color: #c9a079; }
+    .news-block .lede { color: #9aa8b3; }
+    .years {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 700px) { .years { grid-template-columns: 1fr; } }
+    .years h3 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.4rem;
+      margin: 0 0 0.8rem;
+      font-weight: 600;
+    }
+    .years article {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .years time {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #c9a079;
+      margin-bottom: 0.25rem;
+    }
+    .years h4 { margin: 0 0 0.2rem; font-size: 1rem; font-weight: 600; }
+    .years p { margin: 0; color: #9aa8b3; font-size: 0.9rem; }
+
+    .folio {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .folio { grid-template-columns: 1fr; } }
+    .folio img {
+      width: 100%;
+      border: 1px solid var(--line);
+      display: block;
+    }
+    .tools { list-style: none; margin: 0; padding: 0; }
+    .tools li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.95rem;
+    }
+    .tools b { font-weight: 700; }
+    .tools span { color: var(--muted); font-size: 0.82rem; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 2.4rem 0 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer .brand { color: var(--ink); margin-bottom: 0.35rem; }
+    .back {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 20;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: var(--ink);
+      color: var(--paper);
+      padding: 0.7rem 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="back" href="../index.html">← All templates</a>
+
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">
+          Control of HVDC/AC Power Systems
+          <small>TU Delft · IEPG</small>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <div class="hero-copy">
+          <h1>Research for an <em>interoperable</em> European HVDC grid</h1>
+          <p>Aleksandra Lekić’s team at TU Delft works on control, protection, and open tools for hybrid AC/DC power systems.</p>
+          <div class="cta">
+            <a class="btn btn-fill" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#portfolio">Open-source portfolio</a>
+          </div>
+        </div>
+        <div class="hero-plane">
+          <img src="../assets/offshore-map.jpg" alt="European offshore development plans" />
+          <div class="caption">Offshore network ambitions · ENTSO-E context from the Interoperability Program</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <p class="eyebrow">About the group</p>
+        <h2>Circuit theory, nonlinear control, and harmonic stability</h2>
+        <p class="lede">We study multiport HVDC systems, impedance-based MMC/VSC modelling, Lyapunov and MPC methods, and real-time validation for multi-vendor grids.</p>
+        <p class="quote">“Multi-vendor multi-terminal VSC HVDC with future-proof AC/DC hybrid assessment is a top priority for climate-neutral Europe.”</p>
+      </div>
+      <img class="side-img" src="../assets/lab-setup-2.jpg" alt="Laboratory equipment" />
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <p class="eyebrow">Projects</p>
+      <h2>Programmes we lead and contribute to</h2>
+      <p class="lede">Current projects first; completed work (SUNRISE, BiGER Explore, EASY-RES) lives on the full projects page.</p>
+      <div class="proj-list">
+        <a class="proj" href="https://interopera.eu/" target="_blank" rel="noopener">
+          <span class="status">Current</span>
+          <div>
+            <h3>InterOPERA</h3>
+            <p>Enabling interoperability of multi-vendor HVDC grids</p>
+          </div>
+          <span class="go">Official site ↗</span>
+        </a>
+        <a class="proj" href="https://inter-open.eu/" target="_blank" rel="noopener">
+          <span class="status">Current</span>
+          <div>
+            <h3>Inter-oPEn</h3>
+            <p>MSCA doctoral network on PE interoperability by openness</p>
+          </div>
+          <span class="go">Official site ↗</span>
+        </a>
+        <a class="proj" href="https://mitigate-harm.eu/" target="_blank" rel="noopener">
+          <span class="status">Current</span>
+          <div>
+            <h3>MITIGATE-HARM</h3>
+            <p>CETP/NWO — mitigating harmonics in PE-based systems</p>
+          </div>
+          <span class="go">Official site ↗</span>
+        </a>
+        <a class="proj" href="https://cresym.eu/harmony/" target="_blank" rel="noopener">
+          <span class="status">Current</span>
+          <div>
+            <h3>HARMONY</h3>
+            <p>Harmonic stability assessment framework (CRESYM)</p>
+          </div>
+          <span class="go">Official site ↗</span>
+        </a>
+        <a class="proj" href="https://prosecco-project.be/" target="_blank" rel="noopener">
+          <span class="status">Current</span>
+          <div>
+            <h3>PROSECCO</h3>
+            <p>DC protection, security, control and optimisation</p>
+          </div>
+          <span class="go">Official site ↗</span>
+        </a>
+        <a class="proj" href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/electrical-sustainable-energy/intelligent-electrical-power-grids-iepg-group/projects/current-projects/safe-grid" target="_blank" rel="noopener">
+          <span class="status">Current</span>
+          <div>
+            <h3>SAFE-GRID</h3>
+            <p>NWO Veni — smart flexible control for PE-based grids</p>
+          </div>
+          <span class="go">TU Delft ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="wrap">
+      <p class="eyebrow">Team</p>
+      <h2>Researchers</h2>
+      <p class="lede">Individual pages will use biographies and project descriptions from your website forms.</p>
+      <div class="people">
+        <div class="person"><strong>Aleksandra Lekić</strong><span>Associate Professor</span></div>
+        <div class="person"><strong>Rohan Kamat Tarcar</strong><span>PhD · InterOPERA</span></div>
+        <div class="person"><strong>Arjita Pal</strong><span>PhD · InterOPERA</span></div>
+        <div class="person"><strong>Saif Alsarayreh</strong><span>PhD · HARMONY</span></div>
+        <div class="person"><strong>Haixiao Li</strong><span>Postdoc · HARMONY</span></div>
+        <div class="person"><strong>Sunny Singh</strong><span>Postdoc · SAFE-GRID</span></div>
+        <div class="person"><strong>Tuanku Badzlin Hashfi</strong><span>PhD · Inter-oPEn</span></div>
+        <div class="person"><strong>Victor Daniel Reyes Dreke</strong><span>Postdoc · PROSECCO</span></div>
+        <div class="person"><strong>Rahul Rane</strong><span>PhD · PROSECCO</span></div>
+        <div class="person"><strong>Hongjin Du</strong><span>PhD · CSC</span></div>
+        <div class="person"><strong>Hao Xu</strong><span>Postdoc · MITIGATE-HARM</span></div>
+        <div class="person"><strong>Muhammad Noman Ashraf</strong><span>Postdoc · MITIGATE-HARM</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="news-block" id="news">
+    <div class="wrap">
+      <p class="eyebrow">News</p>
+      <h2>Year by year</h2>
+      <p class="lede">A simple chronological feed — easy to extend with Markdown or a small CMS later.</p>
+      <div class="years">
+        <div>
+          <h3>2026</h3>
+          <article>
+            <time>January</time>
+            <h4>MITIGATE-HARM kick-off</h4>
+            <p>Partners from TUD, RWTH, AUTH and industry met in Delft.</p>
+          </article>
+        </div>
+        <div>
+          <h3>2025</h3>
+          <article>
+            <time>September</time>
+            <h4>Energy Transition in Buildings hackathon</h4>
+            <p>Covered by 4TU news.</p>
+          </article>
+          <article>
+            <time>January</time>
+            <h4>IEEE IES MOOC launched</h4>
+            <p>Control and protection of HVDC/AC electrical grids.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="portfolio">
+    <div class="wrap folio">
+      <div>
+        <p class="eyebrow">Open source &amp; portfolio</p>
+        <h2>Tools &amp; planned products</h2>
+        <p class="lede">Mapped from the Interoperability Program business case — maturity notes included.</p>
+        <ul class="tools">
+          <li><b>Harmony toolbox</b><span>Open source · TRL 3–4</span></li>
+          <li><b>ACDC-OpFlow</b><span>Open source · TRL 4–5</span></li>
+          <li><b>DQsym</b><span>Open source · TRL 4–5</span></li>
+          <li><b>HVDC RTDS &amp; NN libraries</b><span>Teaching + research</span></li>
+          <li><b>Hierarchical C&amp;P</b><span>Patent track 2026</span></li>
+          <li><b>PACS · DCGC · DCSS</b><span>Hardware roadmap</span></li>
+        </ul>
+      </div>
+      <img src="../assets/portfolio-diagram.jpg" alt="Interoperability program portfolio diagram" />
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="brand">Control of HVDC/AC Power Systems</div>
+      Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft<br />
+      A.Lekic@tudelft.nl · +31 15 27 82461 · 36.LB 03.210<br />
+      <span style="display:inline-block;margin-top:0.7rem">Template C · Atelier · for review only</span>
+    </div>
+  </footer>
+</body>
+</html>

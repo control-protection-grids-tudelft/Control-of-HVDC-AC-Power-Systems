@@ -1,0 +1,733 @@
+Aleksandra Lekić, Ph.D.
+/envel⌢peA.Lekic@tudelft.nl
+/gl⌢behttps://www.tudelft.nl/staff/a.lekic/
+Employment History
+Jan2020–Present ὑ6 Associate Professor,Intelligent Electrical Power Grids (IEPG), Electrical Sus-
+tainableEnergy(ESE),FacultyofElectricalEngineering,MathematicsandCom-
+puterScience(EEMCS),TUDelftinDelft,Netherlands.
+• AssistantProfessor,tenuretrack,Jan2020-Dec2022
+• AssistantProfessor,tenured,Jan2022-Apr2025
+• AssociateProfessor,May2025-ongoing
+• MSc coordinatorfortheElectricalEngineering-ElectricalPowerEngi-
+neering(MScEE-EPE)
+Responsible for: admission of non-EU students, tracking the progress of
+MScEE-EPEstudents,evaluationofExtraProjectcourse(ET4399)
+• Courses:
+Responsibleinstructorfor:
+– ElectricalPowerSystemoftheFuture(EE4545)-3years,
+– MatlabFundamentals(SET3815-M)-5years,
+– IEEE IES MOOC “Control and protection of HVDC/AC elec-
+trical grids”: https://resourcecenter.ies.ieee.org/education/
+control-protection-hybrid-grids.
+Taught in the past also: Electrical Power Systems of the Linear Circuits A
+andB(EE1C11,EE1C21),BSc-1year,EPO-1(EE1L11),BSc-1year.
+• EnglishLanguageTest : obtainedon11.03.2022
+• UTQ :obtainedon22.12.2021
+• Othercourses:
+– PDP-ﬁnished11.04.2023(certiﬁcateattachedifneeded),
+– Dutch courses:A1 - 27.10.2023, A2 - 23.01.2024, B1- - 16.04.2024, and
+B1-01.07.2024
+– Leadingprojectorateam -30.04.2024
+– Leadership programme Assistant/Associate Professor -
+13.12.2023
+Employment History (continued)
+Research: ὑ6 Advancedcontrolprinciplesforthehybridpowersystems,modeling,andsimu-
+lationofthepowersystemcomponents,veriﬁcationofcontrol/modelingprinci-
+plesusingreal-timesimulationhardwareRTDS/RSCAD
+The majority of the models from theControl of HVDC/AC power systemsgroup
+areplacedhere: https://github.com/control-protection-grids-tudelft
+Open-sourcemodellibraries:
+• RTDS-based models of HVDC electrical grids:
+https://github.com/control-protection-grids-tudelft/HVDC-RTDS-
+models
+• RSCAD/RTDS models for advanced control of HVDC-based electrical
+grids using real-time training neural networks: https://github.com/
+control-protection-grids-tudelft/RTDS_NN_models
+• Models for the IEEE IES MOOC “Control and protection of HVDC/AC
+electrical grids”: https://github.com/control-protection-grids-
+tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-
+IEEE-IES-MOOC. This course material is listed in Open Sustainable
+Technology –GitHub open source ecosystem in the areas of climate change,
+sustainable energy, biodiversity and natural resources.
+• ACDC-OpFlow: Uniﬁed, Cross-Language Framework for AC/DC Opti-
+malPowerFlowSolutions: https://github.com/CRESYM/ACDC_OPF
+• DQsym modelling library: https://github.com/control-protection-
+grids-tudelft/DP
+• NonlinearmodelpredictivecontrolautomaticgeneratorforDC-DCcon-
+verters: https://github.com/kul-optec/dc_dc_simulator
+Employment History (continued)
+Supervision: ὑ6 5postdocs(6ﬁnished),5Ph.D.students(2ﬁnished),1MScstudent(13ﬁnished)
+• Postdocs:
+1. ArjitaPal, InterOPERAproject,2025-ongoing
+2. HaixiaoLi, CSCgrantand Harmonyproject,2023-ongoing
+3. SunnySingh, SAFE-GRIDproject,2024-2025
+4. VictorDanielReyesDreke, PROSECCOproject,2025-ongoing
+5. HaoXu, MITIGATE-HARMproject,2025-ongoing
+6. MuhamadNomanAshraf, MITIGATE-HARMproject,2026-ongoing
+7. FarzadDehghavanMarvasti , InterOPERAproject,2022-2026
+8. RezaBakhshiJaﬀarabadi , InterOPERAproject,2022-2026
+9. AzadehKermansaravi, Harmonyproject,2024-2025
+10. AjayShetgaonkar, InterOPERAproject,2024-2025
+11. DebottamMukherjee, Harmonyproject,2024
+12. RashmiPrasad, BiGERproject,2023-2024
+13. DongyuLi, Harmonyproject,2023-2024
+14. SounakNandi, Harmonyproject,2023-2024
+15. VaibhavNougain, SUNRISEproject,2023-2025
+• Ph.D.students:
+1. HongjinDu, CSCgrant,2022-2026
+2. RohanKamatTarcar, InterOPERAproject,2023-2027
+3. SaifAlsarayreh, Harmonyproject,2024-2028
+4. TuanakuBadzlinHashﬁ, Inter-oPEnproject,2024-2028
+5. RahulRane, PROSECCOproject,2024-2028
+6. LeLiu, CSCgrant,2020-2024,graduatedon22.01.2024with cumlaude.
+7. Ajay Shetgaonkar, SectorPlan position, 2020-2024, graduated on
+21.10.2024.
+Employment History (continued)
+ὑ6 MScstudents:
+1. Jane Marchand, “EMT model and dynamic power management strategy
+ofanoﬀshorerenewableenergyhubwithlocalpower-to-gasconversion,”
+2021.
+2. Milan Jankovski, “Developing and testing a novel busbar protection
+scheme for impedance-earthed distribution networks,” 2022,ﬁnished with
+cum laude.
+3. Morteza Aghahadi, “Sliding mode control of the hybrid power systems
+withpowerelectronicsincorporated,”PolitecnicodiMilano,2022, ﬁnished
+with cum laude.
+4. ShiveshChoudhary,“AreviewofSmartProtectionsolutionsforFuture
+PowerSystems”,2022.
+5. Utkarsh Singh, “ComparativeanalysisofGridformingandGridfollow-
+ingcontrolsforType-3andType-4WindTurbines”2023, ﬁnishedwithcum
+laude.
+6. SankarshanDurgaprasad,“EnergyEﬃcientOperationofVessels: Anal-
+ysisofPotentialHybridSolutionswithLi-IonBatterySystem,”2023.
+7. Rohan Kamat Tarcar, “Revolutionising MTDC Networks: Unlocking
+the Power of FPGA-based MMCs with Grid Forming Control on RSCAD
+throughModelPredictiveControl,”2023, ﬁnished with cum laude.
+8. Matthĳs Mosselaar, “Analysis and Modeling of the Hybrid Vessel’s Elec-
+trical Power System: A study on Power Quality, Short-Circuit Currents
+andProtection&Coordination,”2023.
+9. JeroenvanAmmers ,“ConditionMonitoringofMMCSubmoduleSemi-
+conductors,”2023, ﬁnished with cum laude,Thesismark: 10/10.
+10. VishnuSaiNair ,“ProtectionStudyofMTDCPowerSystem,”2023.
+11. BaraMasalmeh,“NeuralNetwork-BasedPredictiveControlforModular
+MultilevelConvertersinHVDCTransmissionGrids,”2024.
+12. Rahul Rane, “Transfer Learning Framework for Impedance Characteri-
+zationofModularMultilevelConverters,”2024, ﬁnished with cum laude.
+13. NajeeinCherat,“MMCControlinHVDCSystemconnectedtoOﬀshore
+WindFarms,”2024.
+14. Fajril Fajril Mardiansah, “On Performance and Compliance of Grid-
+FormingAssets,”2025.
+15. Tejas Kunbi, “Development of grid code compliance tool for GFM tech-
+nology,”2025.
+16. IshiNigam,“DesigningoptimizedcontrolstrategyforDRUtopologyused
+inoﬀshoretransmissiontoensurestablegridconnection,”ongoing.
+Employment History (continued)
+ὑ6 BAPstudents:
+1. E. Bouma, L. Damoiseaux, and J. Groeneveld, “Low cost power quality
+measuring unit for household usage and small to enterprise scale instal-
+lations: DesigningaLowCostPowerQualityAnalyzer,”2024.
+2. H. Yildiz, M. de Vries, and E. Öztürkoglu, “Designing Software for User-
+FriendlyClass-SPowerQualityAnalyzerbasedonRaspberryPi,”2024.
+Mar2019–Dec2019 ὑ6 Postdoctoral Researcher, ELECTA, Department of Electrical Engineering
+(ESAT),KULeuvenandInstituteEnergyVilleinBelgium.
+• I have developed a complete modeling framework in Julia programming
+language for polyphase system harmonic stability assessment. Compo-
+nents: cables, transmission lines, MMCs, AC and DC grids, etc. are mod-
+eledasmultiportnetworkswithasmuchaspossiblecomplexity.
+• Simulatorhasaroleincheckingstabilityofthemulti-terminalHVDCsys-
+tem and constructing and proposing MMC controls for the mitigation of
+system instabilities, together with the controls for power system applica-
+tions.
+• The tool is available here: https://github.com/Electa-Git/
+PowerImpedanceACDC.jl
+Jul2018–Dec2019 ὑ6 AssistantProfessor, SchoolofElectricalEngineering,UniversityofBelgradein
+Belgrade,Serbia.
+• Courses: Synthesis of Electrical Filters, Elements of Electronics, Linear
+Electronics,ComputerElectronics,Signalsandsystems
+• Research: control theory, system stability, nonlinear control of DC-DC
+converters,simulationandmodelingofpowerconvertersandcircuitthe-
+ory
+• Supervision: 3 BSc theses, one awarded by the Serbian Academy of Sci-
+ences
+Jun2018–Sep2018 ὑ6 Visiting Postdoctoral Researcher,STADIUS, Department of Electrical Engi-
+neering(ESAT),KULeuvenandInstituteEnergyVilleinBelgium.
+• Supervisor: Prof. drPanagiotisPatrinos
+• Topic: MPCcontrolofDC-DCconverters
+• MPC simulator for DC-DC converters can be found in:https://github.
+com/kul-forbes/dc_dc_simulator (opensource)
+• Awardforthebestpaperin2021intheJournalofCircuitTheory&
+Applicationsfor[46]
+Employment History (continued)
+Dec2012–Jun2018 ὑ6 TeachingandResearchAssistant, SchoolofElectricalEngineering,University
+ofBelgradeinBelgrade,Serbia.
+• Courses: Analog Electronics, BSc - 2 years; Elements of Electronics, BSc
+-4years;LinearElectronics,BScandMSc-3years;DigitalSignalProces-
+sors, MSc - 3 years; Computer Electronics, BSc and MSc - 3 years; Signals
+andsystems,BSc-5years;TechnicalDocumentation,BSc-1year;RFelec-
+tronics,BScandMSc-4years,PowerElectronics,BSc-2years;Introduc-
+tiontoElectronics,BSc-6years.
+EveryyearonthestudentsurveysIhaveobtainedanaveragemarkof4or
+higher(ofmaximum5).
+• Research: nonlinear control of DC-DC converters, simulation and mod-
+elingofpowerconvertersandcircuittheory.
+• Supervision: 3BSctheses
+• From 2014 to 2019 team leader of the students in disciplines Electronics
+1 and Electronics 2 to the international student competition in electrical
+engineering“Elektrĳada”.
+Jun2012–Aug2012 ὑ6 InternshipEpcosTDK,Deutschlandsberg,Austria
+• characterizationofpiezoelectrictransformers
+• developmentofthemeasurementequipmentforpiezoelectrictransform-
+ers’characterization
+Oct2011–May2012 ὑ6 Student Demonstrator,School of Electrical Engineering, University of Bel-
+grade,Serbia.
+• Electronics Laboratory for courses:FundamentalsofElectronics, Ele-
+ments of Electronics, Fundamentals of Analog Electronics, Fundamentals
+ofDigitalElectronics,AnalogElectronics,DigitalElectronics,PowerElec-
+tronicsandLinearElectronics
+• Object Oriented Programming course:revising of students’ assign-
+mentsinObjectOrientedProgramminginMicrosoftVisualStudioC++
+Jul2011,2weeks ὑ6 Internship,PowerPlant“NikolaTesla”,Obrenovac,Serbia.
+Processmeasurement
+Education
+2013–2017 ὑ6 Ph.D.,UniversityofBelgrade ,SchoolofElectricalEngineeringinBelgrade,Serbia.
+• Thesistitle: Stable Switching Control of DC-DC Converter
+Keywords: Lyapunovstability,nonlinearcontroldesign,DC-DCconverters
+• Supervisor:Prof. drVujoDrndarević(UniversityofBelgrade)andProf. drDušan
+Stipanović(UniversityofIllinois)
+• Awards:
+– Award for the best PhD thesis at the University of Belgrade, Zadužbina An-
+drejević,Belgrade,Serbia
+– ProfessorMirkoMilićawardforthebestpaperregardingCircuitthe-
+oryforpaper[53]in2017andforthepaper[49]in2019.
+• GPA:10.0/10.0
+2012–2013 ὑ6 M.Sc.ElectricalEngineering, attheSchoolofElectricalEngineering,UniversityofBel-
+grade,Belgrade,Serbia.
+• Thesis title:Simulation of Switching Converters on the Level of Averaged Voltages
+and Currents
+• GPA:10.0/10.0
+2008–2012 ὑ6 B.Sc.ElectricalEngineering, attheSchoolofElectricalEngineering,UniversityofBel-
+grade,Belgrade,Serbia.
+• Thesis title:Simulation of Switching Converters on the Level of Averaged Voltages
+and Currents
+• GPA:10.0/10.0
+• Awards:
+– ThebeststudentofgenerationattheSchoolofElectricalEngineering ,
+byUniversityofBelgrade,Serbia,2013.
+– HUAWEI award for the best student of the University of Belgrade in
+thetechnicalstudies ,2012.
+– Scholarship from Young Talents Foundation, Belgrade, Serbia, in school
+years2011/2012,2012/2013.
+– Scholarship from the City of Belgradeduring school years 2007/2008,
+2009/2010,2010/2011.
+– Award for the best students from the City of Obrenovac, Obrenovac,
+Serbia,inyears2009,2010,2011,2012.
+– ScholarshipfromthePowerPlant“NikolaTesla” ,byPowerPlant“Nikola
+Tesla”, Obrenovac, Serbia, in school years 2009/2010, 2010/2011, 2011/2012,
+2012/2013.
+– Professor Mirko Milić award for the best student on the ﬁnal year in
+the School of Electrical Engineering, School of Electrical Engineering,
+UniversityofBelgrade,Serbia,2012.
+Education (continued)
+2004–2008 ὑ6 GrammarSchoolinObrenovac, Serbia.
+• Graduatedas “Thebeststudentofgeneration”
+• GPA:5.0/5.0
+• Mathematicscompetitions: 3awards(ﬁrst,secondandthirdplace)attherepub-
+lic mathematics competitions in Serbia and 3 ﬁrst awards at the regional level -
+Belgradearea
+• Physics competitions: 3 participations at the republic physics competitions in
+Serbia
+• Chemistry competitions: 2 participations at the republic level, and 2 regional
+awards(ﬁrstandthird)atthechemistrycompetitionsinSerbia
+• Latin competitions:fourth award at republic competition in Latin language in
+Serbia
+Memberships
+IEEE ὑ6 SeniorMember
+• CASSmember,PECAS
+• WIEIES
+• PESmember
+• IASmember
+• IESmember
+Working group- International Technology Roadmap of High-Power Electronics for Modern
+Energy Grids
+CIGRE ὑ6 Member
+• DutchNSCB4
+• JWGC2/B4.43 -Theimpact ofoﬀshore windpower hybridAC/DC connectionsonsys-
+tem operations and system design
+• JWG B4/C4.97-Benchmarking of simulation Models for control interaction in meshed
+AC networks with multiple converters
+CRESYM ὑ6 MemberofGeneralAssembly
+Editorial work
+2026-ongoing ὑ6 AssociateEditor,IEEETransactionsonPowerDelivery,Q1journal
+2024 ὑ6 AssociateEditor,IET,IETPowerElectronics
+2023-2024 ὑ6 AssociateEditor,Springer,ElectricalEngineering,Q3journal
+2023 ὑ6 GuestEditor,Specialissue ,IEEEJournalofPhotovoltaics
+Editorial work (continued)
+2022-ongoing ὑ6 Associate Editor, Elsevier, International Journal of Electrical Power and Energy Sys-
+tems,Q1journal
+2022 ὑ6 Guest Editor, Special issue, Elsevier, International Journal of Electrical Power and
+Energy Systems, “Methodologies and Applications of Digital Twin for Renewable-
+dominantPowerSystems”
+2022 ὑ6 Guest Editor, Special issue, Elsevier, Renewable and Sustainable Energy Reviews,
+“100%inverter-basedmicrogridsforenablinghighpenetrationofrenewableenergy”
+2022 ὑ6 GuestEditor,Specialissue ,MDPI/Energies,“PowerConverterControlApplications
+inLow-InertiaPowerSystems”
+Invited lectures and tutorials
+2025 ὑ6 KULeuven,invitedtalk ,title: ControlofHVDC/ACpowersystems
+2024 ὑ6 IEEEISGT2024 ,title: “ControlofHVDC/ACelectricalgrids: RTDShardware-in-the-loopap-
+proach,” participants: Aleksandra Lekić, Pablo Eguia Lopez, Vaibhav Nougain, Milovan Majs-
+torović,RemkoKoornneef,role: tutorialorganizer
+ὑ6 IEEE ISGT 2024, title: “Digitalization in Power Systems – a Key Enabler of the Energy Transi-
+tion,ControlofHVDCPowerElectronics,”specialsessioninvitation
+ὑ6 ADOreDsummerschool , https://www.msca-adored.eu/,title:‘DesignoftheHVDCadvanced
+controlstrategiesinthereal-time,”invitedlecture
+ὑ6 IET ACDC 2024, title: ‘HVDC Control and Protection - Research activities related to HVDC
+protection&controlatTUDelft,”Dr. MarjanPopovandDr. AleksandraLekić,invitedlecture
+2023 ὑ6 DynPOWER workshop 2023, title: “Harmonic stability assessment of the hybrid power sys-
+tem,”invitedlecture
+ὑ6 DISC Summer School 2023, Control in Power and Energy Systems, title: “Control of Power
+ElectronicsforRenewableEnergyIntegration,”researchlecture
+ὑ6 IEEEPowerTech2023 ,title: “EnablingInteroperabilityofMulti-VendorHVDCGrids,”plenary
+speech
+ὑ6 IEEE PES Serbia & Montenegro 2023, title: “Control Interoperability in the MMC-based
+PowerSystem”
+2022 ὑ6 IEEEeGrid2022 ,title: “ControlInteroperabilityintheMMC-basedPowerSystem”
+ὑ6 4thInternationalSymposiumonSmartGrid-Methods,Toolsandtechnologies ,title: “Ad-
+vancedControlDesignforMulti-terminalHVDCPowerSystems”
+ὑ6 ICAE2022,WomeninAppliedEnergyPanel,title: “PowerSystemsResearchduringCovid-19”
+2021 ὑ6 CoNDyNet2-Conference, “Complexity in Power Grids - From Science to Practice”, title:
+“AdvancedControlDesignforMulti-terminalHVDCPowerSystems”
+2017 ὑ6 25thIEEETelecommunicationForum(TELFOR) ,title: “StableswitchingcontrolofDC-DC
+converters”
+Conferences chairing
+2025 ὑ6 IEEEISGT2025 ,Technicalcommitteemember
+2024 ὑ6 IEEEISGT2024 ,HVDCsessionchair,andBestPaperAwardjurymember
+ὑ6 PowerWebAnnualConference2024 ,conferencechair
+ὑ6 PSCC2024,Sessionchair
+ὑ6 IEEEPVSC2024 ,Programcommitteemember–area9co-chair
+Conferences chairing (continued)
+2023 ὑ6 PowerTech2023,Sessionchair
+ὑ6 IEEEPVSC2023 ,Programcommitteemember–area9chair
+ὑ6 IEEEFES,SEST2023 ,Technicalprogramcommitteemember
+2022 ὑ6 IEEEIECON2022,IEEEPVSC2022,ICoPESA2022 ,Sessionchair
+ὑ6 IEEESEST2022 ,Technicalcommitteemember
+2020 ὑ6 IEEEISCAS2020,IEEEISIE2020 ,Sessionchair
+Projects
+2018–2021 ὑ6 EASYRES,H2020,GrantagreementID:764090
+Role: Task6.4lead
+Budget: 4.5Me (456k e forTUDelft)
+Finishedproject
+2023-2024 ὑ6 BiGER,CRESYMproject
+Role: leadfromTUDelft
+Budget: 345ke (148k e forTUDelft)
+Finishedproject: https://github.com/CRESYM/BiGER
+2023-2025 ὑ6 SUNRISE,HorizonEurope,GrantagreementID:101079200
+Role: leadfromTUDelft,WP3lead
+Budget: 1.4Me (352k e forTUDelft)
+2023-2027 ὑ6 InterOPERA,HorizonEurope,GrantagreementID:101095874
+Role: co-leadfromTUDelft
+Budget: 50.2Me (4.617M e forTUDelft)
+2023-2026 ὑ6 Harmony,CRESYMproject
+Role: PI
+Budget: 1.248Me (1.248M e forTUDelft)
+This project received support from the TU Delft Digital Competence Center
+(https://www.tudelft.nl/en/library/support/library-for-researchers/setting-
+up-research/dcc)byaprogrammeroveraperiodof6months(01.11.2024-01.04.2025).
+2024-2027 ὑ6 SAFE-GRID,NWO,VENI-Talentscheme
+Role: PI,individualgrant
+Budget: 280ke (280k e forTUDelft)
+2023-2027 ὑ6 Inter-oPEn,HorizonEurope,GrantagreementID:101119349
+Role: leadfromTUDelftandWP4lead
+Budget: 2.673Me (274.4k e forTUDelft)
+2023-2024 ὑ6 IEEE IES Sponsorship, funding for the recording of MOOC “Control and protection of
+theHVDC/ACelectricalgrids”
+Budget: 10ke
+Finishedproject/usedgrant
+Projects (continued)
+2024-2028 ὑ6 PROSECCO,HorizonEurope,GrantagreementID:101160687
+Role: leadfromTUDelftandWP4lead
+Budget: 5Me (629k e forTUDelft)
+2024-2025 ὑ6 4TUEnergyFunding2024 ,fundingfortheorganizationoftheworkshopin2025
+Workshop title: Information Interaction Club: Energy Supply & Demand in Residential
+Buildings
+Budget: 19.9ke
+2025 ὑ6 TUDelftandIISccollaboration ,fundingforestablishingNL-INcollaboration
+Role: PIfromTUDelft
+Budget: 2500e
+2025-2028 ὑ6 MITIGATE-HARM,CETP2024
+Role: Projectcoordinator,6partnersfrom4countries
+Budget: 1105ke (400k e forTUDelft)
+2026-2035 ὑ6 UTOPYS,NWOLSRI2025
+Role: Collaborator
+Budget: 16.5Me
+Research Publications
+Journal Articles
+1 Alsarayreh,S.,Dimitrovski,R.,& Lekić,A.(2027).Dynamicphasorstate-spacesolverforhybridac/dc
+systems.Electric Power Systems Research,262,113547.
+ὑ7doi:https://doi.org/10.1016/j.epsr.2026.113547
+2 Alsarayreh,S.,Dimitrovski,R.,& Lekić,A.(2026).Dqsym:Amatlab/simulinklibraryfordynamic
+phasorsimulationofac/dcpowersystems. SoftwareX,34,102719. ὑ7doi:10.1016/j.softx.2026.102719
+3 Du,H.,Hashﬁ,T.B.,Prasad,R.,Vergara,P.,PedroP.andPalensky,& Lekić,A.(2026).OptimalDroop
+ControlStrategyforCoordinatedVoltageRegulationandPowerSharinginHybridAC-MTDC
+Systems.IEEE Access. ὑ7doi:10.1109/ACCESS.2026.3696161
+4 Du,H.,Rane,R.,Xia,W.,Vergara,P.P.,& Lekić,A.(2026).Anopf–basedcontrolframeworkforhybrid
+ac–mtdcpowersystemsunderuncertainty. IEEE Access,1–1. ὑ7doi:10.1109/ACCESS.2026.3716091
+5 Kaseb,Z.,Rane,R., Lekić,A.,Möller,M.,Khodaei,A.,Palensky,P.,&Vergara,P.P.(2026).Quantum
+Hardware-in-the-LoopforOptimalPowerFlowinRenewable-IntegratedPowerSystems. IEEE
+Transactions on Power Systems. ὑ7doi:10.1109/TPWRS.2026.3696764
+6 Mishra,S.,Singh,S.,Das,S.,& Lekić,A.(2026).Enhanceddynamicperformanceofmodularmultilevel
+convertersusingexponentialcostfunction-basedmodelpredictivecontrol. IEEE Access,14,
+67967–67990. ὑ7doi:10.1109/ACCESS.2026.3689159
+7 Tarcar,R.K.,Popov,M.,& Lekić,A.(2026).SCRIndependentPolytopicLyapunovControlforMMC
+HVDCNetworks. IEEE Access,14,38434–38446. ὑ7doi:10.1109/ACCESS.2026.3670417
+8 Chakraborty,S.,Das,S.,Singh,U., Lekić,A.,Singh,R.,Chavez,J.J.,&Popov,M.(2025).Inﬂuenceof
+controlandlimiterschemesonsequence-domainfaultmodelsofgrid-forminginverter-interfaced
+distributedgenerators. IEEE Transactions on Power Delivery,40(2),1040–1053.
+ὑ7doi:10.1109/TPWRD.2025.3540446
+9 Li,H.,Kermansaravi,A.,Dimitrovski,R.,& Lekić,A.(2025b).Acdc-opﬂow:Auniﬁed,cross-language
+frameworkforac/dcoptimalpowerﬂowsolutions. SoftwareX,32,102324.
+ὑ7doi:10.1016/j.softx.2025.102324
+10 Li,H.,Vergara,P.,Dimitrovski,R.,Du,H.,& Lekić,A.(2025).Enhancedac/dcoptimalpowerﬂowvia
+nesteddistributedoptimizationforac/vsc-mtdchybridpowersystems. International Journal of
+Electrical Power & Energy Systems,164,110365. ὑ7doi:10.1016/j.ijepes.2024.110365
+11 Liu,L.,Xie,F.,Kang,X.,Hao,Z., Lekić,A.,&Popov,M.(2025).Parameterﬁtting-basedtravelingwave
+faultlocationmethodformulti-terminaldcgrids. International Journal of Electrical Power & Energy
+Systems,164,110412. ὑ7doi:10.1016/j.ijepes.2024.110412
+12 Majstorović,M.,Nougain,V.,Ristić,L.,& Lekić,A.(2025).Deadbeat-basedcontrolformmc-hvdc
+powersystems. International Journal of Electrical Power & Energy Systems,167,110583.
+ὑ7doi:10.1016/j.ijepes.2025.110583
+13 Masalmeh,B.,Prasad,R.,Nougain,V.,& Lekić,A.(2025).Neuralnetworksinrscad:Enhancing
+mmc-basedhvdcsimulationwithadvancedmachinelearning. IEEE Transactions on Industry
+Applications,61(2),2515–2526. ὑ7doi:10.1109/TIA.2025.3529804
+14 Rane,R.,Kermansaravi,A.,Vergara,P.P.,& Lekić,A.(2025).Transferlearningframeworkfor
+impedancecharacterizationofmodularmultilevelconverters. IEEE Transactions on Industry
+Applications,61(2),2421–2433. ὑ7doi:10.1109/TIA.2025.3529826
+15 Shetgaonkar,A.,Nougain,V.,Popov,M.,Palensky,P.,& Lekić,A.(2025).Predictivedcfault
+ride-throughforoﬀshoremmc-basedmt-hvdcgrid. IEEE Open Journal of Industry Applications,6,
+579–592. ὑ7doi:10.1109/OJIA.2025.3590306
+16 Singh,S.,Stipanović,D.M.,& Lekić,A.(2025).Machinelearning-drivenmodelpredictivecontrolof
+modularmultilevelconverters. IEEE Access,13,169327–169339. ὑ7doi:10.1109/ACCESS.2025.3614746
+17 Singh,U.,Singh,R.,Popov,M.,& Lekić,A.(2025).Developinggrid-formingconvertercontrollerdllfor
+real-timehilsimulations. e+i Elektrotechnik und Informationstechnik,142,51–70.
+ὑ7doi:10.1007/s00502-024-01302-0
+18 Tarcar,R.K.,Popov,M.,& Lekić,A.(2025).Polytopiclyapunovfunction-basedhybridswitching
+controlstrategyforhighvoltagedirectcurrentnetworks. IEEE Open Access Journal of Power and
+Energy,12,442–454. ὑ7doi:10.1109/OAJPE.2025.3585425
+19 vanAmmers,J.,Ye,G., Lekić,A.,Mihić,B.,&Popov,M.(2025).Mmccontrolstrategyforconverter
+lifetimeoptimizationbasedonthermalstressanalysisoflowerIGBTdeviceinhalf-bridgesubmodules.
+IEEE Transactions on Power Delivery,40(5). ὑ7doi:10.1109/TPWRD.2025.3588731
+20 Xie,F.,Liu,L.,Hao,Z.,Wang,T.,Yang,S., Lekić,A.,&Popov,M.(2025).Non-unitprotectionmethod
+forboundary-component-freemtdcsystemsusingnormalizedbackwardtravelingwaves. International
+Journal of Electrical Power & Energy Systems,164,110370. ὑ7doi:10.1016/j.ijepes.2024.110370
+21 Zhao,H.,Wang,P.,Palensky,P.,Filizadeh,S.,Liu,Y.,Chen,Y.,... Terzĳa,V.(2025).Guesteditorial:
+Methodologiesandapplicationsofdigitaltwinforrenewable-dominantpowersystems. International
+Journal of Electrical Power & Energy Systems,171,111006. ὑ7doi:10.1016/j.ijepes.2025.111006
+22 DehghanMarvasti,F.,Mirzaei,A.,Savaghebi,M., Lekić,A.,&Popov,M.(2024).Non-unitprotection
+methodformmc-hvdcgridsbasedonselectivedroprateofvoltagetravelingwaves. Energy Reports,11,
+3740–3755. ὑ7doi:10.1016/j.egyr.2024.03.045
+23 Durgaprasad,S.,Malbašić,Z.,Popov,M.,& Lekić,A.(2024).Analysisofhybridsolutionswithli-ion
+batterysystemfordp-2vessels. Heliyon,10(17),e37068. ὑ7doi:10.1016/j.heliyon.2024.e37068
+24 Fu,A., Lekić,A.,Malamaki,K.N.,Kryonidis,G.,Mauricio,J.M.,Demoulias,C.,... Cvetković,M.
+(2024).Astochasticsimulation-basedapproachforsizingdrespenetrationlevelandbesscapacityin
+distributiongrids. International Journal of Electrical Power and Energy Systems.
+ὑ7doi:10.1016/j.ijepes.2024.110164
+25 Li,S.,Wu,J.,Vasquez,J.C.,Guerrero,J.M.,Palensky,P.,& Lekić,A.(2024).Activeﬁlterparameter
+tuningmethodforharmonicvoltagemitigationinwindpowerplants. Electric Power Systems Research,
+234,110726. ὑ7doi:10.1016/j.epsr.2024.110726
+26 Shetgaonkar,A.,Karmokar,T.,Popov,M.,& Lekić,A.(2024b).Enhancedreal-timemulti-terminalhvdc
+powersystembenchmarkmodelswithperformanceevaluationstrategies. CIGRE Science &
+Engineering,32(1).
+27 Bakhshi-Jafarabadi,R., Lekić,A.,DehghanMarvasti,F.,deJesusChavez,J.,&Popov,M.(2023).
+Analyticalovervoltageandpower-sharingcontrolmethodforphotovoltaic-basedlow-voltageislanded
+microgrid.IEEE Access,11. ὑ7doi:10.1109/ACCESS.2023.3336945
+28 Heidary,A.,Niasar,M.G.,Popov,M.,& Lekić,A.(2023).Transformerresonance:Reasons,modeling
+approaches,solutions. IEEE Access,11,1–13. ὑ7doi:10.1109/ACCESS.2023.3284552
+29 Heidary,A.,Popov,M.,Moghim,A.,Niasar,M.G.,& Lekić,A.(2023).Theprinciplesofcontrolleddc
+reactorfaultcurrentlimiterforbatteryenergystorageprotection. IEEE Transactions on Industrial
+Electronics,71(2),1–9. ὑ7doi:10.1109/TIE.2023.3257391
+30 Jankovski,M.,Popov,M.,Godefrooi,J.,Parabirsing,E.,Wierenga,E.,& Lekić,A.(2023).Novelbusbar
+protectionschemeforimpedance-eartheddistributionnetworks. Special Issue of the Electric Power
+Systems Research, Proceedings of IPST 2023. ὑ7doi:10.1016/j.epsr.2023.109569
+31 Li,H., Lekić,A.,Li,S.,Jiang,D.,Guo,Q.,&Zhou,L.(2023).Distributionnetworkreconﬁguration
+consideringtheimpactsoflocalrenewablegenerationandexternalpowergrid. IEEE Transactions on
+Industry Applications,59(6). ὑ7doi:10.1109/TIA.2023.3307070
+32 Liu,L., Lekić,A.,&Popov,M.(2023).Robusttravelingwave-basedprotectionschemeformultiterminal
+dcgrids. IEEE Transactions on Power Delivery,38(5),3117–3129. ὑ7doi:10.1109/TPWRD.2023.3265748
+33 Liu,L.,Shetgaonkar,A.,& Lekić,A.(2023).Interoperabilityofclassicalandadvancedcontrollersin
+mmcbasedmtdcpowersystem. International Journal of Electrical Power & Energy Systems,148,108980.
+ὑ7doi:10.1016/j.ijepes.2023.108980
+34 Nasirpour,F.,Heidary,A.,GhaﬀarianNiasar,M., Lekić,A.,&Marjan,P.(2023).High-frequency
+transformerwindingmodelwithadequateprotection. Special Issue of the Electric Power Systems
+Research, Proceedings of IPST 2023,223,109637. ὑ7doi:10.1016/j.epsr.2023.109637
+35 Nougain,V.,Mishra,S.,ShubhraNag,S.,& Lekić,A.(2023).Faultlocationalgorithmformulti-terminal
+radialmediumvoltagedcmicrogrid. IEEE Transactions on Power Delivery,38(6).
+ὑ7doi:10.1109/TPWRD.2023.3318689
+36 Shetgaonkar,A.,Liu,L., Lekić,A.,Popov,M.,&Palensky,P.(2023).Modelpredictivecontroland
+protectionofMMC-basedMTDCpowersystems. International Journal of Electrical Power & Energy
+Systems,146,108710. ὑ7doi:10.1016/j.ijepes.2022.108710
+37 Shetgaonkar,A.,Popov,M.,Palensky,P.,& Lekić,A.(2023).Zero-sequencecurrentsuppressioncontrol
+forfaultcurrentdamperbasedonmodelpredictivecontrol. Special Issue of the Electric Power Systems
+Research, Proceedings of IPST 2023,109592. ὑ7doi:10.1016/j.epsr.2023.109592
+38 Stojković,J.,Shetgaonkar,A.,Stefanov,P.,& Lekić,A.(2023).Two-layercontrolstructurefor
+enhancingfrequencystabilityofthemtdcsystem. International Journal of Electrical Power & Energy
+Systems,145,108664. ὑ7doi:10.1016/j.ijepes.2022.108664
+39 Sakinci,Ö.C., Lekić,A.,&Beerten,J.(2022).Generalizedimpedance-basedac/dcpowersystem
+modelingforharmonicstabilityanalysis. International Journal of Electrical Power & Energy Systems,143,
+108456. ὑ7doi:10.1016/j.ijepes.2022.108456
+40 Ganesh,S.,Perilla,A.,RuedaTorres,J.,Palensky,P., Lekić,A.,&vanderMeĳden,M.(2021).Generic
+emtmodelforreal-timesimulationoflargedisturbancesin2gwoﬀshorehvac-hvdcrenewableenergy
+hubs.Energies,14(3),757. ὑ7doi:10.3390/en14030757
+41 Marchand,J.,Shetgaonkar,A.,RuedaTorres,J.L., Lekić,A.,&Palensky,P.(2021).Emtreal-time
+simulationmodelofa2gwoﬀshorerenewableenergyhubintegratingelectrolysers. Energies,14(24),
+8547. ὑ7doi:10.3390/en14248547
+42 Nguyen,H.M.,Torres,J.L.R., Lekić,A.,&Pham,H.V.(2021).MPCbasedcentralizedvoltageand
+reactivepowercontrolforactivedistributionnetworks. IEEE Transactions on Energy Conversion,36(2),
+1537–1547. ὑ7doi:10.1109/TEC.2021.3054844
+43 Shetgaonkar,A., Lekić,A.,RuedaTorres,J.L.,&Palensky,P.(2021).Microsecondenhancedindirect
+modelpredictivecontrolfordynamicpowermanagementinMMCunits. Energies,14(11),3318.
+ὑ7doi:10.3390/en14113318
+44 Lekić,A.,&Beerten,J.(2020).Generalizedmultiportrepresentationofpowersystemsusingabcd
+parametersforharmonicstabilityanalysis. Electric Power Systems Research,189,106658.
+ὑ7doi:10.1016/j.epsr.2020.106658
+45 Lekić,A.,Ergun,H.,&Beerten,J.(2020).Initialisationofahybridac/dcpowersystemforharmonic
+stabilityanalysisusingapowerﬂowformulation. High Voltage,5(5),534–542.
+ὑ7doi:10.1049/hve.2020.0066
+46 Lekić,A.,Hermans,B.,Jovičić,N.,&Patrinos,P.(2020).Microsecondnonlinearmodelpredictive
+controlfordc-dcconverters. International Journal of Circuit Theory and Applications,48(3),406–419.
+ὑ7doi:10.1002/cta.2737
+47 Roose,T., Lekić,A.,Alam,M.M.,&Beerten,J.(2020).Stabilityanalysisofhigh-frequencyinteractions
+betweenaconverterandhvdcgridresonances. IEEE Transactions on Power Delivery,36(6),3414–3425.
+ὑ7doi:10.1109/TPWRD.2020.3041176
+48 Stojković,J., Lekić,A.,&Stefanov,P.(2020).Adaptivecontrolofhvdclinksforfrequencystability
+enhancementinlow-inertiasystems. Energies,13(23),6162. ὑ7doi:10.3390/en13236162
+49 Petrović,N.Ž., Lekić,A.,&Stipanović,D.M.(2018).Lyapunovcharacterizationandanalysisofthe
+operatingmodesoftheac–dcćukconverter. IEEE Journal of Emerging and Selected Topics in Power
+Electronics,7(2),1318–1328. ὑ7doi:10.1109/JESTPE.2018.2875015
+50 Lekić,A.(2017).Simulationofpwmdc-dcconvertersusingeigenvaluesandeigenvectors. Journal of
+Electrical Engineering,68(1),13. ὑ7doi:10.1515/jee-2017-0002
+51 Lekić,A.,Stipanović,D.,&Petrović,N.(2017b).Controllingthećukconverterusingpolytopic
+lyapunovfunctions. IEEE Transactions on Circuits and Systems II: Express Briefs,65(11),1678–1682.
+ὑ7doi:10.1109/TCSII.2017.2781621
+52 Lekić,A.,&Stipanović,D.(2016).Lmiapproachforslidingmodecontrolandanalysisofdc-dc
+converters.Tehnika,65(5),715–723. ὑ7doi:10.5937/tehnika1605715L
+53 Lekić,A.,&Stipanović,D.M.(2016a).Hysteresisswitchingcontrolofthećukconverter. IEEE
+Transactions on Circuits and Systems I: Regular Papers,63(11),2048–2061.
+ὑ7doi:10.1109/TCSI.2016.2600199
+54 Lekić,A.,&Stipanović,D.M.(2016b).Hysteresisswitchingcontrolofthećukconverteroperatingin
+discontinuousconductionmodes. IEEE Transactions on Circuits and Systems II: Express Briefs,64(9),
+1077–1081. ὑ7doi:10.1109/TCSII.2016.2631510
+55 Lekić,A.,&Pejović,P.(2014).Simulationofswitchingconvertersonthelevelofaveragedvoltagesand
+currents.Journal of Energy and Power Sources,1(5),233–241.
+Conference Proceedings
+1 Hashﬁ,T.B.,Vahedi,H.,Palensky,P.,& Lekić,A.(2025).Internalpowerﬂowcontrolformodular
+multilevelconverterduringsubmodulefailure.In 2025 IEEE Kiel PowerTech(pp.1–7).
+ὑ7doi:10.1109/PowerTech59965.2025.11180269
+2 Kermansaravi,A.,Vahedi,H.,Alquennah,A.N.,Trabelsi,M.,& Lekić,A.(2025).Reinforcementlearning
+controllerdesignforfull-bridgeactiverectiﬁer.In 2025 ieee pes innovative smart grid technologies
+conference europe (isgt europe)(pp.1–5). ὑ7doi:10.1109/ISGTEurope64741.2025.11305659
+3 Cherat,N.,Nougain,V.,Majstorović,M.,Palensky,P.,& Lekić,A.(2024).Event-triggerednon-linear
+controlofoﬀshoremmcgridsforasymmetricalacfaults.In 2024 ieee pes innovative smart grid
+technologies europe (isgt europe)(pp.1–5). ὑ7doi:10.1109/ISGTEUROPE62998.2024.10863636
+4 Du,H.,Prasad,R., Lekić,A.,Vergara,P.P.,&Palensky,P.(2024).Enhancedoptimalpowerﬂowbased
+droopcontrolinmmc-mtdcsystems.In 2024 ieee pes innovative smart grid technologies europe (isgt
+europe)(pp.1–5). ὑ7doi:10.1109/ISGTEUROPE62998.2024.10863591
+5 Kermansaravi,A.,Alquennah,A.N., Lekić,A.,Trabelsi,M.,Ghrayeb,A.,Abu-rub,H.,&Vahedi,H.
+(2024).Reinforcementlearningbasedcontrolofgrid-connectedpuc5inverter.In 2024 IEEE IECON
+(pp.1–6). ὑ7doi:10.1109/IECON55916.2024.10905177
+6 Li,H.-X.,Ergun,H.,VanHertem,D.,&Lekic,A.(2024).Scenario-orientedmulti-cutgeneralized
+bendersdecomposition-baseddistributedopfforac/dchybridgrids.In 2024 ieee pes innovative smart
+grid technologies europe (isgt europe)(pp.1–5). ὑ7doi:10.1109/ISGTEUROPE62998.2024.10863082
+7 Li,H.,& Lekić,A.(2024).Distributedrobustoptimizationmethodforac/mtdchybridpowersystems
+withdcnetworkcognizant.In 2024 international conference on smart energy systems and technologies
+(sest)(pp.1–6). ὑ7doi:10.1109/SEST61601.2024.10694436
+8 Mosselaar,M.,Malbašić,Z.,Fu,A.,& Lekić,A.(2024).Analysisandmodelingofthehybridvessel’s
+electricalpowersystem.In 2024 IEEE Power & Energy Society General Meeting (PESGM)(pp.1–5).
+ὑ7doi:10.1109/PESGM51994.2024.10761094
+9 Nougain,V.,Mishra,S.,Rodriguez-Bernuz,J.-M.,Junyent-Ferré,A.,Shekhar,A.,& Lekić,A.(2024).
+Adaptivesingle-terminalfaultlocationfordcmicrogrids.In 2024 international conference on smart
+energy systems and technologies (sest)(pp.1–6). ὑ7doi:10.1109/SEST61601.2024.10694606
+10 Prasad,R.,Padhy,N.P.,VergaraBarrios,P.,Dimitrovski,R.,& Lekić,A.(2024).Ascreeningmethodfor
+powersysteminertiazonesidentiﬁcation.In 2024 ieee power & energy society general meeting (pesgm)
+(pp.1–5). ὑ7doi:10.1109/PESGM51994.2024.10688821
+11 Tarcar,R.K.,Shetgaonkar,A.,Popov,M.,& Lekić,A.(2024).Largesignalstabilityassessmentof
+mpc-basedcontrolforhvdcelectricalgrid.In 2024 ieee pes innovative smart grid technologies europe (isgt
+europe)(pp.1–6). ὑ7doi:10.1109/ISGTEUROPE62998.2024.10863193
+12 Fu,A., Lekić,A.,Kontis,E.O.,Malamaki,K.-N.D.,Kryonidis,G.C.,Mauricio,J.M.,... Cvetković,M.
+(2023).Impactofvirtualsynchronousgeneratorsonpowersystemfrequencydynamics.In IEEE SEST
+2023. ὑ7doi:10.1109/SEST57387.2023.10257357
+13 Liu,L.,Xie,F.,Popov,M.,Hao,Z.,& Lekić,A.(2023).Single-endedDCfaultlocationmethodfor
+MMC-basedHVDCpowersystemusingadaptivemulti-stepLevenberg-Marquardtalgorithm.In IEEE
+PowerTech 2023. ὑ7doi:10.1109/PowerTech55446.2023.10202991
+14 Shekhar,A.,Rituraj,G.,vanderSande,R.,Ahmadi,M.,Deshmukh,R.,Bauer,P.,... Palensky,P.(2023).
+Developmentofreliablepowerelectronicsystemsusingrealtimedigitaltwinbasedpower
+hardware-in-the-looptestbed.In IEEE PowerTech 2023. ὑ7doi:10.1109/PowerTech55446.2023.10202818
+15 Tarcar,R.K.,Shetgaonkar,A.,Popov,M.,vanderMeĳden,M.,Winter,W.,Ndreko,M.,... Lekić,A.
+(2023).PostDCfaultcirculatingcurrentsuppressioncontrol.In IEEE PES General Meeting 2023.
+ὑ7doi:10.1109/PESGM52003.2023.10252199
+16 Xie,F.,Liu,L.,Popov,M.,Hao,Z.,&Lekić,A.(2023).Non-unitdclineprotectionmethodfor
+multi-terminalmmc-hvdcsystembasedonnormalizedbackwardtravelingwaves.In Isgt 2023.
+ὑ7doi:10.1109/ISGTEUROPE56780.2023.10408224
+17 Aghahadi,M.,Piegari,L.,Shetgaonkar,A.,& Lekić,A.(2022).SlidingmodecontroloftheMMC-based
+powersystem.In IECON 2022(pp.1–6).IEEE. ὑ7doi:10.1109/IECON49645.2022.9968871
+18 Liu,L., Lekić,A.,&Popov,M.(2022).Robustadaptiveback-steppingcontrolmethodforMMC-based
+HVDCgrids.In Isola 2022 - international symposium on leveraging applications of formal methods,
+veriﬁcation and validation(pp.1–14). ὑ7doi:10.1007/978-3-031-19762-8_9
+19 Sirige,S.,Blaauwbroek,N.,Torres,J.L.R.,Palensky,P.,& Lekić,A.(2021).Assessmentofdynamic
+measurementintervalsforstateestimationinfuturedistributionsystems.In 2021 IEEE madrid
+powertech(pp.1–6).IEEE. ὑ7doi:10.1109/PowerTech46648.2021.9494773
+20 Lekić,A.,Majstorović,M.,Ristić,L.,&Stipanović,D.(2020).Hysteresiscontrolofthepseudoboostpfc
+converter.In 2020 IEEE 29th international symposium on industrial electronics (isie)(pp.731–735).IEEE.
+ὑ7doi:10.1109/ISIE45063.2020.9152581
+21 Lekić,A.,&Beerten,J.(2019).Generalizedrepresentationofthepolyphasepowersystemusingabcd
+parametersforharmonicstabilityanalysis.In HVDC colloquium, Leuven, Belgium.
+22 Lekić,A.,ElAroudi,A.,&Stipanović,D.(2019).Polytopiccontrolofapv-fedsepicdc-dcconverter.In
+2019 IEEE international symposium on circuits and systems (iscas)(pp.1–5).IEEE.
+ὑ7doi:10.1109/ISCAS.2019.8702076
+23 Vasiljević,I., Lekić,A.,&Stipanović,D.(2019).Lyapunovanalysisofthechaoticcolpittsoscillator.In
+2019 IEEE international symposium on circuits and systems (ISCAS)(pp.1–5).IEEE.
+24 Amrouche,M.,Anand,D.S., Lekić,A.,Royo,V.R.,Chai,E.T.,Stipanović,D.M.,... Tomlin,C.J.(2018).
+Longshort-termmemoryneuralnetworkequilibriacomputationandanalysis.In Workshop on
+Modeling and Decision-Making in the Spatiotemporal Domain, 32nd Conference on Neural Information
+Processing Systems (NIPS 2018), Montreal, Canada.
+25 Lekić,A.,&Stipanović,D.(2018).OptimalcontrolforDC-DCconverters.In Humboldt Kolleg
+“SUSTAINABLE DEVELOPMENT AND CLIMATE CHANGE: CONNECTING RESEARCH,
+EDUCATION, POLICY AND PRACTICE”.HumboldtKolleg.
+26 Stipanović,D.M.,Murmann,B.,Causo,M., Lekić,A.,Royo,V.R.,Tomlin,C.J.,... Lesecq,S.(2018).
+Somelocalstabilitypropertiesofanautonomouslongshort-termmemoryneuralnetworkmodel.In
+2018 IEEE International Symposium on Circuits and Systems (ISCAS), Sapporo, Japan(pp.1–5).IEEE.
+ὑ7doi:10.1109/ISCAS.2018.8350958
+27 Turkmanović,H.,Vukoje,D., Lekić,A.,&Prokin,M.(2018).Usingassemblylanguageforcreating
+games.In IcETRAN-2018, Palić, Serbia(ELI1.6.1–ELI1.6.5).ETRAN.
+28 Vasiljević,I., Lekić,A.,&Petrović,N.(2018).Investigationofchaoticbehaviourinclapposcillator.In
+IcETRAN-2018, Palić, Serbia(ELI2.5.1–ELI2.4.4).ETRAN.
+29 Lekić,A.,&Stipanović,D.(2017).Stableswitchingcontrolofdc-dcconverters.In 2017 25th
+Telecommunication Forum (TELFOR), Belgrade, Serbia(pp.1–7).IEEE.
+30 Lekić,A.,Stipanović,D.,&Petrović,N.(2017a).Controllingthećukconverterusingpiecewiselinear
+lyapunovfunctions.In XIX Power Electronics Ee2017, Novi Sad, Serbia(pp.1–5).
+31 Rajović,V.,Jovičić,N.,& Lekić,A.(2017).Worstcasestart-upestimationofthehalfwavecapacitive
+dividerpowersupply.In IcETRAN-2017, Kladovo, Serbia(ELI2.1.1–ELI2.1.6).ETRAN.
+32 Stojković,T., Lekić,A.,&Rajović,V.(2017).Slidingmodekontrolaswitched-capacitorkonvertora.In
+16. International Symopsium INFOTEH-JAHORINA 2017, Jahorina, Bosnia and Herzegovina(pp.681–686).
+33 Lekić,A.(2016).Simulacĳaprekidačkihkonvertorakorišćenjemsopstvenihvrednostiisopstvenih
+vektoramatricemodelastanja.In ETRAN-2016, Zlatibor, Serbia(EL1.6.1–EL1.5.6).ETRAN.
+34 Janković,S.,Popović,I., Lekić,A.,&Saranovac,L.(2015).Powermanagementforwirelesssensornodes.
+InIcETRAN-2015, Srebrno Jezero, Serbia(EK1.5.1–EKI1.5.4).ETRAN.
+35 Lekić,A.,Drndarević,V.,&Janda,Ž.(2015).Merenjeuglasnagesinhronemašineprimenomsistemana
+čipu.In ETRAN-2015, Srebrno Jezero, Serbia(ELI1.3.1–EL1.3.5).ETRAN.
+36 Lekić,A.(2014).Automateddc-dcconverterssymbolicstate-spacemodelgenerationbytheuseoffree
+software.In 22nd Telecommunicaions forum TELFOR 2014, Belgrade, Serbia(pp.995–998).IEEE.
+ὑ7doi:10.1109/TELFOR.2014.7034574
+37 Lekić,A.,&Pejović,P.(2013).Simulationofswitchingconvertersonthelevelofaveragedvoltagesand
+currents.In 17th International Symposium on Power Electronics, Novi Sad, Serbia(pp.1–5).
+Project Deliverables and Brochures
+1 Hertem,D.V.,Ergun,H.,Huys,M., Lekić,A.,Bellmunt,O.G.,Lotz,M.,&Colas,F.(2025). PROSECCO
+D7.2 Detailed Project Management Plan.
+2 Lekić,A.,Neufeld,A.,Bonnet,A.,Cardozo,C.,Amankwah,E.,Marvasti,F.D.,... Liao,Y.(2025).
+InterOPERA D1.3 Deﬁnition of a standard process for interaction studies with EMT simulation in
+multi-vendor projects.
+3 Lekić,A.,Rane,R.,Koornneef,R.,Dimitrovski,R.,Winter,W.,Badia,G.G.,... Raison,B.(2025).
+PROSECCO D4.1 Report on the HIL laboratory requirements.
+4 Norlander,C.,Zavahir,M.,Salem,S.,Putten,J.V.,Jones,M.,Klaar,D.,... Kreienkamp,J.(2025). The
+impact of oﬀshore wind power hybrid ac/dc connections on system operations and system design(No.972).
+CIGREJWGC2/B4.43,DCsystems.
+5 Bonnet,A.,Bakhshi-Jafarabadi,R.,Popov,M.,Marvasti,F.D., Lekić,A.,Koornneef,R.,... Saciak,A.
+(2024).InterOPERA D1.1 Requirements for AC/DC converter stations, DC switching stations, Power Park
+modules and DC Grid controller oﬄine models, SIL models and C&P cubicles.
+6 Lekić,A.(2024a).SUNRISE D3.1 MOOC for OPAL-RT/RTDS co-simulations.
+7 Lekić,A.(2024b).SUNRISE D4.1 Enhancing R&I capacity through exploratory research projects: Research
+paper related to Multi-terminal HVDC controls.
+8 Lekić,A.,Bonnet,A.,deFoucaud,B.,Marvasti,F.D.,Popov,M.,Koornneef,R.,&Bakhshi-Jafarabadi,R.
+(2024).InterOPERA D1.2 Platform requirements for oﬄine and real-time simulations.
+9 Lekić,A.(2023).SUNRISE D7.2 Data Management Plan.
+10 Kryonidis,G.C.,Danner,D.,Mandarawi,W., Lekić,A.,&Fu,A.(2021). EASY-RES D1.8 Final report
+(after feedback from lab tests) presenting: Voltage regulation algorithms within the LVµG and MV ICA.
+11 Malamaki,K.-N.,Kryonidis,G.,Gkavanoudis,S.,Fu,A., Lekić,A.,Mauricio,J.M.,... Cvetković,M.
+(2021).EASY-RES D6.5 report on the evaluation of project KPIs.
+12 Leterme,W.,Hertem,D.V.,Berteen,J., Lekić,A.,Lundholm,R.,Rua,P.D.,&Sakıncı,Ö.C.(2020).
+Resonance and Transient Behavior of Extensive Cable Grid, Part 1 - Report on Frequency Domain
+Assessment and Mitigation of Power System Resonances.
+Books and Chapters
+1 Ponjavić,M.,& Lekić,A.(2022).Signali i sistemi, zbirka zadataka (eng. Signals and systems, collection of
+solved problems).Retrievedfrom ὑ7http://tnt.etf.bg.ac.rs/~oe2sis/materijali/vezbe/zbirka.pdf
+2 Lekić,A.(2018).Analiza i upravljanje prekidačkih konvertora (eng. Analysis and control of switching power
+converters).ZadužbinaAndrejević.
+Software
+1 Lekić,A.,Li,H.,Dimitrovski,R.,Quintero,Y.,Kermansaravi,A.,&Alsarayreh,S.(2026).Harmony-
+HARMONicstabilitYassessmentofPE-penetratedpowersystems(Version1.0.0).
+ὑ7doi:https://doi.org/10.5281/zenodo.21534064
+2 Majstorović,M.,Brković,B.,Nougain,V.,Ristić,L.,& Lekić,A.(2026).Deadbeat-basedControlfor
+MMC-HVDCPowerSystemswithandwithoutAdaptiveness(Versionv1.0).
+ὑ7doi:10.5281/zenodo.18834993
+3 BiGERteamRWTH,Prasad,R.,& Lekić,A.(2026).Bigerprojectrepository.GitHub.Retrievedfrom
+ὑ7https://github.com/control-protection-grids-tudelft/BiGER
+4 Cherat,N.,Nougain,V.,& Lekić,A.(2026).RTDSModelsforEvent-TriggeredNon-LinearControlof
+OﬀshoreMMCGridsforAsymmetricalACFaults(Versionv1.0). ὑ7doi:10.5281/zenodo.21533994
+5 Control&ProtectionGridsTUDelft.(2026).Pmacdc-hd.jl(powermodelsacdcforhybriddroop
+control).GitHub.Retrievedfrom
+ὑ7https://github.com/control-protection-grids-tudelft/PMACDC-HD
+6 Li,H.,& Lekić,A.(2026).Oipf-ac-dc-grids.GitHub.Retrievedfrom
+ὑ7https://github.com/HLi199305-ee/OIPF-AC-DC-Grids
+7 Alsarayreh,S.,Dimitrovski,R.,& Lekić,A.(2025).DQsym:ADynamicPhasor-Basedlibraryfor
+AnalysisofModernPowerSystemsThisrepositorypresentstheDynamicPhasorlibraryforAnalysis
+ofModernPowerSystems(Version1.0.0). ὑ7doi:https://doi.org/10.5281/zenodo.18544532
+8 Li,H.,Kermansaravi,A.,Dimitrovski,R.,& Lekić,A.(2025a).ACDC-OpFlow,Uniﬁed,Cross-Language
+FrameworkforAC/DCOptimalPowerFlowSolutions(Versionv0.1).
+ὑ7doi:10.4121/66318317-4d5d-4dc4-ba5a-5fa65c585520
+9 Masalmeh,B.,Prasad,R.,Nougain,V.,& Lekić,A.(2024).RTDSNeuralNetworkModels(Versionv1.0).
+ὑ7doi:10.5281/zenodo.14742236
+10 Lekić,A.,Shekhar,A.,&Nougain,V.(2024).ControlandprotectionofHVDC/ACelectricalgrids
+(Versionv1.0). ὑ7doi:10.5281/zenodo.10828892
+11 Shetgaonkar,A.,Karmokar,T.,Popov,M.,& Lekić,A.(2024a).HVDC-basedRTDSmodels
+(Versionv1.0). ὑ7doi:10.5281/zenodo.10828908
+Media exposure
+2025 ὑ6 Newsletter IEEE IES, January: IEEE IES MOOC “Control and protection of HVDC/AC
+electrical grids” , available: https://iten.ieee-ies.org/featured-news/2025/ieee-
+ies-mooc-control-and-protection-of-hvdc-ac-electrical-grids/?mkt_tok=
+NzU2LUdQSC04OTkAAAGYS6XpKvkPG49s5GWzAJxBXwGQXS2J0ugRP0smcgzfy4au2pZ6OFsmh3sl4Abl5PlibMuzUF_
+S4lqcYkzs12hF9yYLw_CteWmTWp9BEgwXxIY9KrYe
+2024 ὑ6 Article: Anchoring Power: Ensuring Control and Stability in Oﬀshore Energy Hubs, available:
+https://www.tudelft.nl/en/stories/articles/anchoring-power-ensuring-control-and-
+stability-in-offshore-energy-hubs
+ὑ6 Newsletter IEEE IES, September: IEEE IES MOOC “Control and Protection of HVDC/AC
+Electrical Grids” , available: https://engage.ieee.org/rs/756-GPH-899/images/ES_
+TA_1018_2024_09_IES_Newsletter_1018_IES_Newsletter_2024_09.html?version=0
+and https://resourcecenter.ies.ieee.org/education/control-protection-hybrid-
+grids/iesedsctea0000
+ὑ6 Newsletter IEEE IES, June:The First Short Course in IES Resource Center!, available: https:
+//iten.ieee-ies.org/featured-news/2024/the-first-short-course-in-ies-resource-
+center/?mkt_tok=NzU2LUdQSC04OTkAAAGTXZ31_HgsCj_OrBhTRcCggcTvQqW3lFDIehshZCMZV5_
+DMfe6xAgxHIqhue41XuVKFo-eUoRdT_6ERGe9EQiipyUa_4C783s_f7Uxo_G76V7FfKA
+2023 ὑ6 Article:EWInners: 6Veniprojectsgranted-AleksandraLekić , https://www.tudelft.nl/en/eemcs/
+current/ewinners
+2021 ὑ6 Article: Humans of Electrical Engineering, Mathematics and Computer Science: Aleksandra Lekić,
+available: https://www.tudelft.nl/en/eemcs/current/humans-of-eemcs/aleksandra-lekic
+Miscellaneous Experience
+Awards and Achievements
+2024 ὑ6 PowerWebbestpaperawardforthepaper[35].
+2023 ὑ6 NWO Veni laureate, award granted to top 10% young researches for applied engineering
+sciencesinNetherlands.
+2021 ὑ6 Awardforthebestpaperin2020intheJournalofCircuitTheory&Applications for
+thepaper[46].
+Miscellaneous Experience (continued)
+2019,2017 ὑ6 Professor Mirko Milić award for the best paper regarding Circuit theory, School of
+ElectrcalEngineering,UniversityofBelgrade,Serbiaforpapers[49]and[53],respectively.
+2018 ὑ6 Award for the best PhD thesis at the University of Belgrade, Zadužbina Andrejević,
+Belgrade,Serbia.
+2018 ὑ6 Scholarship Programme for Young Researchers from the European Neighbour-
+hood, Coimbra group grant, cite: https://www.coimbra-group.eu/?page=european-
+neighborhood.
+2013 ὑ6 AwardforthebeststudentwhoﬁnishedSchoolofElectricalEngineering ,University
+ofBelgrade,intheschoolyear2011/2012.
+Skills
+Languages ὑ6 Serbian,English,German,Dutch
+Programming ὑ6 Julia,C/C++,Qt,Python,MATLAB/Octave,VHDL(XilinxFPGA),Gnu-
+plot,Assembly,Pascal
+PE/PSsimulationtools ὑ6 RSCAD/RTDS,DigSILENTPowerFactory,PSCAD,PLECS,PSIM.
+Electronicssimulationtools ὑ6 PSpice, Cadence, Microwave Oﬃce, Altium Designer, Code Composer
+Studio,IAREmbeddedWorkbench,Keil µvisionIDE.
+µC/DSPprogramming ὑ6 MSP430,STM32Fx-DISCOVERY,TMS320C55x,PSoC5LP
+Misc. ὑ6 Academicresearch,teaching,L ATEXtypesetting.
+References
+1 Prof. Dr. Vladimir Terzĳa, Newcastle University, vladimir.terzija@newcastle.ac.uk, work relation-
+ship: collaborationinjournal International Journal of Electrical Power & Energy System
+2 Prof. Dr. DušanStipanović,UniversityofIllinois, dusan@illinois.edu,workrelationship: Ph.D.super-
+visorandcollaborator

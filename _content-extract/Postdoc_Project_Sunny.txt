@@ -1,0 +1,28 @@
+General information:
+Type: PhD [  ]  or  Postdoc  [ ✓ ]
+Postdoc researcher name:  Dr. Sunny Singh
+Postdoc project name:         Safe Grid: Smart and Flexible Control for a Power Electronics-based Electric Grid
+Staring year:                            August 2024 
+Funder organization/Project:  NWO Veni/SAFE-GRID: Smart and Flexible Control for PE-based HVDC electrical grids
+Project description
+Modern PE-based converter control typically operates on the millisecond time scale and is therefore incapable of responding quickly to unforeseen system changes and grid disruptions. This limited speed and adaptability create a risk of large voltage deviations, power overshoots, and even blackouts in converter-dominated HVDC grids. The ground-breaking innovativeness of this project stems from the development of a smart control methodology that is computationally efficient and reduces control execution time to the microsecond range, while simultaneously improving the controller’s adaptive response to grid uncertainties and large disturbances by introducing a data-driven component into Model Predictive Control. This methodology aims to guarantee stable grid operation even under unforeseen disturbances, accelerate fault elimination by minimizing voltage deviations and power overshoots, and ensure fast grid protection operation, thereby significantly increasing the reliability of PE-based electrical grids.
+Research question 1: How can we develop a robust and scalable control strategy for power electronic converters in multi-terminal, multi-vendor HVDC systems to ensure stable DC voltage and reliable power transfer under normal and disturbed operating conditions?
+Research question 2: How can we design and validate interoperability-oriented control and protection frameworks that enable standardized coordination and data exchange between converters and TSOs, while addressing multi-vendor compatibility and disturbance resilience in large-scale PE-dominated grids?
+The main challenges include the high dimensionality and nonlinearity of converter-dominated HVDC grids, the presence of multiple interacting control layers, and the need to coordinate ultra-fast local converter actions with system-level reliability requirements. Additional difficulties arise from multi-vendor interoperability, the need for standardized data exchange between converters and TSOs, and the requirement to design disturbance-resilient control and protection mechanisms (for faults, line outages, overloads, and other severe events) that prevent cascading failures and support secure operation of large-scale PE-based grids.
+The project will address these challenges by developing a rigorous data-driven Model Predictive Control framework tailored to PE-based HVDC grids. The smart controller will be implemented in real-time environments (RSCAD) as an open-access control unit prototype for PE converters, together with a comprehensive HVDC grid model library. 
+Project keywords
+Electrical grids; power electronic converters; control; stability; protection up to 6 keywords to clarify the scope of the project. 
+Intended deliverables
+Design and mathematical formulation of a smart control framework for PE-based HVDC grids, ensuring reliability and stability under normal and extreme operating conditions.
+Development of a comprehensive smart controller for PE-based power systems enabling extremely fast grid start-up, robust response to catastrophic disturbances, and blackout prevention with fast black start capability.
+Implementation of an open-access control unit prototype for PE converters and a real-time simulation library for HVDC-based electrical grids (RTDS/RTDS-like), supported by validated models that mitigate failures caused by slow control dynamics.
+Industrial validation and dissemination through replication at the National HVDC Centre, increased awareness among vendors and utilities, and contributions to new interoperable control and protection standards in collaboration with TSOs (TenneT) and vendors
+Project (supervision) team
+Prof. Aleksandra Lekić.
+About the PhD/Postdoc researcher
+Sunny Singh received his B.Sc. and M.Sc. degrees in Applied Mathematics from Deen Dayal Upadhyaya Gorakhpur University, Gorakhpur, India, in 2014 and 2016. He received his Ph.D. in Mathematics from the Indian Institute of Technology (BHU), Varanasi, India, in 2024. Since August 2024, he has been a Postdoctoral Researcher at Delft University of Technology (TU Delft), the Netherlands, within the SAFE GRID project. Since 2019, his research interests have focused on nonlinear dynamics, control theory, neural networks, system identification, and machine learning.
+// P.S. 1 Provide a schematic that describes the PhD/Postdoc project Fig. Smart Control Operation.
+// P. S. 2 Attach the figures, logos, and photos separately.
+Fig.  PE-based electrical grid in the North Sea. 
+Fig. Smart Control
+Fig. Funding Agency logo

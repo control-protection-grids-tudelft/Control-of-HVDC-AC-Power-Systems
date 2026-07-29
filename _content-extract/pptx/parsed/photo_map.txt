@@ -1,0 +1,99 @@
+
+===== toshiba slide 3 =====
+NAMES:
+  rohan-kamat-tarcar             x= 9851576 y= 3383744 text=Rohan Kamat Tarcar
+  arjita-pal                     x= 7499287 y= 3383745 text=Dr. Arjita Pal
+  rahul-rane                     x=  420009 y= 3395177 text=Rahul Rane
+  victor-reyes-dreke             x= 2637158 y= 3395177 text=Dr. Victor Daniel Reyes Dreke
+  sunny-singh                    x= 5180690 y= 3404970 text=Dr. Sunny Singh
+  hao-xu                         x= 5027515 y= 6407242 text=Dr. Hao Xu
+  saif-alsarayreh                x= 2567754 y= 6427150 text=Saif Alsarayreh
+  haixiao-li                     x=  420009 y= 6430797 text=Dr. Haixiao Li
+  tuanku-badzlin-hashfi          x= 9778299 y= 6442627 text=Tunku Badzlin Hashfi
+  hongjin-du                     x= 7533710 y= 6443144 text=Hongjin Du
+IMAGES (portrait-ish):
+  image20.png          1257718x863231 @(8542252,474724) -> arjita-pal (d=22797.418840887)
+  image18.png          2084204x490401 @(1170713,632143) -> rahul-rane (d=21420.02622967575)
+  image12.jpeg         1588966x2286000 @(5180690,1076940) -> sunny-singh (d=10118.413145023502)
+  image14.jpeg         1496907x2286000 @(9851576,1076940) -> rohan-kamat-tarcar (d=5169.9959447475)
+  image11.png          1906021x2286000 @(2637158,1088055) -> victor-reyes-dreke (d=5822.9814463454995)
+  image10.jpg          1517945x2285847 @(494548,1097900) -> rahul-rane (d=9340.523998383)
+  image13.jpg          1728833x1904880 @(7499286,1478867) -> arjita-pal (d=3611.7030880275)
+  image23.png          936495x936495 @(5564703,3682820) -> hao-xu (d=17334.104259722997)
+  image22.png          1496907x268196 @(9799970,3893187) -> rohan-kamat-tarcar (d=2777.9911601050003)
+  image16.jpeg         1770658x2286000 @(2637158,4141784) -> saif-alsarayreh (d=4983.833097187499)
+  image17.png          1524000x2286000 @(7542530,4159140) -> hongjin-du (d=5577.82969012275)
+  image21.jpeg         1515390x2286000 @(9778299,4159140) -> tuanku-badzlin-hashfi (d=9793.985466547498)
+  image24.jpeg         2015132x2015132 @(4967607,4415665) -> hao-xu (d=3833.6153796374992)
+  image15.jpeg         1836268x1836268 @(420009,4591516) -> haixiao-li (d=3409.1186370734995)
+
+===== research slide 13 =====
+NAMES:
+  aleksandra-lekic               x= 3558441 y= 5947625 text=Dr. Aleksandra Lekić
+  sunny-singh                    x= 6730266 y= 5947625 text=Dr. Sunny Singh
+IMAGES (portrait-ish):
+  image32.png          1525402x470603 @(10287910,248512) -> sunny-singh (d=409758.94802564994)
+  image31.png          1335781x751377 @(8961654,334292) -> sunny-singh (d=95207.79170008875)
+  image33.png          1207363x670757 @(10474326,842902) -> sunny-singh (d=338394.5054656225)
+  image35.jpeg         926498x1389600 @(3840189,4459272) -> aleksandra-lekic (d=3351.0950236027493)
+  image36.jpeg         965891x1389600 @(6857560,4459272) -> sunny-singh (d=3800.3232320114994)
+  image34.jpeg         2815666x1783254 @(9607320,4652118) -> sunny-singh (d=96126.54515326252)
+
+===== research slide 24 =====
+NAMES:
+  remko-koornneef                x= 6313491 y= 4482465 text=Remko Koornneef
+  rahul-rane                     x= 3559135 y= 4482466 text=Rahul Rane
+  aleksandra-lekic               x=  915991 y= 4488432 text=Dr. Aleksandra Lekić
+  victor-reyes-dreke             x= 9086663 y= 4491043 text=Victor Daniel Reyes Dreke
+IMAGES (portrait-ish):
+  image57.jpg          1523898x2285847 @(6345243,2166314) -> remko-koornneef (d=6429.515092575001)
+  image58.png          1918867x2301407 @(9056812,2166314) -> victor-reyes-dreke (d=5970.096326127748)
+  image55.jpeg         1524059x2285847 @(915991,2181874) -> aleksandra-lekic (d=9940.967867135998)
+  image56.jpg          1517945x2285847 @(3633674,2185189) -> rahul-rane (d=9340.523998383)
+
+===== research slide 31 =====
+NAMES:
+  tuanku-badzlin-hashfi          x= 9387272 y= 6039114 text=Tunku Badzlin Hashfi
+IMAGES (portrait-ish):
+  image69.png          3986673x714279 @(7623543,410737) -> tuanku-badzlin-hashfi (d=97677.773332455)
+  image71.jpg          6363550x3897337 @(182315,2301762) -> tuanku-badzlin-hashfi (d=685658.5752018125)
+  image72.png          1451602x2095620 @(6506893,2534255) -> tuanku-badzlin-hashfi (d=242635.515524425)
+  image70.jpeg         1808811x2728633 @(9387272,3219731) -> tuanku-badzlin-hashfi (d=11460.805429632)
+
+===== research slide 36 =====
+NAMES:
+  marjan-popov                   x= 4590464 y= 2849135 text=Prof. Dr. Marjan Popov
+  aleksandra-lekic               x= 7145223 y= 2849135 text=Dr. Aleksandra Lekić
+  remko-koornneef                x= 9769551 y= 2849135 text=Remko Koornneef
+  arjita-pal                     x= 7145223 y= 5661316 text=Dr. Arjita Pal
+  rohan-kamat-tarcar             x= 9887918 y= 5661317 text=Rohan Kamat Tarcar
+  farzad-dehghan-marvasti        x= 2032676 y= 5661318 text=Dr. Farzad Dehghan Marvasti
+  reza-bakhshi-jafarabadi        x= 4656311 y= 5661318 text=Dr. Reza Bahkhshi -Jafarabadi
+IMAGES (portrait-ish):
+  image81.jpeg         1476000x2214000 @(4656311,609253) -> marjan-popov (d=9390.0156307035)
+  image80.jpeg         1476156x2214000 @(7145223,609253) -> marjan-popov (d=9684.7593375135)
+  image57.jpg          1476000x2214000 @(9813780,609253) -> remko-koornneef (d=6159.967363884749)
+  image73.png          2024019x1389179 @(731506,1405051) -> farzad-dehghan-marvasti (d=56405.599576203)
+  image79.jpeg         1449760x2214000 @(9887918,3447318) -> rohan-kamat-tarcar (d=4752.067492767749)
+  image77.jpeg         1475048x2212572 @(4656311,3448746) -> reza-bakhshi-jafarabadi (d=9191.912376049499)
+  image76.jpeg         1503445x2212571 @(2139003,3455683) -> farzad-dehghan-marvasti (d=8297.574958022999)
+  image78.jpg          1728833x1904880 @(7145222,3756438) -> arjita-pal (d=3611.7030880275)
+
+===== research slide 60 =====
+NAMES:
+  robert-dimitrovski             x= 5159358 y= 3496807 text=Dr. Robert Dimitrovski 100% TenneT Germany, 20% postdoc TU D
+  saif-alsarayreh                x= 7815343 y= 3626760 text=Saif Alsarayreh, Ph.D., WP1 – DP models
+  aleksandra-lekic               x= 2786916 y= 3743606 text=Dr. Aleksandra Lekić
+  yasel-quintero                 x= 8386063 y= 6008663 text=Dr. Yasel Quintero, Programmer, WP3 – tool integration
+  azadeh-kermansaravi            x= 5808333 y= 6024201 text=Dr. Azadeh Kermansaravi , WP3 – tool integration
+  haixiao-li                     x= 3844296 y= 6024202 text=Dr. Haixiao Li, Postdoc, WP2 - power flow
+IMAGES (portrait-ish):
+  image129.jpeg        1475083x799490 @(9066772,14075) -> saif-alsarayreh (d=39548.08129641674)
+  image130.png         1593679x1681373 @(10484020,109327) -> yasel-quintero (d=92509.62662492174)
+  image128.png         2107192x1188005 @(8745309,341528) -> saif-alsarayreh (d=29515.20546002475)
+  image127.jpeg        1113905x1438102 @(8028247,2142506) -> saif-alsarayreh (d=3070.9436685487503)
+  image124.emf         993398x1390178 @(5399179,2166468) -> robert-dimitrovski (d=3588.38761242975)
+  image35.jpeg         926498x1389600 @(3068664,2255253) -> aleksandra-lekic (d=3351.0950236027493)
+  image126.jpeg        1389600x1389600 @(3844296,4634601) -> haixiao-li (d=2723.0605385295003)
+  image125.jpeg        1061647x1226914 @(6392577,4793495) -> azadeh-kermansaravi (d=2254.1077839075)
+  image131.png         1277719x1221183 @(8686413,4793495) -> yasel-quintero (d=2399.26075252275)

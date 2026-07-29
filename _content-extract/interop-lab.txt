@@ -1,0 +1,1299 @@
+Confidential                                                                       13/3/2026
+
+
+
+
+                           INTEROPERABILITY LAB
+                                     Business case
+
+
+                                    By Aleksandra Lekić
+
+
+
+   1. Laboratory organizational and industrial alignment
+On the EU level, the European Strategic Energy Technology (SET) group for HVDC & DC
+technologies [1] has defined the goals for the PE-based HVDC operation as:
+
+   •   Short term (until 2027): interoperable multi-terminal multi-vendor HVDC connection
+       in Europe;
+   •   Medium term (2027-2030): cost effective and scalable multi-terminal multi-vendor
+       HVDC system, ready to be included into a stable and resilient AC grid;
+   •   Long term (2030-2050): HVDC grid covering both offshore and onshore applications.
+
+SET plan also identifies, besides control interoperability, stability management of PE-
+dominated system together with the new modelling methods and tools to improve the overall
+system behaviour and mitigate the interactions between AC and DC parts, as the imperative
+outcomes. The same document defines the following as the top priority:
+
+“Multi-Vendor Multi Terminal Voltage Source Converter (VSC) HVDC with complimentary
+future proof AC/DC hybrid systems assessment and stability management approaches is a
+top priority to fulfil climate neutral Europe needs with ambitious aims for offshore renewable
+energy.”
+
+The scale of planned offshore energy hubs is significant, as can be seen from Fig. 1, designed
+by ENTSO-E as a part of offshore development plans. To support such developments, the
+integrated energy system must be adaptable in terms of operation, design, and expansion,
+and must also support predictive maintenance. This project emphasizes the role of
+integrated and multi-vector energy systems as key enablers of resilient and flexible HVDC-
+based energy hubs. It explicitly considers the entire energy hub, including modular multilevel
+converter (MMC) terminals and renewable energy sources such as hydrogen systems. Wind
+power park modeling and control will build on validated results from previous projects.
+Confidential                                                                                     13/3/2026
+
+
+
+
+      Fig. 1 – Plans for offshore developments in Europe, identified by ENTSO-E, picture taken from 1.
+
+Following the path proposed in my vision document, provided as the Annex 1, and following
+the ENTSO-E Interoperability Workstream [2], and, thus, the ENTSO-E Innovation Roadmap
+[3], I am proposing the establishment of the Interoperability Lab as the part of IEPG/ESE.
+
+The lab will directly addresses key challenges outlined in Cluster 1 of the ENTSO-E roadmap,
+specifically focusing on three areas: HVDC interconnections, offshore AC and DC grids, and
+power system resilience. It also contributes to Cluster 2 topics: digital twins, and AI-based
+technologies, as well as Cluster 3 topics such as hydrogen, RES/VRE integration and
+integrated energy systems, as identified in the ENTSO-E roadmap for the upcoming 10 years
+[3]. The ENTSO-E Interoperability Workstream expects billions of euros of investments.
+
+
+
+
+             Fig. 2 – C&P in the multi-vendor multi-terminal HVDC electrical grid.
+
+
+
+
+1 ENTSO-E, Offshore Network Development Plans, available at: https://www.entsoe.eu/outlooks/offshore-
+
+hub/tyndp-ondp/
+Confidential                                                                        13/3/2026
+
+
+The concept of control & protection (C&P) within an energy hub is inherently very complex
+due to the fast dynamics introduced by power electronic (PE) converters. These converters
+operate on timescales ranging from micro- to milli-seconds, significantly faster than
+traditional power systems, which typically operate over seconds to minutes. As a result,
+effective control of PE converters requires reaction times within microseconds. In the case
+of a fault, protection systems should be capable of detecting, isolating and clearing the fault
+within just 2-3 milliseconds. This stems from the rapid rise of the DC current during faults,
+which can lead to system malfunction and, in extreme cases, even blackouts. Therefore,
+ultra-fast and reliable control and protection systems are essential for the safe and stable
+operation of PE-dominated power systems like energy hubs.
+C&P for HVDC-connected offshore energy hubs are characterized by PE converter control,
+and a protection algorithm at the DC connection of the PE converter, which identifies,
+isolates and interrupts the faulty connection. These systems require near-instantaneous
+and continuous operation. C&P must be carefully designed to be interoperable, scalable and
+adaptable. The interoperability depends on various concepts, as depicted in Fig. 2.
+Additionally, the power system must be capable of adapting to operate under varying
+conditions, supporting future expansion, and enabling effective maintenance.
+
+
+
+The Interoperability lab itself would build upon a range of already made interoperability
+products, services, and results analyzed in detail in section 2, using the already existing
+infrastructure (section 4), and with the idea to be converted into IEPG-owned start-up in the
+upcoming 5-10 years.
+
+This lab will be uniquely positioned as an interface for collaboration with TSOs and vendors.
+Currently it is one of two inside EU (three if The National HVDC Centre lab is considered, and
+five if Etch in Belgium, and DTU lab in Denmark get established).
+
+   2. Lab products
+The portfolio of products follows the vision from the Annex 1, and it can be grouped in the
+modeling, simulation and control categories. And as a type, classified as software, and
+hardware solutions, and testing procedures and setups.
+
+For each product will be given maturity level corresponding to its software/hardware TRL,
+and possible path towards the TRL increase, or for the further increase of the applicability of
+the solution.
+Confidential                                                                     13/3/2026
+
+
+Software solutions
+Software solutions owned by the laboratory can be grouped as: open-source tools,
+hierachical control and protection toolboxes, RSCAD/RTDS libraries, compliance toolboxes,
+and offline simulation models.
+
+ Solution name                                Current state and plans for upgrade
+ Harmony toolbox in C++, open source capable • Satisfies TRL3-4 for software.
+ of time-domain simulation using dynamic • It has funding trough industrial
+ phasors, AC/DC OPF and harmonic stability       HARMONY project (1 more year),
+ assessment                              (see    and MITIGATE-HARM (3 years).
+ https://cresym.github.io/Harmony-Doc/).
+                                              Plans to upgrade:
+                                              • Inclusion of GFM control to
+                                                 HARMONY, and definition of stability
+                                                 indices based on ENTSO-E and
+                                                 AEMO recommendation.
+                                              • Ongoing work on testing on real
+                                                 Slovenian grid which will upgrade to
+                                                 TRL5-6.
+                                              • Formulation as Linux Foundation
+                                                 ENERGY project.
+
+                                                  Future needs and plans:
+                                                  • TenneT industrial Ph.D. reseracher to
+                                                     work on GFM control.
+                                                  • Not identified future project to apply
+                                                     impedance-based              stability
+                                                     assessment in real-time.
+ ACDC-OpFlow is created as AC/DC OPF • Satisfies TRL4-5 for software.
+ toolbox in C++, Julia, Python, and MATLAB. It is
+ an open-source toolbox available here: Plans to upgrade:
+ https://github.com/CRESYM/ACDC_OPF.              • Addition of unit committment.
+                                                  • Integration inside the hierarchical
+                                                     controller for AC/DC grid control.
+
+                                               Future needs and plans:
+                                               • Toshiba        funding    for  unit
+                                                  commitment inclusion.
+                                               • Possible reaching out to power
+                                                  system simulation companies to
+                                                  offer integration.
+ DQsym toolbox is created as an open source in • Satisfies TRL4-5 for software.
+ MATLAB/Simulink, available here:
+Confidential                                                                       13/3/2026
+
+
+ https://github.com/control-protection-grids-      •   It has funding trough industrial
+ tudelft/DP.                                           HARMONY project (2 more years).
+
+                                                   Plans to upgrade:
+                                                   • Transfer to Harmony toobox.
+                                                   • Inclusion of stability assessment
+                                                      interchangably   between    time
+                                                      domain and harmonic simulation –
+                                                      one of a kind.
+
+                                                   Future needs and plans:
+                                                   • TenneT industrial postdoc in
+                                                      combination with MITIGATE-HARM.
+                                                   • Possible reaching out to power
+                                                      system simulation companies to
+                                                      offer integration.
+ HVDC models for RTDS with ratings 2 GW,           • One-of-a-kind library, used and
+ ±525 kV, and adjusted CIGRE B4 ratings based         referenced by CIGRE B4 and EU
+ on TenneT substation and cable design. It is         project PROSECCO.
+ created for the old NovaCor 1.0.                  • Used in teaching, and for NN-library
+ Available here: https://github.com/control-          creation.
+ protection-grids-tudelft/HVDC-RTDS-models
+                                               Plans to upgrade:
+                                               • Transfer to NovaCor 2.0 as the part of
+                                                  UTOPYS project.
+ Neural network libraries for RTDS used for • One-of-a-kind libraries, advertized
+ HVDC control, available as open source. It is    by RTDS worldwide.
+ created for the old NovaCor 1.0 and:
+ • Tested for adaptive PI MMC control: Plans to upgrade:
+    https://github.com/control-protection-     • Transfer to NovaCor 2.0 as the part of
+    grids-tudelft/RTDS_NN_models                  UTOPYS project.
+ • Tested for adaptive deadbeat MPC control: • Additional MSc theses to design
+    https://github.com/control-protection-        more neural network topologies.
+    grids-tudelft/SUNRISE_MPC
+
+
+Besides software purely solutions, there are works on the integration of hierarchical control,
+protection and fault location concepts developed in projects SAFE-GRID (NWO VENI), EU
+project PROSECCO and HARMONY. The list is found in the following table.
+Confidential                                                                      13/3/2026
+
+
+ Solution name                                  Current state and plans for upgrade
+ Hierarchical control for the centralized       •   To be issued patent during summer
+ and decentralized control written in C++           2026.
+ and Julia with offline and real-time testing   •   To be deployed inside Aquila setup
+ capabilities. It includes: AC/DC OPF (from         (UK’s InterOPERA) in the upcoming 2-3
+ ACDC-OpFlow), and decentralized control            months as the vendor-agnostic solution
+ design (PI, MPC with rodust and adaptive           for one MMC terminal. It will increase
+ variants).                                         its TRL to 6.
+ Easy deployable to any real-time target
+ (FPGA, GTSOC 2.0, or microcontroller).         Plans to upgrade:
+                                                • Addition of multiple control algorithms,
+                                                   integration in PACS and DCGC.
+
+                                                Future needs and plans:
+                                                • GE is interested in the toolbox, and it
+                                                   might result in industrial project.
+ Hierarchical protection for the HVDC fault • To be issued patent by the end of 2026.
+ detection, and location. Written in Julia and
+ C++. Easy deployable to any real-time target Plans to upgrade:
+ (FPGA, GTSOC 2.0, or microcontroller).        • Addition of multiple control algorithms,
+                                                 integration in PACS and DCGC.
+
+                                                Future needs and plans:
+                                                • GE is interested in the toolbox, and it
+                                                   might result in industrial project.
+
+
+Hardware solutions
+The hardware solutions at this stage represents three products: PACS, DCGC, and DCSS.
+
+ Solution name                                  Current state and plans for the upgrade
+ PACS (Protection and Control System) is        • To be released and tested by the end of
+ designed as part of PROSECCO project. It          2026.
+ includes hierarchical control and              • To examine future plans: patent, or a
+ protection solutions integrated on the            start-up product.
+ FPGA device.                                   • No additional funding required at this
+                                                   stage.
+
+                                                Future needs and plans:
+                                                • Control and protection expandable
+                                                   solution with adaptive C&P algorithms.
+                                                   Work to be financed through EXPAND-
+Confidential                                                                     13/3/2026
+
+
+                                                  HVDC project (continuation of
+                                                  InterOPERA), which I coordinate.
+
+
+
+
+ DC Grid Controller (DCGC) will represent •       Work to be started in 2027.
+ as digital substation that includes future- •    Funding through 2-3 years TenneT
+ ready interoperability aspects [4]. It aims to   industrial postdoc (under negotiation).
+ replace the control centre system and all its
+ applications for SCADA, grid calculations
+ (EMS), load frequency control (LFC),
+ scheduling, etc., and provide those
+ capabilities and functionalities in a modular
+ way.
+ It will be based on the SEAPATH open-
+ source substation, and ACDC-OpFlow
+ integrated.
+
+
+
+
+ DC Switching Station (DCSS) represents a •       Work to be started in 2027.
+ controller of the switchyard providing the •     Funding through EXPAND-HVDC
+ communication between IEDs, and                  project which I coordinate.
+ modular connection point for the additional •    It will be patented.
+ and expandable HVDC grid.
+Confidential                                                                       13/3/2026
+
+
+Testing procedures and setups
+Setups for PHIL using Imperix MMC and Imperix 2-level VSCs, which would ensure TRL6
+testing for all different RES topologies. Namely, MMC is used for HVDC terminals, while 2-
+level converter is used for PV, BESS, wind and hydrogen connections.
+
+Currently one project (Inter-oPEn) develops PHIL setup for the GFM control of offshore wind
+farms. One more project is ongoing, named GF4EU.
+
+In the lab exist both MMC and 2-level VSC (borrowed from PVMD). In near future should be
+invested in purchasing two 2-level VSC to enable GSC-MSC connection, and at least two
+more power amplifiers as Triphase is outdated.
+
+
+
+
+           IEPG
+                               IEPG
+           Asset
+                               Asset
+                                                                IEPG
+                                                                Asset
+Furthermore, the efforts will be invested to preserve InterOPERA equipment by frequent
+interaction between actors in ENTSO-E interoperability workstream. New vendors will be
+contacted, e.g. Toshiba.
+
+In the upcoming project EXPAND-HVDC will be tested interoperability of protection
+solutions and IEDs.
+
+Courses and training programs
+The Interoperability lab will have the training material in the format of MOOC, with addition
+of libraries, and TU Delft-owned courses with PAO outreach:
+
+   •   MOOC "Control and protection of HVDC/AC electrical grids" offered by IEEE IES and
+       the GitHub library of models following the course:
+       I am the responsible instructor for the MOOC and teach 1/3 of the course material.
+       The MOOC is recorded in co-financing of the EU project SUNRISE and IEEE IES
+Confidential                                                                       13/3/2026
+
+
+       sponsorship based on the successful proposal. I have managed to engage 15
+       lecturers in this course, both from academia and industry. The course is hosted as an
+       open-source,                free,           IEEE             IES             webinar:
+       https://resourcecenter.ies.ieee.org/education/short-courses-protection-basics.
+       The course material is also supported with the open-source RSCAD/RTDS and
+       MATLAB libraries and models, which can be found here: https://github.com/control-
+       protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-IEEE-
+       IES-MOOC.
+       This MOOC covers the teaching material currently unavailable or in the limited format
+       available at universities worldwide. It also represents a relevant topic both for
+       academia and industry. After finishing the course and passing the end quiz, attendees
+       can claim 74 PDH (equivalent to 3 ECTS).
+   •   Electrical Power Systems of the Future – EE4545, ECTS 5, MSc course – responsible
+       instructor (2023/2024-ongoing).
+       I have included teaching of the control of HVDC-based electrical grids in the course
+       material. And formulated practical sessions as RTDS hardware-in-the-loop
+       experiments. This is a completely novel approach for teaching, and having one of the
+       largest RTDS laboratories in the world helps with sharing the knowledge about real-
+       time simulations and testing feasible for our MSc studies.
+       From this year, 2026, the course is being sold as PAO.
+   •   IEPG summer school material will be offered from summer 2028.
+
+   3. Lab future
+The Interoperability lab will be funded through diverse projects: industrial grants, EU
+projects, national funding and industrial actions. In the upcoming 5 years, the focus will be
+given to the establishment of the stable product line, patenting, publication of results, and
+ensuring further financing.
+
+After 5 years, the lab should evolve towards one start-up by applying to EIC Accelerator EU
+grant. Furthermore, with frequent collaboration with TenneT, it might be established TU
+Delft-TenneT institute.
+
+   4. Resources
+Summary of existing and list of needed resources:
+  • Lab space exists in the backyard, and it can be fully employed;
+  • Power electronics hardware: Imperix MMC (exists), Imperix 2-level converter x 2;
+  • Grid emulator: power amplifier x 2;
+  • Measurement instruments: oscilloscope, signal generator;
+  • Software licenses: PSCAD
+Confidential                                                                13/3/2026
+
+
+   •   Servers: 2 working stations (exist);
+   •   Maintenance
+   •   Consumables
+   •   Connection to 5-10 RTDS racks in RTDS Lab (exists)
+
+ Category                                   Investment needed
+ Imperix 2-level converter x 2              200 k€
+ Oscilloscope,       signal      generator, 50 k€
+ measurement equipment
+ Power amplifier x 2                         200 k€
+ Software                                    10 k€ per year
+ Maintenance/consumables                     2-3 k€ per year
+
+The lab can start operation with the currently owned resources, and increase gradually
+through project funding.
+
+
+
+
+   5. Organization
+The lab will be run by:
+   • Lab director – Aleksandra Lekić;
+   • Technical manager – Remko Koornneef;
+   • Research engineers;
+   • PhD students;
+   • Admin support – IT and DCC.
+Confidential                                                                       13/3/2026
+
+
+Governance structure:
+   • Reporting lines: the lab director is directly reporting to the ESP Lab manager and
+      department head;
+   • IP ownership policy: the results will be owned by TU Delft, with different access
+      rights depending on each different product and solution;
+   • Industry collaboration framework: goes through the lab director and technical
+      manager directly with industry partners.
+
+The lab will be available for use to all ESE department members after detailed planning and
+consultation with the lab director and technical manager. All lab users will have to adhere to
+guidelines for the lab access and equipment use. TU Delft owned equipment will be usable
+to anyone using the lab. However, vendor equipment under NDA, will be usable only to the
+individuals whose names are clearly specified on the NDA. Furthermore, at some points one
+or more (of three) laboratory spaces might be out of use due to IP protection, and NDAs (e.g.
+InterOPERA project).
+
+   6. Risk assessment
+               Risk                          Impact     Mitigation
+               Funding delay                 Medium     Diversify grant sources
+               Equipment underutilization    High       Industry partnerships
+               Talent shortage               High       PhD pipeline
+               Tech obsolescence             Medium     Modular infrastructure
+
+
+References
+[1] “Implementation Plan on HVDC & DC Technologies,” European Commission, SET Plan
+Secretariat, October 2021.
+[2] ENTSO-E, “Position on Offshore Development – Interoperability,” January 2021.
+[3] ENTSO-E, “RDI Roadmap 2024 – 2034, Innovation Missions to build the power system
+for a Carbon-Neutral Europe,” 2024.
+[4] ENTSO-E, Interoperability,
+https://www.entsoe.eu/technopedia/techsheets/interoperability/.
+Confidential   13/3/2026
+
+
+Annex 1
+Vision in education,
+leadership, research, and
+valorisation
+
+
+
+
+Name ACT candidate                   Aleksandra Lekić
+
+Department                           ESE
+
+Section                              IEPG
+
+Name section leader and department
+                                     Peter Palensky
+chair
+
+Date                                 30-01-2025
+Following the conclusions of the Paris Climate Agreement1 formulated by the United Nations, the
+reduction of the carbon footprint became a top priority in the EU and the Netherlands. To decrease
+CO2 levels by 80-95% compared to 1990 levels, the EU plans to integrate 420 GW of wind-generated
+energy by 2030 (up from nowadays 205 GW)2.
+European Network of Transmission System Operators for Electricity (ENTSO-E) is formulating
+guidelines and recommendations for integrating onshore and offshore wind energy. In the near future,
+multi-vendor installations will be part of the large gigawatt-scale wind farm tenders, including multi-
+vendor converter stations3. Power electronic (PE) converters will be used to transmit the wind power
+that will cover half of the European energy demands with the multi-terminal multi-vendor connection
+(see Fig. 1).
+
+
+
+
+                                 Fig. 1 – PE-based electrical grid in the North Sea.
+
+The PE-based electrical grid will contain multi-terminal, multi-vendor connections that do not exist yet.
+Therefore, technology and manufacturer interoperability study of control and protection are utmost
+required for an uninterrupted electricity supply4. Namely, as it can be seen from Fig. 2 with the
+existence of multiple vendors for the control and protection in the High Voltage Direct Current (HVDC)-
+based electrical grid, multiple issues can arise that are still not sufficiently examined and standardized.
+
+PE converters are responsible for converting the Alternate Current (AC) into Direct Current (DC), and
+vice versa. Their important part is the control, which in HVDC grids is needed to maintain stable DC
+voltage and continuous power supply to the onshore AC grid. PE converters’ control over disturbances,
+that regularly occur in electrical grids, must be infallible to avoid unforeseen problems in the operation
+of the whole electrical grid, which in the worst case, may cause blackouts5. In case of disturbances (like
+line outage, fault current, or sudden overload), the control should be robust and reliable to stabilize
+the electrical grid. Currently, the PE converter control response time is measured in milliseconds, and
+is incapable of fact reaction against unforeseen system changes and grid disruptions.
+
+
+
+1
+  United Nations, “Paris Agreement,” 2016, available:
+https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf.
+2
+  https://windeurope.org/intelligence-platform/product/getting-fit-for-55-and-set-for-2050/
+3
+  ENTSO-E, “Position on Offshore Development – Interoperability,” January 2021.
+4
+  North Sea Wind Power Hub (NSWPH) Programme, “Hubs and spokes – viable beyond theory,” 2022.
+5
+  Entire electrical grid turning off
+
+                                                         2
+         Fig. 2 – Interoperability issues that might arise in the multi-vendor multi-terminal HVDC electrical grid.
+
+Control of PE-dominated electrical grids has been identified as one of the main problems on the
+Intergovernmental panel on climate change6 (IPCC) where it states that the way forward will be
+through the use of advanced control approaches:
+
+“Electricity systems powered predominantly by renewables will be increasingly viable over the coming
+decades, but it will be challenging to supply the entire energy system with renewable energy (high
+confidence). Large shares of variable solar PV and wind power can be incorporated in electricity grids
+through batteries, hydrogen, and other forms of storage; transmission; flexible non-renewable
+generation; advanced controls; and greater demand-side responses.”
+
+Furthermore, on the EU level, the European Strategic Energy Technology (SET) group for HVDC & DC
+technologies has defined the goals7 for the PE-based HVDC operation as:
+    • Short term (until 2027): interoperable multi-terminal multi-vendor HVDC connection in
+        Europe;
+    • Medium term (2027-2030): cost effective and scalable multi-terminal multi-vendor HVDC
+        system, ready to be included into a stable and resilient AC grid;
+    • Long term (2030-2050): HVDC grid covering both offshore and onshore applications.
+This plan also identifies, besides control interoperability, stability management of PE-dominated
+system together with the new modelling methods and tools to improve the overall system behaviour
+and mitigate the interactions between AC and DC parts, as the imperative outcomes. The same
+document defines the following as the top priority:
+
+“Multi-Vendor Multi Terminal Voltage Source Converter (VSC) HVDC with complimentary future proof
+AC/DC hybrid systems assessment and stability management approaches is a top priority to fulfil
+climate neutral Europe needs with ambitious aims for offshore renewable energy.”
+
+
+
+
+6
+  “Climate Change 2022: Mitigation of Climate Change, Technical Summary,” Intergovernmental Panel on
+Climate Change (IPCC), 2022.
+7
+  “Implementation Plan on HVDC & DC Technologies,” European Commission, SET Plan Secretariat, October
+2021.
+
+                                                             3
+In recent years, researchers have proposed various advanced modular multilevel converter (MMC –
+type of VSC, PE converter) controllers to enhance the performance of classical MMC controls.
+However, there is a lack of MMC control standardization, and the majority of HVDC projects are
+constructed in a vendor-specific manner. Furthermore, projects Best Paths and PROMOTioN (in which
+TU Delft has participated in) have given a good basis for the multi-vendor control and protection
+studies, which are currently being extended by READY4DC (as a preparation stage for InterOPERA) and
+InterOPERA (where TU Delft plays an important consortium member, and in which I participate)
+projects.
+
+From the previous summary, we can see that the power system sector is slow. In order to find the
+application inside the power system in the following decades, the research has to take place now.
+With my work on hardware-in-the-loop and advanced control principles, I will speed up this transition
+and provide solutions to future instabilities. This solution can be later used by the transmission system
+operators (TSOs) around the Europe and worldwide. Furthermore, my solutions will be scalable to the
+distribution network applications with PE-based low-voltage and medium-voltage power systems.
+
+Based on Fig. 2 and following EU plans for the HVDC & DC technology development, I can identify the
+following paths in which my research can steer the ongoing HVDC grid development:
+     1. Design of fast, robust, and adaptive interoperable control strategies using classical and
+        advanced control approaches (nonlinear control strategies supported by machine learning -
+        ML).
+        These control strategies ensure system stability even in the case of major disturbances such as
+        faults and restore the system to stable operation. Namely, my research contributes towards
+        system black start and pre-fault, during-fault, and post-fault system restoration.
+        In line with IPCC and EU plans, I am committed to use of the sophisticated mathematics, by
+        connecting the traditional system theory (such as Lyapunov theory) with the latest
+        commutation advancements (FPGA, CPU, etc.) and algorithms (ML, quantum computing), to
+        improve the system stability and control.
+     2. Design of detailed and computationally efficient mathematical models for the harmonic,
+        electromagnetic transient (EMT), and real-time simulations (RTS).
+        This research presents an important topic since the commercially available tools either cannot
+        cope with the simulation of PE-based electrical grids, or the simulation of such grids can last
+        hours or even days. To ensure the interoperability of the MTDC, extensive simulations are
+        imperative.
+        The ability to iteratively interconnect multiple vendor’s converters will lead to the drastically
+        increase of the AC/DC power system complexity. Therefore, new efficient models are needed
+        to enable these extensive hybrid power system simulations. These models furthermore improve
+        system performance and mitigate adverse AC-DC interactions.
+     3. EMT simulation and RTS hardware-in-the-loop (HIL) experiments following the successful
+        design of the control strategies and mathematical models.
+        EMT simulations and RTS HIL experiments are necessary for the full-scale implementation of
+        the HVDC electrical grid and the only real-time testing that can enable the start of the first
+        multi-terminal HVDC connection procurement.
+        As committed to open-source practice, all of these models created as a part of my research
+        will be published as open-source libraries.
+
+                                                   4
+My research goals
+In the future, I see myself as a leading HVDC/AC control specialist in the Netherlands (and wider,
+worldwide), who plays a crucial role in this energy transition. I will provide smart controlling solutions
+for the PE-based electrical grid that will prevent blackouts and ensure fast grid disturbance recovery.
+It will directly enable the design of the first multi-terminal multi-vendor PE-based electrical grid in
+Europe.
+In that manner, I have identified the key research goals, which are grouped into Controls, Modeling,
+and Simulation, as depicted in Fig. 3. The goals are as follows:
+
+1. CONTROL - Designing of the HVDC/AC
+    controlling strategy that will suffice multi-
+    vendor multi-terminal HVDC application.
+The control strategies will be applied as
+distributed for each PE-terminal and as
+centralized for the entire HVDC/AC power
+system.
+I have already shown that advanced controls
+can prevent blackouts, stabilize frequency,
+and speed up system recovery after fault
+occurrence. This unique approach where I
+synthesized data-driven methods with                           Fig. 3 – My main research components.
+analytical ones has so far led to ground-
+breaking results that can be utilized shortly concerning its fast-growing need in the energy transition.
+
+The control topics can be separated into decentralized and centralized actions.
+
+     • Decentralized control approach
+Since 2020, my team has developed Model Predictive Control, Sliding Mode Control, back-stepping
+control approaches, and ML applications for the decentralized control of the power converters. These
+approaches are compared and benchmarked for MTDC digital twins8 and used as teaching material in
+the MOOC: Control and protection of HVDC/AC electrical grids9.
+Two of my Ph.D. students have already graduated on this topic (one with “cum laude”). Furthermore,
+I have received the Veni grant for the fundamental design of the ML-based adaptive MPC in hybrid
+electrical grids.
+The extension of this approach will provide a black start sequence and the control-protection
+coordination strategy for the HVDC power system.
+My team comprises 3 Ph.D. and 4 postdoctoral researchers continuing this research line. This research
+line is covered in projects InterOPERA (1 Ph.D. and 3 postdocs), Inter-oPEn (1 Ph.D.), and PROSECCO (1
+Ph.D. and 1 postdoc at the later project stage).
+
+
+
+8
+  https://github.com/control-protection-grids-tudelft/HVDC-RTDS-models
+9
+  https://github.com/control-protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-IEEE-
+IES-MOOC
+
+                                                       5
+    • Centralized coordination control actions for the hybrid power system
+This research improves the application of the optimal power flow (OPF)-based control approaches to
+communicate operating scenarios to the advanced controlled PE converters locally (in a decentralized
+manner).
+This research started in 2022. One CSC Ph.D. researcher and one postdoc (working on project
+Harmony) represent the team working on the AC-DC optimization strategies. The Harmony project
+partially covers it.
+
+2. MODELING - Create models for the PE-based power system with different levels of abstraction
+    depending on the application. This work will be based on RTS/EMT and harmonic simulation
+    strategies.
+In my current work, I have developed models for the PE-based power system using open-source
+programming languages and RTDS10. The models can have different levels of abstraction and
+simplifications.
+
+In 2020 and 2021, my team designed software-in-the-loop and HIL bipolar MTDC digital twins with 2-
+5 terminals (with state-of-the-art ratings ±525 kV, 2 GW) and installed DC circuit breakers. These
+models cannot be found in any existing library of the models. These models are filling in the gap that
+is not covered by recent CIGRE brochures11, and can be found in the repository: HVDC-based RTDS
+models.
+In 2022-2023, my team has built models that will be used for the InterOPERA project. Three postdocs
+are hired to perform control and protection interoperability studies for the multi-vendor HVDC-based
+power system for 52 months.
+The work on the models continues with future projects, such as PROSECCO and Inter-oPEn. InterOPERA
+also continues.
+Since my team already has a solid library of basic models, the future work is directed at the “true”
+hardware implementation (control-hardware-in-the-loop) on the specialized FPGAs. The models will
+be upgraded to be implemented in the substation in real-time (in project PROSECCO).
+
+In 2023 and 2024, my team has extensively worked on the model implementation using ML and neural
+networks. The first neural network based controller for real-time simulation of HVDC connection has
+been designed by my team, and it has been published as one IEEE paper, and as RTDS leaflet12 and
+specialized open source repository13.
+
+Regarding the open source harmonic models development – the project funded by the CRESYM
+organization, titled Harmony, has started. This project covers 1 Ph.D. researcher and 2.5 FTE postdocs.
+This project is designed under the CRESYM umbrella with financial support from TSO Swissgrid and
+TenneT.
+
+3. SIMULATION - Simulation (and experimental) work is required for all control and model
+   verification studies. All simulation work will be provided as open-access:
+
+10
+   www.rtds.com
+11
+   CIGRE Technical Brochure, “B4.72 – DC grid benchmark models for system studies,” vol. 804, 2020.
+12
+   https://knowledge.rtds.com/hc/en-us/articles/26763169128983-Case-Study-Machine-Learning
+13
+   https://github.com/control-protection-grids-tudelft/RTDS_NN_models
+
+                                                      6
+    •   In the form of libraries (CRESYM, CIGRE) for real-time hardware- and software-in-the-loop
+        simulations using state-of-the-art power systems simulating supercomputers named RTDS.
+    •   In the form of open-source software (Python and Julia-based) for the transient and harmonic
+        power system studies.
+
+As a part of my short-term and long-term goals, I plan to become the leading name in the HVDC/AC
+control and stability studies in the Netherlands and worldwide. I will continue working on HVDC/AC
+modeling and control research topics, and I will continue leading the team of researchers. I plan to
+increase the resources in the RTDS laboratory further and maintain the up-to-date model libraries for
+EMT and harmonic stability studies. Furthermore, as a part of HARMONY project, I will continue
+developing an open-source framework for the stability studies of PE-based power systems.
+
+Projects
+During the last 4 years, I have written and participated in 10 projects, out of which 7 are granted. The
+granted projects are:
+
+    •   [2023-2025] SUNRISE, Horizon Europe, Grant agreement ID: 101079200
+        Role: lead from TU Delft, WP3 lead
+        Budget: 1.4 M€ (352 k€ for TU Delft)
+    •   [2023-2027] InterOPERA, Horizon Europe, Grant agreement ID: 101095874
+        Role: co-lead from TU Delft
+        Budget: 50.2 M€ (3.443 M€ for TU Delft)
+    •   [2023-2026] Harmony, CRESYM project
+        Role: PI
+        Budget: 1.248 M€ (1.248 M€ for TU Delft)
+    •   [2024-2027] SAFE-GRID, NWO, VENI-Talent scheme
+        Role: PI, individual grant
+        Budget: 280 k€ (280 k€ for TU Delft)
+    •   [2024-2027] Inter-oPEn, Horizon Europe, Grant agreement ID: 101119349
+        Role: lead from TU Delft and WP3 lead
+        Budget: 2.673 M€ (274.4 k€ for TU Delft)
+    •   [2024-2028] PROSECCO, Horizon Europe, Grant agreement ID: 101160687
+        Role: lead from TU Delft and WP4 lead
+        Budget: 5 M€ (629 k€ for TU Delft)
+
+Finished projects:
+
+    •   [2018–2021] EASY RES, H2020, Grant agreement ID: 764090 – finished project
+        Role: Task 6.4 lead
+        Budget: 4.5 M€ (456 k€ for TU Delft)
+    •   [2023-2024] BiGER, CRESYM project – finished project
+        Role: lead from TU Delft
+        Budget: 345 k€ (148 k€ for TU Delft)
+
+As visible, 2 of the granted projects are industrial, 1 is an individual grant, 1 is an MSCA project, and 3
+are Horizon Europe projects. In the mentioned projects, I serve in different roles as the project lead
+
+
+                                                    7
+(SAFE-GRID, InterOPERA and Harmony), WP lead (Inter-oPEn, PROSECCO, SUNRISE), and task lead
+(EASY RES, finished project). So far, I have gathered funding of 6.384 M€ for the research projects and
+teaching support.
+
+Besides project writing, I have gathered significant contacts with companies. I had MSc theses
+collaborating with companies: 2 MSc theses with DNV, 2 MSc theses with Alewijnse, 1 MSc thesis
+with TenneT, 2 theses with Stedin, and 1 thesis with Shell.
+
+Research outreach
+I have been serving as an associate editor for Elsevier’s International Journal of Electrical Power and
+Energy Systems, Q1 journal, since 2023. I was also an associate editor for Springer’s Electrical
+Engineering, Q3 journal, between 2023-2024; and an associate editor for IET Power Electronics in
+2024.
+
+Besides, I have also served as a guest associate editor for:
+
+    •   Special issue, Elsevier, International Journal of Electrical Power and Energy Systems,
+        “Methodologies and Applications of Digital Twin for Renewable-dominant Power Systems”.
+    •   Special issue, Elsevier, Renewable and Sustainable Energy Reviews, “100% inverter-based
+        microgrids for enabling high penetration of renewable energy”.
+    •   Special issue, IEEE, IEEE Journal of Photovoltaics, for the papers selected from PSVC 2023.
+    •   Special issue, MDPI/Energies, “Power Converter Control Applications in Low-Inertia Power
+        Systems”.
+
+I am often serving as the conference chair, member of the technical committee, etc:
+
+    •   IEEE ISGT 2024, HVDC session chair, and Best Paper Award jury member
+    •   PowerWeb Annual Conference 2024, conference chair
+    •   PSCC 2024, Session chair
+    •   IEEE PVSC 2024, Program committee member – area 9 co-chair
+    •   PowerTech 2023, Session chair
+    •   IEEE PVSC 2023, Program committee member – area 9 chair
+    •   IEEE FES, and SEST 2023, Technical program committee member
+    •   IEEE IECON 2022, IEEE PVSC 2022, and ICoPESA 2022, Session chair
+    •   IEEE SEST 2022, Technical committee member
+    •   IEEE ISCAS 2020, IEEE ISIE 2020, Session chair
+
+Future plans
+All projects cover my research line, and through the work on them, together with my team, I am
+improving the research on modeling and control of electrical grids. The research results are
+communicated to the academic, industrial, and governmental bodies through publications, magazines,
+project deliverables, open-source repositories, and lectures.
+
+To increase my research outreach, I will continue participating in IEEE and CIGRE working groups and
+participating in EU projects. I will also focus on writing individual grants, such as VIDI/VICI, NWO OTP,
+and ERC grants.
+
+
+
+                                                    8
+My goals for the future are as follows:
+
+    •   Continue the work of MTDC control and modelling and establish myself as a leader in this
+        research area.
+    •   Continue to increase RTDS laboratory equipment: increase the number of RTDS racks and
+        vendor C&P units, and improve HIL potential.
+        As a part of my work on InterOPERA, the RTDS equipment has been increased by 20 GTPGAs,
+        1 NovaCor rack, and 1 renewed RTDS rack. This equipment costs 1.2 M€.
+        Furthermore, as a part of project PROSECCO, I have purchased the ultra-fast FPGA and GTSOC
+        2.0 unit.
+    •   Further increase academic and industrial networks by participation in EU projects,
+        conferences, and IEEE/CIGRE working groups.
+    •   Obtain the ERC starting grant on the topic of the application of quantum computing in the
+        design of the MTDC control.
+
+
+
+
+                                                9
+Valorization
+My industrial and academic interactions were directed by my research goals and Sustainable
+Development Goals (SDGs) imposed by UN. Namely, I have aimed to strengthen collaboration with all
+industrial stakeholders including distribution, transmission companies and different equipment
+manufacturers (vendors) which are known to play a role in the ongoing energy transition and
+development of renewable energy sources. As a result, I have a strong collaboration with different
+TSOs: TenneT, as the main collaborator, and then RTE, 50Hz, Energinet, Amprion, among others. With
+the growing necessity for TSO-DSO coordination, I have established contacts with Stedin and Alliander.
+And of course, with different PE converters manufacturers: Siemens Energy, Hitachi Energy, General
+Electric; Wind power park manufacturers: Vestas, Siemens Gamesa; DC circuit breaker manufacturers:
+SciBreak, etc. I already have a strong collaboration with the industry in the Netherlands, the EU, and
+the world.
+
+I also established good contact with three manufacturers of real-time simulation platforms: RTDS,
+OPAL-RT and Typhoon HIL. RTDS is the most important for my work, since their real-time simulator
+represents by far the best tool for the EMT simulation and HIL testing of power systems, and ESP Lab
+possess one of the biggest RTDS clusters worldwide. One of the biggest valorization achievements is
+the publication of the open-source repositories created by my group in form of RTDS leaflet14
+communicated by them worldwide to their customers: 100+ utilities, 100+ manufacturers, 260+
+universities, and during each their attendance to meetings and conferences. This work has been
+published in 2024, but it already gathered wide attention and increased my list of contacts.
+
+My academic connections are also strong, with universities such as KU Leuven, University of Lille, TU
+Braunschweig, University of Manchester, RWTH, KTH, and others; and institutes like SuperGrid
+Institute, Nikola Tesla institute, etc. I plan also to further increase academic contacts around the
+globe. This can be achieved by participating in IEEE and CIGRE working groups. I am already a member
+of IEEE, and four IEEE communities (PES, IES, CASS, WIE). I am also increasing my industrial and
+academic contacts through CIGRE (global community committed to the collaborative development and
+sharing of power system expertise), where I am a member of the Dutch B4 working group, and joint
+working groups C2/B4.43 on “The impact of offshore wind power hybrid AC/DC connections on system
+operations and system design” and B4/C4.97 on “Benchmarking of Simulation Models for control
+interaction in meshed AC networks with multiple converters”.
+
+Furthermore, I am a member of Sustainable Energy Technology (SET) Plan for HVDC grids committee
+for European Commission. I am also participating in the CRESYM organization as a General Assembly
+member for open-source collaborative research on power system modeling.
+
+As mentioned previously, I have so far represented TU Delft in writing 10 project proposals, out of
+which 7 were granted with the total funding of 6.384 M€. All these projects are supported by different
+businesses (mainly TSOs and vendors), academic institutions, and institutes, as well as organizations
+(such as CRESYM). Furthermore, I have worked and will continue working on outreach activities:
+
+       •   My work has always been directed toward open-access practice. I have developed different
+           open-source frameworks and will continue doing so.
+
+
+
+14
+     https://knowledge.rtds.com/hc/en-us/articles/26763169128983-Case-Study-Machine-Learning
+
+                                                    10
+•   I lead IEEE IES MOOC “Control and protection of the HVDC/AC electrical grids” useful for
+    academia and industry worldwide.
+•   I participated in the EdX MOOC with the lecture “Role of multi-terminal HVDC” in 2021.
+•   As a Veni laureate, I am also promoting the research output.
+•   I actively communicate the research output through CIGRE, CRESYM, and IEEE.
+
+
+
+
+                                           11
+Teaching
+I strongly believe that the university is the first step towards forming a complete person, an “academic
+citizen”. Education should be structured in such a way as to teach people to be respectful towards
+others and towards nature, and to cherish and preserve them.
+
+Taking into account TU Delft strategic agenda for 2024-203015, I am always aligning my personal
+teaching preferences and style to the values TU Delft promotes, i.e. solving complex and urgent societal
+challenges through the education of highly qualified engineers who are creative, innovative and
+responsible. I am doing that by promoting and upgrading the curriculum and administration inside ESE
+department and IEPG section.
+
+Since I started my academic work 12 years ago, I have always streamed towards making nicely
+structured lectures with all available teaching materials. I have also tried to stimulate student
+participation inside the classroom, which I modernized a lot since joining TU Delft by applying principles
+taught at UTQ Teach such as flipped classroom, etc.
+
+Furthermore, I have never shied away from taking a bigger leadership role in administration, which
+can be seen from my work as a MSc coordinator.
+
+Role in ESE department
+In the department, I was the MSc coordinator for the track MSc EE-EPE. I had this role for two years
+between 2021 and 2023.
+
+As an MSc coordinator, I have made a summary of the admission trends for MSc EE-EPE. It is visible
+that the number of applicants decreases yearly. I have formulated a couple of points where my work
+can improve admission:
+
+     •   Improved text on the site and in the brochure for MSc EE-EPE.
+     •   Improved presentations for Master Week and Master Your Start.
+     •   Searched for internship opportunities for MSc EE-EPE students.
+     •   Communicated ideas to MSc director of studies and ESE MT boards about possibilities to ask
+         crucial Dutch companies to fund at least one MSc EE-EPE scholarship yearly.
+     •   Published all MSc topics and MSc internship texts timely.
+     •   Started the work on the ongoing accreditation for MSc EE program that is being finished by
+         new MSc coordinator currently.
+
+My role in the IEPG team
+As a member of the Intelligent Electrical Power Grids (IEPG) section, ESE department, I base my
+teaching material on environmental goals related to clean energy. I believe that lecturers have the best
+teaching performance when they teach topics related to their research interests. I am following this
+approach and I am teaching material related to control, stability, and modeling of the power systems
+of the future together with the fundamental teaching material for electrical engineering.
+
+Currently, I am teaching three courses:
+
+
+
+15
+  https://filelist.tudelft.nl/TUDelft/Over_TU_Delft/Strategie/Institutional%20plan%20TU%20Delft%20-%20EN-
+DEF-online.pdf
+
+                                                    12
+     •   Matlab Fundamentals for Electrical Engineers - SET3815-M, ECTS 2, MSc course – responsible
+         instructor (2021/2022-ongoing).
+         I am the instructor responsible for this course. I organize all teaching material and teach it. I
+         also create assessments (summative and formative) and grade summative assessments.
+
+         I am consistently improving the course structure. I have introduced new lectures and
+         significantly restructured the course, including in the last school year, 2023/2024.
+
+         Grades were always good:
+            • 3.9/5.0 in 2021/2022,
+            • 3.2/5.0 in 2022/2023,
+            • 3.7/5.0 in 2023/2024,
+            • 4.0/5.0 in 2024/2025.
+
+     •   Electrical Power Systems of the Future – EE4545, ECTS 5, MSc course – one lecture
+         (2020/2021), and responsible instructor (2023/2024-ongoing).
+         In this course, in 2020/2021, I participated in one theoretical and one practical lecture, lecture
+         6, related to the HVDC power grids.
+
+         From this school year, I am participating in the course as a responsible instructor. I have
+         included teaching of the control of HVDC-based electrical grids in the course material. And
+         formulated practical sessions as RTDS hardware-in-the-loop experiments.
+         This is a completely novel approach for teaching, and having one of the largest RTDS
+         laboratories in the world helps with sharing the knowledge about real-time simulations and
+         testing feasible for our MSc studies.
+
+     •   IEEE IES MOOC “Control and Protection of the HVDC/AC electrical grids,” 3 ECTS, responsible
+         instructor
+         I am the responsible instructor for the MOOC and teach 1/3 of the course material. The MOOC
+         is recorded in co-financing of the EU project SUNRISE and IEEE IES sponsorship based on the
+         successful proposal. I have managed to engage 15 lecturers in this course, both from academia
+         and industry. The course is hosted as an open-source, free, IEEE IES webinar16.
+         The course material is also supported with the open-source RSCAD/RTDS and MATLAB libraries
+         and models, which can be found here17.
+         This MOOC covers the teaching material currently unavailable or in the limited format
+         available at universities worldwide. It also represents a relevant topic both for academia and
+         industry. After finishing the course and passing the end quiz, attendees can claim 74 PDH
+         (equivalent to 3 ECTS)18.
+
+
+
+16
+   https://resourcecenter.ies.ieee.org/education/short-courses-protection-basics
+17
+   https://github.com/control-protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-
+IEEE-IES-MOOC
+18
+   https://iten.ieee-ies.org/featured-news/2025/ieee-ies-mooc-control-and-protection-of-hvdc-ac-electrical-
+grids/?mkt_tok=NzU2LUdQSC04OTkAAAGYS6XpKhQbmHepq9Vx0wTC67OzVWvnv-
+pseyPKQVDxXw6iEi9dw2xXzJLYEHrFiIe5i6gaVS4SxD6olJI_ach6_Hi-fSeUBY_TudS_k-5oe1hKcnDe
+
+                                                     13
+Previously, I was also teaching:
+
+    •   Linear Circuits A (EE1C11) and B (EE1C21), each ECTS 5, BSc courses – Brightspace managing
+        and practical instructions (2021/2022).
+        In these two courses, I had the role of an instructor. As the instructor, I was giving practical
+        instructions. Also, I was maintaining material on Brightspace and participating in the
+        formulations of the final exams.
+    •   EPO-1 – tutor for the laboratory sessions (2022/2023).
+    •   I have contributed to EdX MOOC designed by IEPG with the lecture “Role of multi-terminal
+        HVDC” in 2021.
+
+I am contributing to energy digitalization by developing digital twins for real-time EMT simulation using
+RSCAD/RTDS and I have promoted learning of real-time simulation using RTDS in the following ways:
+
+    •   Prepared documentation and open source libraries with the digital twins using EMT real-time
+        simulation software for internal use of the ESE department.
+    •   Prepared documentation and digital twin libraries for the wider audience as a form of CRESYM,
+        and perhaps CIGRE, library.
+
+
+
+I have passed UTQ, English exam, PDP, Leading a project and team, and Leadership Programme
+Assistant Professor courses.
+
+
+
+
+                                                   14
+Organization and leadership
+
+
+Organization
+Role in ESE department
+In the department, I lead the group Control of HVDC/AC electrical grids. My work complements and
+improves the work of the following colleagues:
+
+    •   Prof. Marjan Popov, power system protection specialist;
+    •   Dr. Mohamad Ghaffarian Niasar, high voltage technology specialist;
+    •   Dr. Jose Luis Rueda Torres, power system stability specialist;
+    •   Dr. Jianning Dong, electrical machines specialist;
+    •   Dr. Pedro Vergara Barrios, active distribution networks and power flow specialist;
+
+… whose work would be incomplete without the control of the PE-based electrical grids. Namely,
+control and protection represent strongly linked algorithms that will be designed together in the future
+electrical grids since the control can “save” the time for the reaction of the protection algorithm, even
+up to 2 ms. In case of a fault in the HVDC connection, protection should react in less than 3 ms to clear
+the fault and restore the system to the proper operating state. Furthermore, the power system cannot
+be stable if the designed control is not stable and robust, and the control directly influences the
+system's stability. Active distribution networks also have PE converters for low and medium voltage,
+which are based on the same controlling principles as the HVDC grids. Finally, the proper control can
+drastically reduce the voltage and current oscillation and overshoots and, consequently, extend the
+lifetime of high-voltage cables and components. And finally, electrical machines cannot operate
+without properly designed controllers.
+
+I am closely collaborating with the HVT and DCE&S groups in our department. With Aditya Shekhar
+from DCE&S, I am supervising one postdoc researcher. Colleagues Aditya Shekhar and Mohamad
+Ghaffarian Niasar have participated in lectures in the MOOC “Control and protection of the HVDC/AC
+electrical grids.” Furthermore, with Hani Vahedi from DCE&S group I co-supervise one Ph.D. researcher
+as a part of MSCA project Inter-oPEn.
+
+I plan to increase collaborations inside the faculty and university. With Prof. Sergio Grammatico from
+3mE, I have submitted the project proposal to TenneT titled “Robust Control for High Voltage Direct
+Current Grids”.
+
+In my further work, I would need the help of the department to ensure:
+
+    •   Better inclusion of women in the research team, and bigger promotion of women in science.
+    •   Increased support and more guidelines for section/department/faculty procedures and
+        guidelines, especially for the newly employed staff members.
+    •   Constant information about funding possibilities (some calls pass unnoticed).
+    •   That we continue tracking internal information on partners, observe the news, and rumors,
+        and systematically gather that information so that we can distribute strategically the funding
+        opportunities.
+
+
+
+
+                                                   15
+My role in the IEPG team
+Within the IEPG section, ESE department, I take an active role in research and teaching advanced
+control methods for hybrid power systems. I am contributing to energy digitalization by developing
+digital twins for real-time EMT simulation using RSCAD/RTDS.
+
+I am very active in supervision at the MSc, Ph.D., and postdoctoral levels. So far, I have supervised:
+
+     •   15 MSc students, of which 13 successfully defended the thesis and 2 ongoing. It is worth noting
+         that 7 MSc theses received a grade higher than 9, and 6 MSc students received “cum laude”
+         as a result. One of the MSc students is also graded with a mark of 10.
+     •   7 Ph.D. researchers, of which two graduated (one graduated “cum laude”) and 5 ongoing.
+     •   11 postdoctoral researchers, of which 6 finished and 5 ongoing.
+
+My team members are working towards strengthening the research on simulation, modeling, and
+control of the hybrid (HVDC/AC) electrical grids. I supervise the content of their research and the
+administrative processes behind them.
+
+I have enriched my teaching portfolio, as already mentioned in Teaching section, with:
+
+     •   The IEEE IES MOOC related to real-time simulation possibilities using RTDS, and control
+         strategies for HVDC/AC. This course is funded by the Horizon Europe project SUNRISE, and the
+         IEEE IES community. I have managed to engage 15 lecturers in this course, both from academia
+         and industry. The course is hosted as an open-source, free, IEEE IES webinar.
+         The course material is also supported with the open-source RSCAD/RTDS and MATLAB libraries
+         and models, which can be found here19.
+     •   The documentation with the digital twins using EMT real-time simulation software for open-
+         source use as a form of CRESYM, and perhaps CIGRE, library.
+     •   I have included teaching of the control of HVDC-based electrical grids in the course material of
+         Electrical Power Systems of the Future, EE4545. Furthermore, I have formulated practical
+         sessions as RTDS hardware-in-the-loop experiments.
+
+Faculty and university level
+Furthermore, I represent faculty/department/section in projects and I am a work package lead (and
+TU Delft lead) in the awarded projects:
+
+     •   HORIZON Europe twinning project - SUNRISE: WP3 lead;
+     •   MSCA Inter-oPEn project: WP3 lead;
+     •   HORIZON Europe PROSECCO project: WP4 lead.
+
+I was a task 6.4 lead in the EASY-RES project, which was successfully finished.
+
+I also represent the faculty by serving as a jury for NWO calls – e.g., I was a jury member for NWO OTP
+call in 2024. I am also a principal investigator of the industrial CRESYM project HARMONY, EU project
+InterOPERA, and of the individual NWO VENI project SAFE-GRID. And I was a PI for the successfully
+finished industrial project BiGER.
+
+
+19
+  https://github.com/control-protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-
+IEEE-IES-MOOC
+
+                                                     16
+I carefully plan work, budget, and personnel in all projects to increase the section’s and department's
+knowledge base, software/hardware products, and buying or modernization of the laboratory
+equipment.
+
+
+Leadership
+Leading yourself and personal development
+I have filled in the survey for leading yourself, and my personal leadership style is depicted in Fig. 4. I
+highly value trust and integrity, and I am aware of my position inside the section, department, faculty,
+and university. I am also aware of the existing research and organizational gaps, and I have a vision for
+all of them.
+
+Since joining TU Delft, I have grown immensely in various aspects. At the start of my work, I was
+unaware of organizational matters, teaching procedures, research organization, etc. Nowadays, I can
+confidently say that I have mastered these topics and formulated my own path, which I would like to
+take in the years to come.
+
+I have also survived challenging personal and work-related periods - all evidences that I am a strong
+individual, capable of overcoming and thriving during bad and even worse times. My research and
+valorization results are better year by year, and I have a stable teaching line. I have a team of which I
+am very proud of, and I am constantly improving myself personally.
+
+My weakest point is “saying NO” to requests, as I often tend to accept requests that are forwarded to
+me. The reason for that is cultural, due to, sometimes, an inability to refuse the task and the fear that
+I might “hurt” my supervisor or colleague. That obviously leads me to be overloaded with work, which
+will not directly lead toward my visioned goals. This is the point at which I will continue working, and I
+have already worked a lot as a part of the Personal Development Programme and Leadership for
+Assistant and Associate Professor courses. I can say that I am daily becoming more confident with my
+boundaries.
+
+As depicted in Fig 4., and in link with “saying NO,” my result on initiative and courage is lower than the
+rest. Similarly, as for refusing work, I sometimes lack the courage to advertise my work out of fear of
+sounding “pushy,” “arrogant,” and “not respecting my more experienced colleagues”. In the future, I
+plan to continue working on self-promotion by posting more announcements about my work to my
+colleagues, contacts, and peers on LinkedIn and other relevant channels.
+
+My main qualities are critical thinking, analyzing complex information, selecting goals, making deep
+commitments, motivating myself and others, being enthusiastic about my work, and being efficient. I
+still need to work on negotiation and communicating expectations, but I am becoming better day-by-
+day. As already pointed out, by properly saying NO when needed and using good negotiation
+techniques, I have significantly improved my fulfilment with working conditions.
+
+To summarize: I have learned a lot in the last 5 year working at IEPG. First of all, I now value myself in
+the same amount I value others and always take my plans, vision, and feelings while deciding on work
+matters. I learned to never suppress myself in favour of others, and I communicate it clearly.
+Furthermore, I always keep my boundaries for working hours, social safety, and work results. I ask
+others to respect them the same way I respect the results of my colleagues. I have learned that, with
+
+                                                    17
+clear agreements, every collaboration turns to success. Furthermore, I am already thinking very
+critically about myself and reflecting on myself; I will continue doing that to enable my constant
+personal improvement.
+
+
+
+
+                                     Fig. 4 – Leading yourself overview.
+
+Leading others
+My strong point is maintaining a good working atmosphere. I tend to create a friendly environment in
+which my team can properly function, but I also maintain professionalism. I am willing to learn new
+topics, and I appreciate students’ opinions on research. During meetings, I always make notes, and I
+can track agreements, goals, and students’ progress. I am paying special attention to the inclusion of
+the student in the group and the department while keeping in mind the student’s culture (e.g., the
+cultural background can direct the safe environment for dealing with difficult supervision situations).
+
+In my role in personal leadership and in leading a team, I will offer improvements for my role in 6
+leadership components:
+
+    1. Ownership and collaboration
+       I understand the pillars of the IEPG group and devote my research and that of my team to
+       fulfilling section and department goals. We help our society through education and research
+       should lead to providing clean and cheap electricity for everyone. The work that I and my team
+       produces is clearly communicated to section colleagues, and externally, with numerous
+       publications. Each Ph.D. student must maintain a record of his/her data and, at the end of each
+       year, prepare and archive the published research material together with all data.
+       I define the data management strategy for each Ph.D. and Postdoc student and define which
+       data should be gathered and stored yearly. To maintain a record of the data, my research
+
+
+
+
+                                                    18
+         group is creating open-source course material and simulation repositories, such as: HVDC-
+         based RTDS models20 and Control and protection of HVDC/AC electrical grids21.
+
+         There is room for improving collaboration with other sections of the department (exchange of
+         thoughts, ongoing projects that will possibly lead to joint publications and even joint projects).
+         Currently, I share one project with a colleague from DCE&S Aditya Shekhar. With Mohamad
+         Ghaffarian Niasar from HVT, and Hani Vahedi from DCE&S I am currently writing NWO OTP
+         proposal on the HVDC DC/DC converters, their operation and application.
+
+     2. Vision and strategy
+        I have a strong vision related to my research goals and strategy, and how to achieve them. I
+        have grouped them into short- and long-term goals. I plan to become a leading academic
+        person in HVDC in the Netherlands. With my ideas and perseverance, I will contribute to
+        resolving yet, unimplemented new methodologies in practice.
+
+         While planning my work and the work of my research team, I am always thinking about how it
+         can strengthen the department’s research and the department's resources, software,
+         hardware, and, of course, human.
+
+         Inside my research group, I am paying a lot of attention to the short and long-term goals of the
+         researchers working with me (Ph.D. and postdoc). I am trying to fit into the work tasks that
+         will help them build up a portfolio and apply for the desired positions. One example of this is
+         the situation of my current postdoc, who wanted to apply for an assistant professor position in
+         the future, with whom I made a plan to involve him in the supervision of the Ph.D. student, and
+         also involved him in the content creation for the MOOC “Control and protection of the HVDC/AC
+         electrical grids”. This helped him to enrich his portfolio and he recently received the job
+         proposal to join University of Aberdeen as a Lecturer, which he accepted and will join them at
+         the beginning of 2025.
+
+     3. Self-awareness and situational awareness
+        Daily, I am improving my knowledge about rules and procedures, department goals, etc. I am
+        leading a group of Ph.D. and postdoc researchers and constantly reflecting on our work and
+        collaboration. I am trying to maintain high satisfaction with the working environment while
+        maintaining a good working ethic. To the best of my knowledge, my group thrives when
+        everybody has sufficient autonomy and responsibility for the work.
+
+     4. Trust and integrity
+        I aim to manage better relationships with my colleagues, managers, and support staff, and
+        collaborators within TU Delft. My goal is to be a reliable and accountable colleague to support
+        the trust-building and integrity of me and my team.
+
+
+
+
+20
+  https://github.com/control-protection-grids-tudelft/HVDC-RTDS-models
+21
+  https://github.com/control-protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-IEEE-
+IES-MOOC
+
+                                                      19
+        Trust and integrity play an important role in my team. As mentioned earlier, I aim to create a
+        safe and supportive environment for my research team. That said, I am allowing the team
+        members to evolve inside the research topic while fulfilling the core of the project
+        requirements. With sufficient freedom, researchers feel trusted and take responsibility for the
+        given tasks.
+
+        Researchers are encouraged to question tasks and adjust them in content in the case when
+        they can be validly explained. Researchers within my team feel free to accept and refuse the
+        tasks based on their availability, task importance, etc.
+
+        Within my team, we aim for the full transparency of the work, data, and models (unless there
+        is secrecy inside the project, ensured through the signed NDA), while we also maintain the IP
+        of the person who created them. The collaboration among group members is strongly
+        supported and nurtured. We always strive to increase collaborations within TU Delft,
+        Netherlands, and the wider world.
+
+        So far, I cooperate with the aforementioned colleagues, even from different sections, and in
+        this way, we increase our trust and cooperation which will lead to future joint projects.
+
+    5. Attracting and encouraging talent
+       In the last few years, I have significantly improved the representation of my research topics,
+       and I am constantly attracting sufficient MSc students. I am constantly observing for talent
+       within TU Delft and outside and trying to keep/bring talent.
+
+        In my team, after the initial learning process and mastering the topic, I tend to let Ph.D.
+        students and postdocs develop in their own directions and let them plan their work
+        themselves. I encourage them to give presentations, lectures, and speeches and become
+        visible within and outside of the organization. Furthermore, as mentioned above, I am
+        encouraging them to carefully plan their goals and how our collaboration can help them
+        achieve them.
+
+    6. Initiative and courage
+
+        I am constantly working towards increasing the international visibility. I am doing that through
+        being an associate editor, and guest associate editor. Furthermore, through invited conference
+        speeches and participation in the project consortia.
+
+        I am constantly increasing awareness about my research topic through the lectures, and course
+        material, but also through the publications, projects, and communication of the group
+        achievements.
+
+I am always responsive and supportive toward the MSc students. And jointly with them, I am solving
+the issues that occur.
+
+For leading others, I have filled in the survey provided by TU Delft and asked for the review by my team
+members. The results, depicted in Fig. 5, show that my leadership style has been sorted as leverage or
+more “hands-on approach.” The comments received together with the survey mean a lot to me, since
+they show that my team members feel supported in terms of work and meetings whenever they have
+a need for it. They understand the expectations and the direction of the work of the team, and most
+
+                                                  20
+importantly, they feel that everybody’s work is strongly valued and recognized. I will select the most
+important comment: “She is always very aware of the recognition you should be getting out of the
+work, and she keeps on reminding it. Which is good to learn.”
+
+I plan to keep leading a transparent and strong team and fostering trust and collaboration between
+team members and colleagues from the university and worldwide. I will also keep building the work of
+the team while paying attention to the individual goals of each team member, and I will always try to
+help them achieve it.
+
+
+
+
+                                  Fig. 5 – Leading others personal overview.
+
+Visibility outside university
+Nationally and internationally, I maintain contacts within academia and industry. My main goal as the
+HVDC/AC control specialist is carefully fulfilled by participating in conferences (as an author, chair,
+program committee member, etc.), and by participating in project consortia. I am constantly striving
+to widen my collaboration.
+
+I promote TU Delft by giving invited talks and leading/co-leading projects with academia and industry.
+In the future, I will continue doing that by increasing my role in the IEEE and CIGRE societies.
+
+
+
+
+                                                     21
+
