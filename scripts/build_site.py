@@ -1516,7 +1516,7 @@ def build():
         related_html = f"<h2>Related portfolio</h2><ul>{''.join(related)}</ul>" if related else ""
 
         full = p.get("full_name") or p["name"]
-        img = p.get("image") or "projects/interopera-card.jpg"
+        img = p.get("logo") or p.get("image") or "projects/interopera-card.jpg"
         body = f'''
   <section class="page-hero"><div class="wrap">
     <div class="breadcrumbs"><a href="{rel(page, "projects/index.html")}">Projects</a> / {escape(p["name"])}</div>
@@ -1526,8 +1526,8 @@ def build():
   </div></section>
   <section class="block"><div class="wrap detail-grid">
     <aside>
-      <div class="portrait logo-card" style="aspect-ratio:16/10;background:#f7faf9;display:grid;place-items:center;padding:1.1rem">
-        <img src="{rel(page, "assets/" + img)}" alt="{escape(p["name"])} logo" style="max-width:100%;max-height:220px;width:auto;height:auto;object-fit:contain" />
+      <div class="portrait logo-card">
+        <img src="{rel(page, "assets/" + img)}" alt="{escape(p["name"])} logo" />
       </div>
       <dl class="side-meta">
         <dt>Role at TU Delft</dt><dd>{escape(p["role"])}</dd>

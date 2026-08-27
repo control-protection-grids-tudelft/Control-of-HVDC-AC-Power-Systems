@@ -469,6 +469,22 @@ h2 {
   overflow: hidden;
 }
 .portrait img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.portrait.logo-card {
+  aspect-ratio: 16 / 10;
+  background: #f7faf9;
+  display: grid;
+  place-items: center;
+  padding: 1.1rem;
+}
+.portrait.logo-card img {
+  width: auto;
+  max-width: 100%;
+  max-height: 11rem;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
 .side-meta {
   margin-top: 1rem;
   font-size: 0.95rem;
