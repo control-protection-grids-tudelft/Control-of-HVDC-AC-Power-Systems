@@ -1264,9 +1264,6 @@ def build():
         </a>''')
 
     hero_img = rel(page, "assets/hero-hierarchical.jpg")
-    g_hier = rel(page, "assets/graphics/hierarchical-control-card.jpg")
-    g_map = rel(page, "assets/graphics/offshore-wind-map-card.jpg")
-    g_hil = rel(page, "assets/graphics/hil-novacor-card.jpg")
     body = f'''
   <section class="hero" style="--hero-image: url('{hero_img}')">
     <div class="wrap hero-inner">
@@ -1308,21 +1305,7 @@ def build():
       <p class="sec-label">Team</p>
       <h2>Researchers</h2>
       <p class="lede-body">Current researchers — see the team page for alumni and graduated MSc students.</p>
-      <div class="visual-strip" aria-label="Research visuals">
-        <figure>
-          <img src="{g_hier}" alt="Hierarchical control from centralized supervision to decentralized PE control" loading="lazy" />
-          <figcaption>Hierarchical control &amp; protection</figcaption>
-        </figure>
-        <figure>
-          <img src="{g_map}" alt="Offshore wind farms linked to shore grids" loading="lazy" />
-          <figcaption>Offshore HVDC networks</figcaption>
-        </figure>
-        <figure>
-          <img src="{g_hil}" alt="RSCAD co-simulation with RTDS NovaCor hardware" loading="lazy" />
-          <figcaption>Real-time HIL validation</figcaption>
-        </figure>
-      </div>
-      <div class="grid-4" style="margin-top:1.75rem">{"".join(team_cards)}</div>
+      <div class="grid-4">{"".join(team_cards)}</div>
       <p style="margin-top:1.25rem"><a class="btn btn-outline" href="{rel(page, "team/index.html")}">Full team →</a></p>
     </div>
   </section>
