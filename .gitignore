@@ -1,4 +1,5 @@
-## Ignore building folder
-
+## Private local extracts — never publish
 _content-extract/
+_content-extract/**
 
+## Ignore building folder
