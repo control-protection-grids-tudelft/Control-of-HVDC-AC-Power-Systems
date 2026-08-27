@@ -1102,42 +1102,34 @@ def clean_pubs():
         if p.get("title") and p["title"][0].islower():
             p["title"] = p["title"][0].upper() + p["title"][1:]
         if not p.get("venue") and p.get("doi"):
-            m = re.search(r"\.\s+([^.]+?)\.\s*(?:doi:|" + re.escape(p["doi"]) + r")", p.get("raw") or "", re.I)
+            m = re.search(r"\.\s+([^.]+?)\.\s*(?:doi:|" + re.escape(str(p["doi"])) + r")", p.get("raw") or "", re.I)
             if m:
                 p["venue"] = m.group(1).strip()
-        # Ensure each paper has a working outbound link (DOI preferred, else URL / Scholar)
         title = p.get("title") or ""
+        # Real paper link only when DOI/landing exists — do not invent one
         if p.get("doi") and not p.get("url"):
             d = str(p["doi"])
             p["url"] = d if d.startswith("http") else f"https://doi.org/{d}"
         if not p.get("scholar") and title:
             q = urllib.parse.quote(f'author:"Aleksandra Lekić" "{title[:80]}"')
             p["scholar"] = f"https://scholar.google.com/scholar?q={q}"
-        if not p.get("url"):
-            p["url"] = p.get("scholar") or "https://scholar.google.com/citations?user=xwCWAb0AAAAJ&hl=en"
-    pubs = [p for p in pubs if p.get("year") and 2010 <= p["year"] <= 2030]
+        # Keep entries without paper URL; Scholar button still available
+
+    # Keep essentially everything with a title + year in a sensible window (0 = undated)
     pubs = [
         p
         for p in pubs
-        if p.get("doi")
-        or p.get("url")
-        or p.get("kind") in ("journal", "conference", "preprint")
-        or p.get("source") == "openalex"
-        or re.search(
-            r"IEEE|Journal|Energies|Electric|International|Heliyon|CIGRE|High Voltage|Tehnika|SoftwareX|arXiv",
-            p.get("raw") or p.get("title") or "",
-            re.I,
-        )
+        if (p.get("title") or p.get("raw"))
+        and p.get("year") is not None
+        and (p["year"] == 0 or 2008 <= int(p["year"]) <= 2035)
     ]
-    # Drop deliverable-like blobs and clearly off-topic items
+    # Only drop clear project deliverables (those live in extras)
     drop_re = re.compile(
-        r"Detailed Project Management Plan|D7\.2|Using Assembly Language for Creating Games|"
-        r"Stabilno prekida|Harmony - HARMONic stabilitY assessment of PE-penetrated power systems$",
+        r"Detailed Project Management Plan|\bD\d+\.\d+\b|SUNRISE D\d|InterOPERA D\d|PROSECCO D\d|EASY-RES D\d",
         re.I,
     )
     pubs = [p for p in pubs if not drop_re.search((p.get("title") or "").strip())]
-    seen = set()
-    uniq = []
+
     # Prefer DOI + longer titles; drop truncated CV stubs that are prefixes of fuller entries
     pubs_sorted = sorted(
         pubs,
@@ -1149,14 +1141,14 @@ def clean_pubs():
         ),
     )
     seen_doi = set()
-    kept = []  # list of (norm_title, pub)
+    kept = []
     for p in pubs_sorted:
         title = (p.get("title") or "").strip().lower()
         doi_k = (p.get("doi") or "").lower().replace("https://doi.org/", "")
         if doi_k and doi_k in seen_doi:
             continue
         if any(title and kt.startswith(title) and len(kt) > len(title) + 8 for kt, _ in kept):
-            continue  # stub of a longer title already kept
+            continue
         if doi_k:
             seen_doi.add(doi_k)
         kept.append((title, p))
@@ -1671,24 +1663,28 @@ def build():
     blocks = []
     for year in sorted(by_year.keys(), reverse=True):
         items = []
+        year_label = "Undated" if year == 0 else str(year)
         for p in by_year[year]:
             title = p.get("title") or p["raw"][:120]
             authors = p.get("authors") or ""
             kind = p.get("kind") or ""
             tag = f'<span class="tag">{escape(kind)}</span> ' if kind else ""
-            href = p.get("url") or p.get("scholar")
-            if not href and p.get("doi"):
+            href = None
+            if p.get("doi"):
                 d = str(p["doi"])
                 href = d if d.startswith("http") else f"https://doi.org/{d}"
+            elif p.get("url") and "scholar.google.com/scholar?q=" not in str(p.get("url")):
+                href = p["url"]
             title_html = (
                 f'<a href="{escape(href)}" target="_blank" rel="noopener">{escape(title)}</a>'
                 if href
                 else escape(title)
             )
             links = []
-            if p.get("doi"):
-                doi_href = p["doi"] if str(p["doi"]).startswith("http") else f"https://doi.org/{p['doi']}"
-                links.append(f'<a class="doi" href="{escape(doi_href)}" target="_blank" rel="noopener">doi</a>')
+            if href and p.get("doi"):
+                links.append(f'<a class="doi" href="{escape(href)}" target="_blank" rel="noopener">doi</a>')
+            elif href:
+                links.append(f'<a class="doi" href="{escape(href)}" target="_blank" rel="noopener">link</a>')
             scholar = p.get("scholar") or "https://scholar.google.com/citations?user=xwCWAb0AAAAJ&hl=en"
             links.append(f'<a class="doi" href="{escape(scholar)}" target="_blank" rel="noopener">Scholar</a>')
             link_html = " · ".join(links)
@@ -1699,7 +1695,7 @@ def build():
               <h3>{title_html} <span class="pub-links">{link_html}</span></h3>
               {venue}
             </article>''')
-        blocks.append(f'<h2 class="year-heading">{year}</h2>' + "".join(items))
+        blocks.append(f'<h2 class="year-heading">{escape(year_label)}</h2>' + "".join(items))
 
     def extra_block(title, items):
         if not items:
@@ -1728,7 +1724,7 @@ def build():
   <section class="page-hero"><div class="wrap">
     <p class="sec-label">Publications</p>
     <h1>Papers by year</h1>
-    <p class="lede">{len(pubs)} journal &amp; conference papers (CV + Google Scholar / OpenAlex), plus books, software and selected deliverables. Full profile: <a href="https://scholar.google.com/citations?user=xwCWAb0AAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--foam)">Google Scholar ↗</a>.</p>
+    <p class="lede">{len(pubs)} entries from the CV, ORCID, Semantic Scholar, OpenAlex and Google Scholar. Titles link when a DOI/landing page exists; every entry has a Scholar search link. Profile: <a href="https://scholar.google.com/citations?user=xwCWAb0AAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--foam)">Google Scholar ↗</a>.</p>
   </div></section>
   <section class="block"><div class="wrap">
     {"".join(blocks)}

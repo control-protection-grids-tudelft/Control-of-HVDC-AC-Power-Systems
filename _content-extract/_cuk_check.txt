@@ -1,6 +1,0 @@
-(2016, 'hysteresis switching control of the cuk converter operating in discont', True, True, '10.1109/tcsii.2016.2631510')
-(2017, 'controlling the cuk converter using polytopic lyapunov functions', True, True, '10.1109/tcsii.2017.2781621')
-(2016, 'hysteresis switching control of the cuk converter', True, True, '10.1109/tcsi.2016.2600199')
-(2018, 'lyapunov characterization and analysis of the operating modes of the a', True, True, '10.1109/jestpe.2018.2875015')
-(2026, 'controlling the cuk converter using piecewise linear lyapunov function', False, True, '10.48550/arxiv.2604.20242')
-(2026, 'controlling the cuk converter using piecewise linear lyapunov function', False, True, '')
