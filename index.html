@@ -6,7 +6,7 @@
   <title>Home · HVDC/AC Control · TU Delft</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
@@ -20,7 +20,7 @@
     </div>
   </header>
 
-  <section class="hero" style="--hero-image: url('assets/hero-north-sea.jpg')">
+  <section class="hero" style="--hero-image: url('assets/hero-hierarchical.jpg')">
     <div class="wrap hero-inner">
       <p class="eyebrow">TU Delft · IEPG · ESE</p>
       <h1>Control of HVDC/AC Power Systems</h1>
@@ -114,7 +114,21 @@
       <p class="sec-label">Team</p>
       <h2>Researchers</h2>
       <p class="lede-body">Current researchers — see the team page for alumni and graduated MSc students.</p>
-      <div class="grid-4">
+      <div class="visual-strip" aria-label="Research visuals">
+        <figure>
+          <img src="assets/hero-hierarchical.jpg" alt="Hierarchical control from centralized supervision to decentralized PE control" loading="lazy" />
+          <figcaption>Hierarchical control &amp; protection</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/hero-offshore-map.jpg" alt="Offshore wind farms linked to shore grids" loading="lazy" />
+          <figcaption>Offshore HVDC networks</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/graphics/hil-novacor-card.jpg" alt="RSCAD co-simulation with RTDS NovaCor hardware" loading="lazy" />
+          <figcaption>Real-time HIL validation</figcaption>
+        </figure>
+      </div>
+      <div class="grid-4" style="margin-top:1.75rem">
         <a class="card person-card" href="team/aleksandra-lekic.html">
           <div class="card-media"><img src="assets/team/aleksandra-lekic.jpg" alt="Dr. Dipl.-Ing. Aleksandra Lekić" /></div>
           <div class="card-body">
@@ -191,15 +205,22 @@
         <article class="list-item">
           <time>2026-01</time>
           <div>
-            <h3>MITIGATE-HARM kick-off at TU Delft</h3>
-            <p class="muted">Consortium partners launched the CETP/NWO project on open-source tools for harmonic and converter-driven instability mitigation.</p>
+            <h3>Building more resilient and reliable power systems</h3>
+            <p class="muted">TU Delft EEMCS feature on the CETP/NWO MITIGATE-HARM project coordinated by Aleksandra Lekić. <a href="https://www.tudelft.nl/en/2026/eemcs/building-more-resilient-and-reliable-power-systems-for-the-future" target="_blank" rel="noopener">Read more ↗</a></p>
+          </div>
+        </article>
+        <article class="list-item">
+          <time>2026-01</time>
+          <div>
+            <h3>MITIGATE-HARM project website</h3>
+            <p class="muted">Consortium partners launched open-source tools for harmonic and converter-driven instability mitigation. <a href="https://mitigate-harm.eu/" target="_blank" rel="noopener">Read more ↗</a></p>
           </div>
         </article>
         <article class="list-item">
           <time>2025-01</time>
           <div>
             <h3>IEEE IES newsletter — MOOC feature</h3>
-            <p class="muted">IEEE IES featured the MOOC “Control and protection of HVDC/AC electrical grids”.</p>
+            <p class="muted">IEEE IES featured the MOOC “Control and protection of HVDC/AC electrical grids”. <a href="https://iten.ieee-ies.org/featured-news/2025/ieee-ies-mooc-control-and-protection-of-hvdc-ac-electrical-grids/" target="_blank" rel="noopener">Read more ↗</a></p>
           </div>
         </article>
         <article class="list-item">
@@ -207,13 +228,6 @@
           <div>
             <h3>Hackathon on Energy Transition in Buildings</h3>
             <p class="muted">Two-day 4TU Energy workshop on energy supply &amp; demand in residential buildings.</p>
-          </div>
-        </article>
-        <article class="list-item">
-          <time>2024-11</time>
-          <div>
-            <h3>Anchoring Power: control &amp; stability in offshore energy hubs</h3>
-            <p class="muted">TU Delft Stories feature on control and stability research for offshore hubs.</p>
           </div>
         </article>
       <p style="margin-top:1.25rem"><a class="btn btn-outline" href="news/index.html">News archive →</a></p>
@@ -224,14 +238,14 @@
     <div class="wrap">
       <p class="sec-label">Open source &amp; portfolio</p>
       <h2>Tools from the Interoperability Program</h2>
-      <p class="lede-body">Software libraries on GitHub plus planned hardware products (PACS, DCGC, DCSS).</p>
+      <p class="lede-body">Software libraries on GitHub plus hardware products (PACS, DCGC, DCSS) from the Interoperability Program.</p>
       <div class="grid-3">
         <a class="card" href="portfolio/harmony-toolbox.html">
           <div class="card-media"><img src="assets/portfolio/harmony-toolbox.jpg" alt="Harmony toolbox" /></div>
           <div class="card-body">
             <div class="tag">Software · Open source</div>
             <h3>Harmony toolbox</h3>
-            <p>TRL 3–4 (path to TRL 5–6)</p>
+            <p>TRL 3–4</p>
             <span class="more">Details →</span>
           </div>
         </a>

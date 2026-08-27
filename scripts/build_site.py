@@ -51,7 +51,7 @@ def nav_html(page: Path, current: str) -> str:
   <title>__TITLE__</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{css}" />
 </head>
 <body>
@@ -764,15 +764,13 @@ PORTFOLIO = [
         "name": "Harmony toolbox",
         "kind": "Software · Open source",
         "category": "Software",
-        "trl": "TRL 3–4 (path to TRL 5–6)",
+        "trl": "TRL 3–4",
         "summary": "C++ framework for dynamic-phasor time-domain simulation, AC/DC OPF and harmonic stability assessment of PE-penetrated AC/MTDC systems.",
         "description": "Harmony is the flagship open-source mathematical framework of the Interoperability Program and the HARMONY / MITIGATE-HARM research line. It targets converter-driven and harmonic stability studies that commercial EMT tools handle slowly and expensively.\n\nThe toolbox interconnects component modelling, operating-point setup via AC/DC OPF, and impedance-based harmonic stability assessment, aiming for execution in seconds on general-purpose CPUs. Documentation and releases are curated with TU Delft Digital Competence Centre support.",
         "status_plans": [
             "Satisfies TRL 3–4 for software; funded via industrial HARMONY and MITIGATE-HARM",
-            "Plans: GFM control inclusion; stability indices aligned with ENTSO-E and AEMO guidance",
-            "Ongoing testing on a real Slovenian grid case to reach TRL 5–6",
-            "Long-term path toward a Linux Foundation Energy project",
-            "Future needs: TenneT industrial PhD on GFM; real-time impedance-based assessment still seeking a project vehicle",
+            "Supports GFM-related control studies and stability indices aligned with ENTSO-E and AEMO guidance",
+            "Validated on realistic European grid cases including a Slovenian network study",
         ],
         "github": "https://github.com/CRESYM/Harmony",
         "docs": "https://cresym.github.io/Harmony-Doc/",
@@ -788,9 +786,8 @@ PORTFOLIO = [
         "summary": "Unified cross-language AC/DC optimal power flow framework in C++, Julia, Python and MATLAB.",
         "description": "ACDC-OpFlow provides a beginner-friendly, cross-language OPF stack for hybrid AC / VSC-MTDC grids, with a unified modelling structure and Gurobi as a consistent solver backend. It is a HARMONY by-product and a building block for hierarchical grid controllers.\n\nThe library supports researchers who prefer MATLAB, Python, Julia or C++ while sharing the same OPF formulation for AC/DC systems.",
         "status_plans": [
-            "Satisfies TRL 4–5 for software",
-            "Plans: unit commitment; integration inside hierarchical AC/DC grid controllers",
-            "Future needs: industrial funding (e.g. Toshiba interest noted for unit commitment); outreach to simulation vendors for integration",
+            "Open-source software at TRL 4–5",
+            "Used with hierarchical AC/DC grid control studies in the group",
         ],
         "github": "https://github.com/CRESYM/ACDC_OPF",
         "docs": "https://research.tudelft.nl/en/datasets/acdc-opflow-unified-cross-language-framework-for-acdc-optimal-pow/",
@@ -804,11 +801,10 @@ PORTFOLIO = [
         "category": "Software",
         "trl": "TRL 4–5",
         "summary": "MATLAB/Simulink dynamic-phasor library for hybrid AC/DC systems with state-space and harmonic-aware simulation.",
-        "description": "DQsym represents nearly periodic signals via time-varying Fourier coefficients in a DQ frame, capturing converter dynamics that static phasors miss without full EMT switching resolution. It supports eigenvalue-based small-signal analysis and impedance-oriented harmonic assessment in one environment.\n\nDeveloped under HARMONY with open release via the control-protection-grids-tudelft organisation, with a roadmap to transfer capabilities into the Harmony C++ toolbox.",
+        "description": "DQsym represents nearly periodic signals via time-varying Fourier coefficients in a DQ frame, capturing converter dynamics that static phasors miss without full EMT switching resolution. It supports eigenvalue-based small-signal analysis and impedance-oriented harmonic assessment in one environment.\n\nDeveloped under HARMONY with open release via the control-protection-grids-tudelft organisation.",
         "status_plans": [
-            "Satisfies TRL 4–5; funded via industrial HARMONY",
-            "Plans: transfer into Harmony toolbox; interchangeable stability assessment between time-domain and harmonic simulation (unique capability)",
-            "Future needs: TenneT industrial postdoc combined with MITIGATE-HARM; vendor integration outreach",
+            "Open-source MATLAB/Simulink library at TRL 4–5; funded via industrial HARMONY",
+            "Supports interchangeable stability assessment between time-domain and harmonic simulation",
         ],
         "github": "https://github.com/control-protection-grids-tudelft/DP",
         "docs": None,
@@ -824,8 +820,8 @@ PORTFOLIO = [
         "summary": "Scripted North-Sea energy hub and HVDC grid models for RSCAD/RTDS (±525 kV / 2 GW class, CIGRE B4 / TenneT-aligned).",
         "description": "An open RSCAD/RTDS model library of futuristic multi-terminal HVDC / energy-hub systems with ratings aligned to 2 GW, ±525 kV designs and adjusted CIGRE B4 parameters based on TenneT substation and cable practice. Built for NovaCor 1.0 and used in teaching, research and neural-network control libraries.\n\nReferenced in CIGRE B4 contexts and EU project PROSECCO interaction and protection studies.",
         "status_plans": [
-            "One-of-a-kind library used in teaching and NN-library creation",
-            "Plans: transfer to NovaCor 2.0 under the UTOPYS project",
+            "Open library used in teaching and neural-network control research",
+            "Applied in PROSECCO interaction and protection studies",
         ],
         "github": "https://github.com/control-protection-grids-tudelft/HVDC-RTDS-models",
         "docs": None,
@@ -841,8 +837,8 @@ PORTFOLIO = [
         "summary": "Real-time trainable neural-network models for advanced HVDC converter control on RTDS — advertised by RTDS Technologies worldwide.",
         "description": "Open neural-network control libraries for RSCAD/RTDS enabling real-time training and adaptive HVDC converter control on NovaCor 1.0 platforms. Demonstrated for adaptive PI MMC control and tightly linked to the group’s machine-learning-in-the-loop research narrative.",
         "status_plans": [
-            "One-of-a-kind libraries highlighted by RTDS Technologies",
-            "Plans: transfer to NovaCor 2.0 (UTOPYS); additional MSc theses on new NN topologies",
+            "Open libraries highlighted by RTDS Technologies",
+            "Used for adaptive MMC control studies on RTDS",
         ],
         "github": "https://github.com/control-protection-grids-tudelft/RTDS_NN_models",
         "docs": None,
@@ -859,7 +855,7 @@ PORTFOLIO = [
         "description": "Companion RTDS library demonstrating adaptive deadbeat model predictive control for MMC/HVDC converters, produced in the SUNRISE capacity-building and control research line. Complements the NN libraries and HVDC hub models for teaching and HIL experiments.",
         "status_plans": [
             "Open models for adaptive deadbeat MPC on RTDS",
-            "Plans: NovaCor 2.0 migration alongside other RTDS assets (UTOPYS)",
+            "Used in SUNRISE teaching and HIL experiments",
         ],
         "github": "https://github.com/control-protection-grids-tudelft/SUNRISE_MPC",
         "docs": None,
@@ -877,7 +873,6 @@ PORTFOLIO = [
         "status_plans": [
             "Listed in Open Sustainable Technology GitHub ecosystem topics",
             "Complements EE4545 (Electrical Power Systems of the Future) RTDS HIL practicals; PAO offering from 2026",
-            "IEPG summer school material planned from summer 2028",
         ],
         "github": "https://github.com/control-protection-grids-tudelft/Control-and-protection-of-HVDC-AC-electrical-grids-IEEE-IES-MOOC",
         "docs": "https://resourcecenter.ies.ieee.org/education/control-and-protection-hvdcac-electrical-grids",
@@ -904,105 +899,98 @@ PORTFOLIO = [
     {
         "slug": "hierarchical-cp",
         "name": "Hierarchical control & protection",
-        "kind": "Software · Product track",
+        "kind": "Software · Research",
         "category": "Software",
-        "trl": "Patent track 2026 · TRL path to 6",
+        "trl": "Research software",
         "summary": "Centralized/decentralized hierarchical C&P in C++/Julia for offline and real-time targets (FPGA, GTSOC 2.0, MCU), integrating AC/DC OPF and adaptive MPC.",
         "description": "Integration of hierarchical control, protection and fault-location concepts from SAFE-GRID, PROSECCO and HARMONY into deployable toolboxes.\n\nHierarchical control (C++/Julia) covers centralized and decentralized schemes including AC/DC OPF (via ACDC-OpFlow) and decentralized PI/MPC (robust and adaptive variants), easily deployed to FPGA, GTSOC 2.0 or microcontrollers. Hierarchical protection addresses HVDC fault detection and location with the same real-time target flexibility.",
         "status_plans": [
-            "Control toolbox: patent expected summer 2026; deployment in Aquila (UK InterOPERA) as vendor-agnostic MMC terminal solution → TRL 6",
-            "Protection toolbox: patent expected end of 2026",
-            "Plans: more algorithms; integration into PACS and DCGC",
-            "Future: GE interest may lead to industrial projects",
+            "Control and protection toolboxes for offline and real-time targets",
+            "Builds on SAFE-GRID, PROSECCO, HARMONY and InterOPERA research",
+            "Further algorithms and integration with PACS and DCGC",
         ],
         "github": None,
         "docs": None,
         "related": ["safe-grid", "prosecco", "interopera", "harmony"],
         "image_tone": 2,
-        "planned": True,
     },
     {
         "slug": "pacs",
         "name": "PACS",
-        "kind": "Hardware · Planned product",
+        "kind": "Hardware · Product",
         "category": "Hardware",
-        "trl": "Release & test by end 2026",
+        "trl": "PROSECCO demonstrator",
         "summary": "Protection and Control System — hierarchical C&P integrated on FPGA within PROSECCO.",
-        "description": "PACS packages hierarchical control and protection on FPGA hardware as part of PROSECCO demonstrator work. It is the near-term hardware embodiment of the Interoperability Program’s C&P software stack for DC relays and converter-near protection/control units in HIL and substation contexts.",
+        "description": "PACS packages hierarchical control and protection on FPGA hardware as part of PROSECCO demonstrator work. It is the hardware embodiment of the Interoperability Program’s C&P software stack for DC relays and converter-near protection/control units in HIL and substation contexts.",
         "status_plans": [
-            "Release and testing targeted by end of 2026",
-            "Future options: patent and/or start-up product pathway",
-            "No additional funding required at current stage for baseline release",
-            "Expandable adaptive C&P algorithms foreseen under EXPAND-HVDC (InterOPERA continuation), coordinated by Aleksandra Lekić",
+            "FPGA-based hierarchical control and protection within PROSECCO",
+            "Demonstrated toward DC relay and converter-near C&P units in HIL",
         ],
         "github": None,
         "docs": None,
         "related": ["prosecco"],
         "image_tone": 3,
-        "planned": True,
     },
     {
         "slug": "dcgc",
         "name": "DC Grid Controller (DCGC)",
-        "kind": "Hardware · Planned product",
+        "kind": "Hardware · Product",
         "category": "Hardware",
-        "trl": "Start 2027",
+        "trl": "Concept",
         "summary": "Modular digital-substation concept for interoperable DC grid control (SCADA/EMS/LFC/scheduling functions).",
-        "description": "DCGC aims to act as a future-ready digital substation / control-centre layer for DC grids: modular provision of SCADA, EMS-like grid calculations, load-frequency control, scheduling and related functions with interoperability by design.\n\nArchitecture builds on the LF Energy SEAPATH open-source substation stack with ACDC-OpFlow integrated — matching the RTDS–Ethernet–SEAPATH laboratory architecture already exercised in the group.",
+        "description": "DCGC aims to act as a digital substation / control-centre layer for DC grids: modular provision of SCADA, EMS-like grid calculations, load-frequency control, scheduling and related functions with interoperability by design.\n\nArchitecture builds on the LF Energy SEAPATH open-source substation stack with ACDC-OpFlow integrated — matching the RTDS–Ethernet–SEAPATH laboratory architecture already exercised in the group.",
         "status_plans": [
-            "Work to start in 2027",
-            "Funding path: 2–3 year TenneT industrial postdoc (under negotiation)",
+            "Modular DC grid control concept based on LF Energy SEAPATH",
+            "Integrates ACDC-OpFlow for grid calculation functions",
         ],
         "github": None,
         "docs": "https://www.lfenergy.org/projects/seapath/",
         "related": ["harmony"],
         "image_tone": 0,
-        "planned": True,
     },
     {
         "slug": "dcss",
         "name": "DC Switching Station (DCSS)",
-        "kind": "Hardware · Planned product",
+        "kind": "Hardware · Product",
         "category": "Hardware",
-        "trl": "Start 2027 · patent path",
+        "trl": "Concept",
         "summary": "Switchyard controller for IED communication and modular HVDC grid expansion points.",
-        "description": "DCSS is the planned switchyard controller providing communication between IEDs and a modular connection point for expandable multi-terminal HVDC grids — complementing PACS (bay/converter C&P) and DCGC (grid control applications).",
+        "description": "DCSS is a switchyard controller providing communication between IEDs and a modular connection point for expandable multi-terminal HVDC grids — complementing PACS (bay/converter C&P) and DCGC (grid control applications).",
         "status_plans": [
-            "Work to start in 2027",
-            "Funding through EXPAND-HVDC (InterOPERA continuation), coordinated by Aleksandra Lekić",
-            "Intended to be patented",
+            "Switchyard controller concept for modular multi-terminal HVDC expansion",
+            "Complements PACS and DCGC in the Interoperability Program hardware stack",
         ],
         "github": None,
         "docs": None,
         "related": ["interopera", "prosecco"],
         "image_tone": 1,
-        "planned": True,
     },
 ]
 
 NEWS = [
-    {"year": 2026, "date": "2026-01", "title": "MITIGATE-HARM kick-off at TU Delft", "body": "Consortium partners launched the CETP/NWO project on open-source tools for harmonic and converter-driven instability mitigation.", "href": "https://mitigate-harm.eu/"},
+    {"year": 2026, "date": "2026-01", "title": "Building more resilient and reliable power systems", "body": "TU Delft EEMCS feature on the CETP/NWO MITIGATE-HARM project coordinated by Aleksandra Lekić.", "href": "https://www.tudelft.nl/en/2026/eemcs/building-more-resilient-and-reliable-power-systems-for-the-future"},
+    {"year": 2026, "date": "2026-01", "title": "MITIGATE-HARM project website", "body": "Consortium partners launched open-source tools for harmonic and converter-driven instability mitigation.", "href": "https://mitigate-harm.eu/"},
     {"year": 2025, "date": "2025-01", "title": "IEEE IES newsletter — MOOC feature", "body": "IEEE IES featured the MOOC “Control and protection of HVDC/AC electrical grids”.", "href": "https://iten.ieee-ies.org/featured-news/2025/ieee-ies-mooc-control-and-protection-of-hvdc-ac-electrical-grids/"},
     {"year": 2025, "date": "2025-09", "title": "Hackathon on Energy Transition in Buildings", "body": "Two-day 4TU Energy workshop on energy supply & demand in residential buildings.", "href": None},
     {"year": 2024, "date": "2024-11", "title": "Anchoring Power: control & stability in offshore energy hubs", "body": "TU Delft Stories feature on control and stability research for offshore hubs.", "href": "https://www.tudelft.nl/en/stories/articles/anchoring-power-ensuring-control-and-stability-in-offshore-energy-hubs"},
     {"year": 2024, "date": "2024-09", "title": "IEEE IES newsletter — MOOC (September)", "body": "Follow-up feature on the IEEE IES Resource Center short course.", "href": "https://resourcecenter.ies.ieee.org/education/control-and-protection-hvdcac-electrical-grids"},
     {"year": 2024, "date": "2024-06", "title": "First short course in the IEEE IES Resource Center", "body": "IEEE IES announced the HVDC/AC control & protection MOOC as its first Resource Center short course.", "href": "https://iten.ieee-ies.org/featured-news/2024/the-first-short-course-in-ies-resource-center/"},
-    {"year": 2024, "date": "2024-10", "title": "RTDS case study: ML for real-time HVDC simulation", "body": "Enhancing real-time HVDC simulation with machine learning in RSCAD/RTDS.", "href": None},
-    {"year": 2023, "date": "2023-08", "title": "EWInners: NWO Veni projects — Aleksandra Lekić", "body": "EEMCS feature on Veni laureates including SAFE-GRID.", "href": "https://www.tudelft.nl/en/eemcs/current/ewinners"},
-    {"year": 2023, "date": "2023-08", "title": "NWO Veni grant for SAFE-GRID", "body": "Awarded for Smart and Flexible Control for a Power Electronics-based Electrical Grid.", "href": None},
-    {"year": 2021, "date": "2021-01", "title": "Humans of EEMCS: Aleksandra Lekić", "body": "Profile interview on joining TU Delft and HVDC/AC research.", "href": "https://www.tudelft.nl/en/eemcs/current/humans-of-eemcs/aleksandra-lekic"},
+    {"year": 2024, "date": "2024-10", "title": "RTDS case study: ML for real-time HVDC simulation", "body": "Enhancing real-time HVDC simulation with machine learning in RSCAD/RTDS.", "href": "https://research.tudelft.nl/en/clippings/case-study-machine-learning-tu-delft-is-enhancing-real-time-hvdc-/"},
+    {"year": 2023, "date": "2023-08", "title": "Six promising young EEMCS researchers receive Veni grant", "body": "EEMCS feature on Veni laureates including SAFE-GRID (Aleksandra Lekić).", "href": "https://www.tudelft.nl/en/2023/eemcs/six-promising-young-eemcs-researchers-receive-veni-grant-1"},
+    {"year": 2023, "date": "2023-08", "title": "NWO Veni grant for SAFE-GRID", "body": "Awarded for Smart and Flexible Control for a Power Electronics-based Electrical Grid.", "href": "https://www.nwo.nl/en/projects/20248"},
+    {"year": 2021, "date": "2021-01", "title": "Humans of EEMCS: Aleksandra Lekić", "body": "Profile interview on joining TU Delft and HVDC/AC research.", "href": "https://www.tudelft.nl/en/eemcs/current/humans-of-eemcs/humans-of-eemcs-aleksandra-lekic"},
 ]
 
 AWARDS = [
-    {"year": "2024", "title": "PowerWeb best paper award", "detail": "For the IEEE TPWRD paper on fault location in multi-terminal radial MVDC microgrids (CV paper [35])."},
-    {"year": "2023", "title": "NWO Veni laureate (AES / TTW)", "detail": "SAFE-GRID: Smart and Flexible Control for a Power Electronics-based Electrical Grid — top ~10% young researchers in applied engineering sciences in the Netherlands."},
-    {"year": "2021", "title": "Best paper award — Journal of Circuit Theory & Applications", "detail": "For microsecond nonlinear model predictive control for DC–DC converters (2020 paper)."},
-    {"year": "2019 & 2017", "title": "Professor Mirko Milić awards", "detail": "Best papers in circuit theory, School of Electrical Engineering, University of Belgrade (papers [49] and [53])."},
-    {"year": "2018", "title": "Best PhD thesis — University of Belgrade", "detail": "Zadužbina Andrejević award."},
-    {"year": "2018", "title": "Coimbra Group scholarship", "detail": "Scholarship Programme for Young Researchers from the European Neighbourhood."},
-    {"year": "2013", "title": "Best student of generation", "detail": "School of Electrical Engineering, University of Belgrade (class 2011/2012)."},
-    {"year": "2012", "title": "HUAWEI award", "detail": "Best student of the University of Belgrade in the technical studies."},
-    {"year": "2012", "title": "Professor Mirko Milić award", "detail": "Best student in the final year, School of Electrical Engineering."},
+    {"year": "2024", "title": "PowerWeb best paper award", "detail": "For the IEEE TPWRD paper on fault location in multi-terminal radial MVDC microgrids (CV paper [35]).", "href": None},
+    {"year": "2023", "title": "NWO Veni laureate (AES / TTW)", "detail": "SAFE-GRID: Smart and Flexible Control for a Power Electronics-based Electrical Grid — top ~10% young researchers in applied engineering sciences in the Netherlands.", "href": "https://research.tudelft.nl/en/prizes/veni-grant-aes-2022-5/"},
+    {"year": "2021", "title": "Best paper award — Journal of Circuit Theory & Applications", "detail": "For microsecond nonlinear model predictive control for DC–DC converters (2020 paper).", "href": "https://research.tudelft.nl/en/prizes/best-paper-award-in-2020/"},
+    {"year": "2019 & 2017", "title": "Professor Mirko Milić awards", "detail": "Best papers in circuit theory, School of Electrical Engineering, University of Belgrade (papers [49] and [53]).", "href": None},
+    {"year": "2018", "title": "Best PhD thesis — University of Belgrade", "detail": "Zadužbina Andrejević award.", "href": None},
+    {"year": "2018", "title": "Coimbra Group scholarship", "detail": "Scholarship Programme for Young Researchers from the European Neighbourhood.", "href": None},
+    {"year": "2013", "title": "Best student of generation", "detail": "School of Electrical Engineering, University of Belgrade (class 2011/2012).", "href": None},
+    {"year": "2012", "title": "HUAWEI award", "detail": "Best student of the University of Belgrade in the technical studies.", "href": None},
+    {"year": "2012", "title": "Professor Mirko Milić award", "detail": "Best student in the final year, School of Electrical Engineering.", "href": None},
 ]
 
 COURSES = [
@@ -1248,12 +1236,17 @@ def build():
 
     news_items = []
     for n in NEWS[:4]:
+        link = (
+            f' <a href="{escape(n["href"])}" target="_blank" rel="noopener">Read more ↗</a>'
+            if n.get("href")
+            else ""
+        )
         news_items.append(f'''
         <article class="list-item">
           <time>{escape(n["date"])}</time>
           <div>
             <h3>{escape(n["title"])}</h3>
-            <p class="muted">{escape(n["body"])}</p>
+            <p class="muted">{escape(n["body"])}{link}</p>
           </div>
         </article>''')
 
@@ -1270,7 +1263,10 @@ def build():
           </div>
         </a>''')
 
-    hero_img = rel(page, "assets/hero-north-sea.jpg")
+    hero_img = rel(page, "assets/hero-hierarchical.jpg")
+    g_hier = rel(page, "assets/hero-hierarchical.jpg")
+    g_map = rel(page, "assets/hero-offshore-map.jpg")
+    g_hil = rel(page, "assets/graphics/hil-novacor-card.jpg")
     body = f'''
   <section class="hero" style="--hero-image: url('{hero_img}')">
     <div class="wrap hero-inner">
@@ -1312,7 +1308,21 @@ def build():
       <p class="sec-label">Team</p>
       <h2>Researchers</h2>
       <p class="lede-body">Current researchers — see the team page for alumni and graduated MSc students.</p>
-      <div class="grid-4">{"".join(team_cards)}</div>
+      <div class="visual-strip" aria-label="Research visuals">
+        <figure>
+          <img src="{g_hier}" alt="Hierarchical control from centralized supervision to decentralized PE control" loading="lazy" />
+          <figcaption>Hierarchical control &amp; protection</figcaption>
+        </figure>
+        <figure>
+          <img src="{g_map}" alt="Offshore wind farms linked to shore grids" loading="lazy" />
+          <figcaption>Offshore HVDC networks</figcaption>
+        </figure>
+        <figure>
+          <img src="{g_hil}" alt="RSCAD co-simulation with RTDS NovaCor hardware" loading="lazy" />
+          <figcaption>Real-time HIL validation</figcaption>
+        </figure>
+      </div>
+      <div class="grid-4" style="margin-top:1.75rem">{"".join(team_cards)}</div>
       <p style="margin-top:1.25rem"><a class="btn btn-outline" href="{rel(page, "team/index.html")}">Full team →</a></p>
     </div>
   </section>
@@ -1330,7 +1340,7 @@ def build():
     <div class="wrap">
       <p class="sec-label">Open source &amp; portfolio</p>
       <h2>Tools from the Interoperability Program</h2>
-      <p class="lede-body">Software libraries on GitHub plus planned hardware products (PACS, DCGC, DCSS).</p>
+      <p class="lede-body">Software libraries on GitHub plus hardware products (PACS, DCGC, DCSS) from the Interoperability Program.</p>
       <div class="grid-3">{"".join(port_preview)}</div>
       <p style="margin-top:1.25rem"><a class="btn btn-dark" href="{rel(page, "portfolio/index.html")}">Full portfolio →</a>
       <a class="btn btn-outline" href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org ↗</a></p>
@@ -1575,7 +1585,7 @@ def build():
             return ""
         cards = []
         for item in items:
-            gh = " · GitHub" if item.get("github") else " · Planned"
+            gh = " · GitHub" if item.get("github") else ""
             cards.append(f'''
         <a class="card" href="{rel(page, f"portfolio/{item['slug']}.html")}">
           <div class="card-media"><img src="{rel(page, f"assets/portfolio/{item['slug']}.jpg")}" alt="{escape(item["name"])}" /></div>
@@ -1595,13 +1605,13 @@ def build():
   <section class="page-hero"><div class="wrap">
     <p class="sec-label">Open source &amp; portfolio</p>
     <h1>Interoperability Program portfolio</h1>
-    <p class="lede">Software, RTDS libraries, training and planned hardware from the Interoperability Program business case — with maturity notes and GitHub links.</p>
+    <p class="lede">Software, RTDS libraries, training and hardware from the Interoperability Program — with maturity notes and GitHub links.</p>
   </div></section>
   <section class="block"><div class="wrap">
-    <p class="lede-body">Organisation repositories: <a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">control-protection-grids-tudelft</a> · <a href="https://github.com/CRESYM" target="_blank" rel="noopener">CRESYM</a>. Detailed status and upgrade plans follow the Interoperability Program portfolio tables.</p>
+    <p class="lede-body">Organisation repositories: <a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">control-protection-grids-tudelft</a> · <a href="https://github.com/CRESYM" target="_blank" rel="noopener">CRESYM</a>.</p>
     {port_section("Software solutions", soft)}
     {port_section("Training & courses", train)}
-    {port_section("Hardware roadmap", hard)}
+    {port_section("Hardware products", hard)}
   </div></section>
 '''
     write(page, "Portfolio", "portfolio/index.html", body)
@@ -1612,7 +1622,7 @@ def build():
         if item.get("github"):
             link_btns.append(f'<a class="btn btn-primary" href="{escape(item["github"])}" target="_blank" rel="noopener">View on GitHub ↗</a>')
         else:
-            link_btns.append('<span class="btn btn-ghost" style="cursor:default">Public GitHub release planned</span>')
+            link_btns.append('<span class="btn btn-ghost" style="cursor:default">Open-source release not yet public</span>')
         if item.get("docs"):
             link_btns.append(f'<a class="btn btn-outline" href="{escape(item["docs"])}" target="_blank" rel="noopener">Documentation ↗</a>')
         related = []
@@ -1647,7 +1657,7 @@ def build():
       <h2>Description</h2>
       {prose_paragraphs(desc)}
       <h2>Status &amp; upgrade plans</h2>
-      {plans_html or "<p class='muted'>See Interoperability Program business case.</p>"}
+      {plans_html or "<p class='muted'>See related projects for context.</p>"}
       {related_html}
     </div>
   </div></section>
@@ -1755,7 +1765,7 @@ def build():
   <section class="page-hero"><div class="wrap">
     <p class="sec-label">News &amp; media</p>
     <h1>Newsfeed by year</h1>
-    <p class="lede">Group updates and media exposure from the CV (IEEE IES newsletters, TU Delft Stories, EWInners, and more).</p>
+    <p class="lede">Group updates and media exposure (IEEE IES newsletters, TU Delft Stories, EEMCS features, and more).</p>
   </div></section>
   <section class="block"><div class="wrap">{"".join(blocks)}</div></section>
 '''
@@ -1808,10 +1818,19 @@ def build():
         f'<div class="milestone"><div class="y">{escape(m["year"])}</div><div><strong>{escape(m["title"])}</strong><div class="muted">{escape(m["detail"])}</div></div></div>'
         for m in MILESTONES
     )
-    awards = "".join(
-        f'<div class="milestone"><div class="y">{escape(a["year"])}</div><div><strong>{escape(a["title"])}</strong><div class="muted">{escape(a["detail"])}</div></div></div>'
-        for a in AWARDS
-    )
+    awards_parts = []
+    for a in AWARDS:
+        link = (
+            f' <a href="{escape(a["href"])}" target="_blank" rel="noopener">More ↗</a>'
+            if a.get("href")
+            else ""
+        )
+        awards_parts.append(
+            f'<div class="milestone"><div class="y">{escape(a["year"])}</div>'
+            f'<div><strong>{escape(a["title"])}</strong>'
+            f'<div class="muted">{escape(a["detail"])}{link}</div></div></div>'
+        )
+    awards = "".join(awards_parts)
     editorial = "".join(
         f'<div class="milestone"><div class="y">{escape(e["year"])}</div><div><strong>{escape(e["title"])}</strong><div class="muted">{escape(e["detail"])}</div></div></div>'
         for e in EDITORIAL
