@@ -254,7 +254,7 @@ h2 {
   position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
-  background: var(--deep);
+  background: #fff;
   aspect-ratio: 4 / 3;
 }
 .visual-strip figure:first-child { aspect-ratio: auto; min-height: 100%; }

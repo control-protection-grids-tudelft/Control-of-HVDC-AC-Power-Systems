@@ -1264,8 +1264,8 @@ def build():
         </a>''')
 
     hero_img = rel(page, "assets/hero-hierarchical.jpg")
-    g_hier = rel(page, "assets/hero-hierarchical.jpg")
-    g_map = rel(page, "assets/hero-offshore-map.jpg")
+    g_hier = rel(page, "assets/graphics/hierarchical-control-card.jpg")
+    g_map = rel(page, "assets/graphics/offshore-wind-map-card.jpg")
     g_hil = rel(page, "assets/graphics/hil-novacor-card.jpg")
     body = f'''
   <section class="hero" style="--hero-image: url('{hero_img}')">
