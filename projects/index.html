@@ -10,136 +10,93 @@
   <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../index.html">Control of HVDC/AC Power Systems<span>TU Delft · IEPG</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <ul class="site-nav" id="site-nav">
-        <li><a href="../index.html">Home</a></li><li><a href="../team/index.html">Team</a></li><li><a href="../projects/index.html" aria-current="page">Projects</a></li><li><a href="../publications/index.html">Publications</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../news/index.html">News</a></li><li><a href="../awards.html">Awards</a></li><li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="page-hero"><div class="wrap">
+  <div id="site-header"></div>
+<section id="main-content" class="page-hero"><div class="wrap">
     <p class="sec-label">Projects</p>
-    <h1>Research programmes</h1>
-    <p class="lede">Current and completed projects with links to official consortium websites.</p>
+    <h1>Our work</h1>
+    <p class="lede">Current and completed projects with all information, including links to official consortium websites.</p>
   </div></section>
   <section class="block"><div class="wrap">
     <h2>Current</h2>
-    <div class="grid-3" style="margin:1rem 0 2.5rem">
-            <a class="card" href="../projects/interopera.html">
-              <div class="card-media logo-card"><img src="../assets/projects/interopera-card.jpg" alt="InterOPERA" /></div>
-              <div class="card-body">
-                <div class="tag">2023–2027 · Horizon Europe · Grant 101095874 · CL5-2</div>
-                <h3>InterOPERA</h3>
-                <p>Unlocking multi-vendor, multi-terminal, multi-purpose HVDC grids with grid-forming capability for large-scale offshore wind integration.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a>
-            <a class="card" href="../projects/inter-open.html">
-              <div class="card-media logo-card"><img src="../assets/projects/inter-open-card.jpg" alt="Inter-oPEn" /></div>
-              <div class="card-body">
-                <div class="tag">2024–2028 (1 June 2024 – 31 May 2028) · Horizon Europe MSCA Doctoral Network · G</div>
-                <h3>Inter-oPEn</h3>
-                <p>MSCA doctoral network integrating electrical engineering and legal research on PE-asset interoperability through openness.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a>
-            <a class="card" href="../projects/mitigate-harm.html">
-              <div class="card-media logo-card"><img src="../assets/projects/mitigate-harm-card.jpg" alt="MITIGATE-HARM" /></div>
-              <div class="card-body">
-                <div class="tag">2026–2029 · CETP Joint Call 2024 (CETP-2024-00024) ·</div>
-                <h3>MITIGATE-HARM</h3>
-                <p>Fast, open-source tools to identify, assess and mitigate converter-driven instabilities and harmonic resonances in hybrid AC/DC and multi-vendor HVDC grids.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a>
-            <a class="card" href="../projects/harmony.html">
-              <div class="card-media logo-card"><img src="../assets/projects/harmony-card.jpg" alt="HARMONY" /></div>
-              <div class="card-body">
-                <div class="tag">2023–2026 · CRESYM (TU Delft, TenneT, Swissgrid)</div>
-                <h3>HARMONY</h3>
-                <p>Open-source mathematical framework for harmonic stability assessment of PE-penetrated hybrid AC/DC systems — OPF, dynamic phasors and impedance methods in secon…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a>
-            <a class="card" href="../projects/prosecco.html">
-              <div class="card-media logo-card"><img src="../assets/projects/prosecco-card.jpg" alt="PROSECCO" /></div>
-              <div class="card-body">
-                <div class="tag">2024–2028 (1 July 2024 – 30 June 2028) · Horizon Europe · Grant 101160687</div>
-                <h3>PROSECCO</h3>
-                <p>Maturing hybrid AC/DC grids through DC protection near converters and congestion management — with four European demonstrators.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a>
-            <a class="card" href="../projects/safe-grid.html">
-              <div class="card-media logo-card"><img src="../assets/projects/safe-grid-card.jpg" alt="SAFE-GRID" /></div>
-              <div class="card-body">
-                <div class="tag">2024–2027 · NWO Veni (AES / TTW) · supported by Tenn</div>
-                <h3>SAFE-GRID</h3>
-                <p>Standardised microsecond-scale adaptive MPC for PE converters in forthcoming multi-terminal HVDC grids.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a></div>
+    <div class="grid-3" style="margin:1rem 0 2.5rem" data-component="project-cards">
+<script type="application/json">
+[
+  {
+    "name": "InterOPERA",
+    "tag": "2023–2027 · Horizon Europe · Grant 101095874 · CL5-2",
+    "image": "assets/projects/interopera-card.jpg",
+    "url": "projects/interopera.html",
+    "summary": "Unlocking multi-vendor, multi-terminal, multi-purpose HVDC grids with grid-forming capability for large-scale offshore wind integration.…"
+  },
+  {
+    "name": "Inter-oPEn",
+    "tag": "2024–2028 · Horizon Europe MSCA Doctoral Network · G",
+    "image": "assets/projects/inter-open-card.jpg",
+    "url": "projects/inter-open.html",
+    "summary": "MSCA doctoral network integrating electrical engineering and legal research on PE-asset interoperability through openness.…"
+  },
+  {
+    "name": "MITIGATE-HARM",
+    "tag": "2026–2029 · CETP Joint Call 2024 (CETP-2024-00024) ·",
+    "image": "assets/projects/mitigate-harm-card.jpg",
+    "url": "projects/mitigate-harm.html",
+    "summary": "Fast, open-source tools to identify, assess and mitigate converter-driven instabilities and harmonic resonances in hybrid AC/DC and multi-vendor HVDC grids.…"
+  },
+  {
+    "name": "HARMONY",
+    "tag": "2023–2026 · CRESYM (TU Delft, TenneT, Swissgrid)",
+    "image": "assets/projects/harmony-card.jpg",
+    "url": "projects/harmony.html",
+    "summary": "Open-source mathematical framework for harmonic stability assessment of PE-penetrated hybrid AC/DC systems — OPF, dynamic phasors and impedance methods in secon…"
+  },
+  {
+    "name": "PROSECCO",
+    "tag": "2024–2028 · Horizon Europe · Grant 101160687",
+    "image": "assets/projects/prosecco-card.jpg",
+    "url": "projects/prosecco.html",
+    "summary": "Maturing hybrid AC/DC grids through DC protection near converters and congestion management — with four European demonstrators.…"
+  },
+  {
+    "name": "SAFE-GRID",
+    "tag": "2024–2027 · NWO Veni (AES / TTW) · supported by Tenn",
+    "image": "assets/projects/safe-grid-card.jpg",
+    "url": "projects/safe-grid.html",
+    "summary": "Standardised microsecond-scale adaptive MPC for PE converters in forthcoming multi-terminal HVDC grids.…"
+  }
+]
+</script>
+</div>
     <h2>Completed</h2>
-    <div class="grid-3" style="margin-top:1rem">
-            <a class="card" href="../projects/sunrise.html">
-              <div class="card-media logo-card"><img src="../assets/projects/sunrise-card.jpg" alt="SUNRISE" /></div>
-              <div class="card-body">
-                <div class="tag">2023–2025 · Horizon Europe WIDERA · Grant 101079200</div>
-                <h3>SUNRISE</h3>
-                <p>Building research capacity in Serbia and the region for RES integration using real-time simulation (OPAL-RT, RTDS), MOOC training and hybrid AC/DC studies.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a>
-            <a class="card" href="../projects/biger-explore.html">
-              <div class="card-media logo-card"><img src="../assets/projects/biger-explore-card.jpg" alt="BiGER Explore" /></div>
-              <div class="card-body">
-                <div class="tag">2023–2024 · CRESYM</div>
-                <h3>BiGER Explore</h3>
-                <p>Open use-cases and state-of-the-art methods to bridge EMT and RMS for converter-driven stability in PE-rich grids.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a>
-            <a class="card" href="../projects/easy-res.html">
-              <div class="card-media logo-card"><img src="../assets/projects/easy-res-card.jpg" alt="EASY-RES" /></div>
-              <div class="card-body">
-                <div class="tag">2018–2021 · Horizon 2020 · Grant 764090</div>
-                <h3>EASY-RES</h3>
-                <p>Making distributed RES grid-friendly providers of ancillary services — virtual inertia, frequency support, harmonics filtering and viable business models.…</p>
-                <span class="more">Open project →</span>
-              </div>
-            </a></div>
+    <div class="grid-3" style="margin-top:1rem" data-component="project-cards">
+<script type="application/json">
+[
+  {
+    "name": "SUNRISE",
+    "tag": "2023–2025 · Horizon Europe WIDERA · Grant 101079200",
+    "image": "assets/projects/sunrise-card.jpg",
+    "url": "projects/sunrise.html",
+    "summary": "Building research capacity in Serbia and the region for RES integration using real-time simulation (OPAL-RT, RTDS), MOOC training and hybrid AC/DC studies.…"
+  },
+  {
+    "name": "BiGER Explore",
+    "tag": "2023–2024 · CRESYM",
+    "image": "assets/projects/biger-explore-card.jpg",
+    "url": "projects/biger-explore.html",
+    "summary": "Open use-cases and state-of-the-art methods to bridge EMT and RMS for converter-driven stability in PE-rich grids.…"
+  },
+  {
+    "name": "EASY-RES",
+    "tag": "2018–2021 · Horizon 2020 · Grant 764090",
+    "image": "assets/projects/easy-res-card.jpg",
+    "url": "projects/easy-res.html",
+    "summary": "Making distributed RES grid-friendly providers of ancillary services — virtual inertia, frequency support, harmonics filtering and viable business models.…"
+  }
+]
+</script>
+</div>
   </div></section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="brand-font">Control of HVDC/AC Power Systems</div>
-        Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="../team/index.html">Team</a></li>
-          <li><a href="../projects/index.html">Projects</a></li>
-          <li><a href="../publications/index.html">Publications</a></li>
-          <li><a href="../teaching.html">Teaching</a></li>
-          <li><a href="../portfolio/index.html">Open-source portfolio</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:A.Lekic@tudelft.nl">A.Lekic@tudelft.nl</a></li>
-          <li>+31 15 27 82461</li>
-          <li>Room 36.LB 03.210</li>
-          <li><a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/site.js"></script>
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
 </body>
 </html>

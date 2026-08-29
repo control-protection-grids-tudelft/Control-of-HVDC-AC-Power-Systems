@@ -10,17 +10,8 @@
   <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../index.html">Control of HVDC/AC Power Systems<span>TU Delft · IEPG</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <ul class="site-nav" id="site-nav">
-        <li><a href="../index.html">Home</a></li><li><a href="../team/index.html">Team</a></li><li><a href="../projects/index.html">Projects</a></li><li><a href="../publications/index.html">Publications</a></li><li><a href="../portfolio/index.html" aria-current="page">Portfolio</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../news/index.html">News</a></li><li><a href="../awards.html">Awards</a></li><li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="page-hero"><div class="wrap">
+  <div id="site-header"></div>
+<section id="main-content" class="page-hero"><div class="wrap">
     <div class="breadcrumbs"><a href="../portfolio/index.html">Portfolio</a> / PACS</div>
     <p class="sec-label">Hardware · Product · PROSECCO demonstrator</p>
     <h1>PACS</h1>
@@ -28,7 +19,7 @@
   </div></section>
   <section class="block"><div class="wrap detail-grid">
     <aside>
-      <div class="portfolio-hero-img" style="margin:0"><img src="../assets/portfolio/pacs.jpg" alt="PACS" /></div>
+      <div class="portfolio-hero-img" style="margin:0"><img src="../assets/portfolio/pacs.jpg" alt="PACS"  loading="lazy"/></div>
       <dl class="side-meta">
         <dt>Category</dt><dd>Hardware</dd>
         <dt>Maturity</dt><dd>PROSECCO demonstrator</dd>
@@ -47,33 +38,7 @@
     </div>
   </div></section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="brand-font">Control of HVDC/AC Power Systems</div>
-        Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="../team/index.html">Team</a></li>
-          <li><a href="../projects/index.html">Projects</a></li>
-          <li><a href="../publications/index.html">Publications</a></li>
-          <li><a href="../teaching.html">Teaching</a></li>
-          <li><a href="../portfolio/index.html">Open-source portfolio</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:A.Lekic@tudelft.nl">A.Lekic@tudelft.nl</a></li>
-          <li>+31 15 27 82461</li>
-          <li>Room 36.LB 03.210</li>
-          <li><a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/site.js"></script>
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
 </body>
 </html>

@@ -1,189 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home · HVDC/AC Control · TU Delft</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/site.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="wrap nav-inner">
-      <a class="logo" href="index.html">Control of HVDC/AC Power Systems<span>TU Delft · IEPG</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <ul class="site-nav" id="site-nav">
-        <li><a href="index.html" aria-current="page">Home</a></li><li><a href="team/index.html">Team</a></li><li><a href="projects/index.html">Projects</a></li><li><a href="publications/index.html">Publications</a></li><li><a href="portfolio/index.html">Portfolio</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="news/index.html">News</a></li><li><a href="awards.html">Awards</a></li><li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="hero" style="--hero-image: url('assets/hero-hierarchical.jpg')">
+<body style="overscroll-behavior-x: auto;">
+  <div id="site-header"></div>
+<section id="main-content" class="hero" style="background-image: linear-gradient(105deg, rgba(6, 24, 32, 0.88) 26%, rgba(6, 24, 32, 0.42) 58%, rgba(11, 58, 69, 0.55) 100%), url('assets/hero-grid-connector.jpg');">
     <div class="wrap hero-inner">
       <p class="eyebrow">TU Delft · IEPG · ESE</p>
       <h1>Control of HVDC/AC Power Systems</h1>
       <p class="lede">Interoperable multi-vendor HVDC grids, converter control &amp; protection, and open tools for hybrid AC/DC systems.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="projects/index.html">Explore projects</a>
-        <a class="btn btn-ghost" href="portfolio/index.html">Open-source portfolio</a>
+      <div class="cta-row" id="hero-cta">
+        <a class="btn btn-primary" href="#projects">Projects</a>
+        <a class="btn btn-ghost" href="#focus">Focus</a>
+        <a class="btn btn-ghost" href="#team">Team</a>
+        <a class="btn btn-ghost" href="#news">News</a>
+        <a class="btn btn-ghost" href="#tools">Open-source portfolio</a>
       </div>
     </div>
   </section>
 
-  <section class="block">
+  <nav id="section-nav" class="section-nav wrap"></nav>
+
+  <section id="focus" class="block">
     <div class="wrap">
       <p class="sec-label">Research focus</p>
       <h2>Interoperable control &amp; protection for PE-dominated grids</h2>
-      <p class="lede-body">Led by Assoc. Prof. Aleksandra Lekić. Circuit theory, nonlinear control, harmonic stability, and real-time validation for multi-terminal HVDC systems — with a growing open-source portfolio on GitHub.</p>
+      <p class="lede-body">
+    Led by Assoc. Prof. Aleksandra Lekić (PI). 
+    <br>
+    <br>
+    Circuit theory, nonlinear control, harmonic stability, and real-time validation for multi-terminal HVDC systems — with a growing open-source portfolio on GitHub.
+</p>
       <div class="cta-row">
-        <a class="btn btn-dark" href="team/aleksandra-lekic.html">Meet the PI</a>
+        <a class="btn btn-dark" href="team/aleksandra-lekic.html">Meet Prof. Aleksandra Lekić</a>
         <a class="btn btn-outline" href="publications/index.html">Publications</a>
         <a class="btn btn-outline" href="awards.html">Awards &amp; milestones</a>
       </div>
     </div>
   </section>
 
-  <section class="block strip-dark">
+  <section id="projects" class="block strip-dark">
     <div class="wrap">
       <p class="sec-label">Projects</p>
       <h2>Current programmes</h2>
-      <p class="lede-body">Each project has its own page with consortium links and team members.</p>
-      <div class="grid-3">
-        <a class="card" href="projects/interopera.html">
-          <div class="card-media logo-card"><img src="assets/projects/interopera-card.jpg" alt="InterOPERA" /></div>
-          <div class="card-body">
-            <div class="tag">Current · 2023–2027</div>
-            <h3>InterOPERA</h3>
-            <p>Unlocking multi-vendor, multi-terminal, multi-purpose HVDC grids with grid-forming capability for large-scale offshore wind integration.…</p>
-            <span class="more">Project page →</span>
-          </div>
-        </a>
-        <a class="card" href="projects/inter-open.html">
-          <div class="card-media logo-card"><img src="assets/projects/inter-open-card.jpg" alt="Inter-oPEn" /></div>
-          <div class="card-body">
-            <div class="tag">Current · 2024–2028 (1 June 2024 – 31 May 2028)</div>
-            <h3>Inter-oPEn</h3>
-            <p>MSCA doctoral network integrating electrical engineering and legal research on PE-asset interoperability through openness.…</p>
-            <span class="more">Project page →</span>
-          </div>
-        </a>
-        <a class="card" href="projects/mitigate-harm.html">
-          <div class="card-media logo-card"><img src="assets/projects/mitigate-harm-card.jpg" alt="MITIGATE-HARM" /></div>
-          <div class="card-body">
-            <div class="tag">Current · 2026–2029</div>
-            <h3>MITIGATE-HARM</h3>
-            <p>Fast, open-source tools to identify, assess and mitigate converter-driven instabilities and harmonic resonances in hybrid AC/DC and multi-ve…</p>
-            <span class="more">Project page →</span>
-          </div>
-        </a>
-        <a class="card" href="projects/harmony.html">
-          <div class="card-media logo-card"><img src="assets/projects/harmony-card.jpg" alt="HARMONY" /></div>
-          <div class="card-body">
-            <div class="tag">Current · 2023–2026</div>
-            <h3>HARMONY</h3>
-            <p>Open-source mathematical framework for harmonic stability assessment of PE-penetrated hybrid AC/DC systems — OPF, dynamic phasors and impeda…</p>
-            <span class="more">Project page →</span>
-          </div>
-        </a>
-        <a class="card" href="projects/prosecco.html">
-          <div class="card-media logo-card"><img src="assets/projects/prosecco-card.jpg" alt="PROSECCO" /></div>
-          <div class="card-body">
-            <div class="tag">Current · 2024–2028 (1 July 2024 – 30 June 2028)</div>
-            <h3>PROSECCO</h3>
-            <p>Maturing hybrid AC/DC grids through DC protection near converters and congestion management — with four European demonstrators.…</p>
-            <span class="more">Project page →</span>
-          </div>
-        </a>
-        <a class="card" href="projects/safe-grid.html">
-          <div class="card-media logo-card"><img src="assets/projects/safe-grid-card.jpg" alt="SAFE-GRID" /></div>
-          <div class="card-body">
-            <div class="tag">Current · 2024–2027</div>
-            <h3>SAFE-GRID</h3>
-            <p>Standardised microsecond-scale adaptive MPC for PE converters in forthcoming multi-terminal HVDC grids.…</p>
-            <span class="more">Project page →</span>
-          </div>
-        </a></div>
-      <p style="margin-top:1.5rem"><a class="btn btn-ghost" href="projects/index.html">All projects including completed →</a></p>
+      <p class="lede-body">See below our current programmes, and learn more about each one's consortia and team members.</p>
+      <div class="grid-3" data-component="project-cards">
+<script type="application/json">
+[
+  {
+    "name": "InterOPERA",
+    "tag": "Current · 2023–2027",
+    "image": "assets/projects/interopera-card.jpg",
+    "url": "projects/interopera.html",
+    "summary": "Unlocking multi-vendor, multi-terminal, multi-purpose HVDC grids with grid-forming capability for large-scale offshore wind integration.…"
+  },
+  {
+    "name": "Inter-oPEn",
+    "tag": "Current · 2024–2028",
+    "image": "assets/projects/inter-open-card.jpg",
+    "url": "projects/inter-open.html",
+    "summary": "MSCA doctoral network integrating electrical engineering and legal research on PE-asset interoperability through openness.…"
+  },
+  {
+    "name": "MITIGATE-HARM",
+    "tag": "Current · 2026–2029",
+    "image": "assets/projects/mitigate-harm-card.jpg",
+    "url": "projects/mitigate-harm.html",
+    "summary": "Fast, open-source tools to identify, assess and mitigate converter-driven instabilities and harmonic resonances in hybrid AC/DC and multi-ve…"
+  },
+  {
+    "name": "HARMONY",
+    "tag": "Current · 2023–2026",
+    "image": "assets/projects/harmony-card.jpg",
+    "url": "projects/harmony.html",
+    "summary": "Open-source mathematical framework for harmonic stability assessment of PE-penetrated hybrid AC/DC systems — OPF, dynamic phasors and impeda…"
+  },
+  {
+    "name": "PROSECCO",
+    "tag": "Current · 2024–2028",
+    "image": "assets/projects/prosecco-card.jpg",
+    "url": "projects/prosecco.html",
+    "summary": "Maturing hybrid AC/DC grids through DC protection near converters and congestion management — with four European demonstrators.…"
+  },
+  {
+    "name": "SAFE-GRID",
+    "tag": "Current · 2024–2027",
+    "image": "assets/projects/safe-grid-card.jpg",
+    "url": "projects/safe-grid.html",
+    "summary": "Standardised microsecond-scale adaptive MPC for PE converters in forthcoming multi-terminal HVDC grids.…"
+  }
+]
+</script>
+</div>
+      <p style="margin-top:1.5rem"><a class="btn btn-ghost" href="projects/index.html">See All Projects →</a></p>
     </div>
   </section>
 
-  <section class="block">
+  <section id="team" class="block">
     <div class="wrap">
       <p class="sec-label">Team</p>
-      <h2>Researchers</h2>
-      <p class="lede-body">Current researchers — see the team page for alumni and graduated MSc students.</p>
-      <div class="grid-4">
-        <a class="card person-card" href="team/aleksandra-lekic.html">
-          <div class="card-media"><img src="assets/team/aleksandra-lekic.jpg" alt="Dr. Dipl.-Ing. Aleksandra Lekić" /></div>
-          <div class="card-body">
-            <h3>Aleksandra Lekić</h3>
-            <p>Associate Professor · Group lead · All programmes</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a>
-        <a class="card person-card" href="team/rohan-kamat-tarcar.html">
-          <div class="card-media"><img src="assets/team/rohan-kamat-tarcar.jpg" alt="Rohan Kamat Tarcar" /></div>
-          <div class="card-body">
-            <h3>Rohan Kamat Tarcar</h3>
-            <p>PhD researcher · InterOPERA</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a>
-        <a class="card person-card" href="team/arjita-pal.html">
-          <div class="card-media"><img src="assets/team/arjita-pal.jpg" alt="Dr. Arjita Pal" /></div>
-          <div class="card-body">
-            <h3>Arjita Pal</h3>
-            <p>Postdoctoral researcher · InterOPERA</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a>
-        <a class="card person-card" href="team/saif-alsarayreh.html">
-          <div class="card-media"><img src="assets/team/saif-alsarayreh.jpg" alt="Saif Alsarayreh" /></div>
-          <div class="card-body">
-            <h3>Saif Alsarayreh</h3>
-            <p>PhD researcher · HARMONY</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a>
-        <a class="card person-card" href="team/haixiao-li.html">
-          <div class="card-media"><img src="assets/team/haixiao-li.jpg" alt="Dr. Haixiao Li" /></div>
-          <div class="card-body">
-            <h3>Haixiao Li</h3>
-            <p>Postdoctoral researcher · HARMONY</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a>
-        <a class="card person-card" href="team/sunny-singh.html">
-          <div class="card-media"><img src="assets/team/sunny-singh.jpg" alt="Dr. Sunny Singh" /></div>
-          <div class="card-body">
-            <h3>Sunny Singh</h3>
-            <p>Postdoctoral researcher · SAFE-GRID</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a>
-        <a class="card person-card" href="team/tuanku-badzlin-hashfi.html">
-          <div class="card-media"><img src="assets/team/tuanku-badzlin-hashfi.jpg" alt="Tuanku Badzlin Hashfi" /></div>
-          <div class="card-body">
-            <h3>Tuanku Badzlin Hashfi</h3>
-            <p>PhD researcher · Inter-oPEn</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a>
-        <a class="card person-card" href="team/victor-reyes-dreke.html">
-          <div class="card-media"><img src="assets/team/victor-reyes-dreke.jpg" alt="Dr. Victor Daniel Reyes Dreke" /></div>
-          <div class="card-body">
-            <h3>Victor Daniel Reyes Dreke</h3>
-            <p>Postdoctoral researcher · PROSECCO</p>
-            <span class="more">Profile →</span>
-          </div>
-        </a></div>
-      <p style="margin-top:1.25rem"><a class="btn btn-outline" href="team/index.html">Full team →</a></p>
+      <h2>Meet The Team</h2>
+      <p class="lede-body">Current researchers — see the Full Team page for alumni and graduated MSc students.</p>
+      <div class="grid-4" data-component="person-cards">
+<script type="application/json">
+[
+  {
+    "name": "Dr. Dipl.-Ing. Aleksandra Lekić",
+    "role": "Associate Professor",
+    "photo": "assets/team/aleksandra-lekic.jpg",
+    "url": "team/aleksandra-lekic.html",
+    "project": "Group lead"
+  },
+  {
+    "name": "Rohan Kamat Tarcar",
+    "role": "PhD researcher",
+    "photo": "assets/team/rohan-kamat-tarcar.jpg",
+    "url": "team/rohan-kamat-tarcar.html",
+    "project": "InterOPERA"
+  },
+  {
+    "name": "Arjita Pal",
+    "role": "Postdoctoral researcher",
+    "photo": "assets/team/arjita-pal.jpg",
+    "url": "team/arjita-pal.html",
+    "project": "InterOPERA"
+  },
+  {
+    "name": "Saif Alsarayreh",
+    "role": "PhD researcher",
+    "photo": "assets/team/saif-alsarayreh.jpg",
+    "url": "team/saif-alsarayreh.html",
+    "project": "HARMONY"
+  },
+  {
+    "name": "Haixiao Li",
+    "role": "Postdoctoral researcher",
+    "photo": "assets/team/haixiao-li.jpg",
+    "url": "team/haixiao-li.html",
+    "project": "HARMONY"
+  },
+  {
+    "name": "Sunny Singh",
+    "role": "Postdoctoral researcher",
+    "photo": "assets/team/sunny-singh.jpg",
+    "url": "team/sunny-singh.html",
+    "project": "SAFE-GRID"
+  },
+  {
+    "name": "Tuanku Badzlin Hashfi",
+    "role": "PhD researcher",
+    "photo": "assets/team/tuanku-badzlin-hashfi.jpg",
+    "url": "team/tuanku-badzlin-hashfi.html",
+    "project": "Inter-oPEn"
+  },
+  {
+    "name": "Victor Daniel Reyes Dreke",
+    "role": "Postdoctoral researcher",
+    "photo": "assets/team/victor-reyes-dreke.jpg",
+    "url": "team/victor-reyes-dreke.html",
+    "project": "PROSECCO"
+  }
+]
+</script>
+</div>
+      <p style="margin-top:1.25rem"><a class="btn btn-outline" href="team/index.html">See Full Team →</a></p>
     </div>
   </section>
 
-  <section class="block" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <section id="news" class="block" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
     <div class="wrap">
       <p class="sec-label">News</p>
       <h2>What is happening</h2>
@@ -220,98 +210,64 @@
     </div>
   </section>
 
-  <section class="block">
+  <section id="tools" class="block">
     <div class="wrap">
       <p class="sec-label">Open source &amp; portfolio</p>
       <h2>Tools from the Interoperability Program</h2>
       <p class="lede-body">Software libraries on GitHub plus hardware products (PACS, DCGC, DCSS) from the Interoperability Program.</p>
-      <div class="grid-3">
-        <a class="card" href="portfolio/harmony-toolbox.html">
-          <div class="card-media"><img src="assets/portfolio/harmony-toolbox.jpg" alt="Harmony toolbox" /></div>
-          <div class="card-body">
-            <div class="tag">Software · Open source</div>
-            <h3>Harmony toolbox</h3>
-            <p>TRL 3–4</p>
-            <span class="more">Details →</span>
-          </div>
-        </a>
-        <a class="card" href="portfolio/acdc-opflow.html">
-          <div class="card-media"><img src="assets/portfolio/acdc-opflow.jpg" alt="ACDC-OpFlow" /></div>
-          <div class="card-body">
-            <div class="tag">Software · Open source</div>
-            <h3>ACDC-OpFlow</h3>
-            <p>TRL 4–5</p>
-            <span class="more">Details →</span>
-          </div>
-        </a>
-        <a class="card" href="portfolio/dqsym.html">
-          <div class="card-media"><img src="assets/portfolio/dqsym.jpg" alt="DQsym" /></div>
-          <div class="card-body">
-            <div class="tag">Software · Open source</div>
-            <h3>DQsym</h3>
-            <p>TRL 4–5</p>
-            <span class="more">Details →</span>
-          </div>
-        </a>
-        <a class="card" href="portfolio/hvdc-rtds-models.html">
-          <div class="card-media"><img src="assets/portfolio/hvdc-rtds-models.jpg" alt="HVDC RTDS models" /></div>
-          <div class="card-body">
-            <div class="tag">Software · RSCAD/RTDS library</div>
-            <h3>HVDC RTDS models</h3>
-            <p>One-of-a-kind library</p>
-            <span class="more">Details →</span>
-          </div>
-        </a>
-        <a class="card" href="portfolio/rtds-nn-models.html">
-          <div class="card-media"><img src="assets/portfolio/rtds-nn-models.jpg" alt="RTDS neural-network libraries" /></div>
-          <div class="card-body">
-            <div class="tag">Software · RSCAD/RTDS</div>
-            <h3>RTDS neural-network libraries</h3>
-            <p>One-of-a-kind library</p>
-            <span class="more">Details →</span>
-          </div>
-        </a>
-        <a class="card" href="portfolio/sunrise-mpc.html">
-          <div class="card-media"><img src="assets/portfolio/sunrise-mpc.jpg" alt="SUNRISE MPC (RTDS)" /></div>
-          <div class="card-body">
-            <div class="tag">Software · RSCAD/RTDS</div>
-            <h3>SUNRISE MPC (RTDS)</h3>
-            <p>Library</p>
-            <span class="more">Details →</span>
-          </div>
-        </a></div>
-      <p style="margin-top:1.25rem"><a class="btn btn-dark" href="portfolio/index.html">Full portfolio →</a>
+      <div class="grid-3" data-component="portfolio-cards">
+<script type="application/json">
+[
+  {
+    "name": "Harmony toolbox",
+    "tag": "Software · Open source",
+    "image": "assets/portfolio/harmony-toolbox.jpg",
+    "url": "portfolio/harmony-toolbox.html",
+    "summary": "TRL 3–4"
+  },
+  {
+    "name": "ACDC-OpFlow",
+    "tag": "Software · Open source",
+    "image": "assets/portfolio/acdc-opflow.jpg",
+    "url": "portfolio/acdc-opflow.html",
+    "summary": "TRL 4–5"
+  },
+  {
+    "name": "DQsym",
+    "tag": "Software · Open source",
+    "image": "assets/portfolio/dqsym.jpg",
+    "url": "portfolio/dqsym.html",
+    "summary": "TRL 4–5"
+  },
+  {
+    "name": "HVDC RTDS models",
+    "tag": "Software · RSCAD/RTDS library",
+    "image": "assets/portfolio/hvdc-rtds-models.jpg",
+    "url": "portfolio/hvdc-rtds-models.html",
+    "summary": "One-of-a-kind library"
+  },
+  {
+    "name": "RTDS neural-network libraries",
+    "tag": "Software · RSCAD/RTDS",
+    "image": "assets/portfolio/rtds-nn-models.jpg",
+    "url": "portfolio/rtds-nn-models.html",
+    "summary": "One-of-a-kind library"
+  },
+  {
+    "name": "SUNRISE MPC (RTDS)",
+    "tag": "Software · RSCAD/RTDS",
+    "image": "assets/portfolio/sunrise-mpc.jpg",
+    "url": "portfolio/sunrise-mpc.html",
+    "summary": "Library"
+  }
+]
+</script>
+</div>
+      <p style="margin-top:1.25rem"><a class="btn btn-dark" href="portfolio/index.html">See our full portfolio →</a>
       <a class="btn btn-outline" href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org ↗</a></p>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="brand-font">Control of HVDC/AC Power Systems</div>
-        Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="team/index.html">Team</a></li>
-          <li><a href="projects/index.html">Projects</a></li>
-          <li><a href="publications/index.html">Publications</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="portfolio/index.html">Open-source portfolio</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:A.Lekic@tudelft.nl">A.Lekic@tudelft.nl</a></li>
-          <li>+31 15 27 82461</li>
-          <li>Room 36.LB 03.210</li>
-          <li><a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="js/site.js"></script>
-</body>
-</html>
+  <div id="site-footer"></div>
+  <script src="./js/components.js"></script>
+</body></html>

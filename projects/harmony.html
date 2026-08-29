@@ -10,17 +10,8 @@
   <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../index.html">Control of HVDC/AC Power Systems<span>TU Delft · IEPG</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <ul class="site-nav" id="site-nav">
-        <li><a href="../index.html">Home</a></li><li><a href="../team/index.html">Team</a></li><li><a href="../projects/index.html" aria-current="page">Projects</a></li><li><a href="../publications/index.html">Publications</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../news/index.html">News</a></li><li><a href="../awards.html">Awards</a></li><li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="page-hero"><div class="wrap">
+  <div id="site-header"></div>
+<section id="main-content" class="page-hero"><div class="wrap">
     <div class="breadcrumbs"><a href="../projects/index.html">Projects</a> / HARMONY</div>
     <p class="sec-label">Current · 2023–2026</p>
     <h1>HARMONY</h1>
@@ -29,10 +20,10 @@
   <section class="block"><div class="wrap detail-grid">
     <aside>
       <div class="portrait logo-card">
-        <img src="../assets/projects/harmony-cresym.png" alt="HARMONY logo" />
+        <img src="../assets/projects/harmony-cresym.png" alt="HARMONY logo"  loading="lazy"/>
       </div>
       <dl class="side-meta">
-        <dt>Role at TU Delft</dt><dd>Principal investigator</dd>
+        <dt>TU Delft contribution</dt><dd>Principal investigator</dd>
         <dt>Funder</dt><dd>CRESYM (TU Delft, TenneT, Swissgrid)</dd>
         <dt>Period</dt><dd>2023–2026</dd>
       </dl>
@@ -51,42 +42,70 @@
       <p>Aleksandra Lekić is PI. TU Delft leads mathematical framework design, component spectral models, harmonic stability solver, toolbox architecture and funding acquisition, with PhD/postdoc contributions on OPF, DQsym and software.</p>
       <h2>Related portfolio</h2><ul><li><a href="../portfolio/harmony-toolbox.html">Harmony toolbox</a></li><li><a href="../portfolio/acdc-opflow.html">ACDC-OpFlow</a></li><li><a href="../portfolio/dqsym.html">DQsym</a></li></ul>
       <h2>Team on this project</h2>
-      <div class="grid-3" style="margin-top:1rem"><a class="card person-card" href="../team/saif-alsarayreh.html"><div class="card-media"><img src="../assets/team/saif-alsarayreh.jpg" alt="" /></div><div class="card-body"><h3>Saif Alsarayreh</h3><p>PhD researcher</p></div></a><a class="card person-card" href="../team/haixiao-li.html"><div class="card-media"><img src="../assets/team/haixiao-li.jpg" alt="" /></div><div class="card-body"><h3>Dr. Haixiao Li</h3><p>Postdoctoral researcher</p></div></a><a class="card person-card" href="../team/aleksandra-lekic.html"><div class="card-media"><img src="../assets/team/aleksandra-lekic.jpg" alt="" /></div><div class="card-body"><h3>Dr. Dipl.-Ing. Aleksandra Lekić</h3><p>Associate Professor · Group lead</p></div></a><a class="card person-card" href="../team/robert-dimitrovski.html"><div class="card-media"><img src="../assets/team/robert-dimitrovski.jpg" alt="" /></div><div class="card-body"><h3>Dr. Robert Dimitrovski</h3><p>Postdoctoral researcher · TenneT / TU Delft</p></div></a><a class="card person-card" href="../team/azadeh-kermansaravi.html"><div class="card-media"><img src="../assets/team/azadeh-kermansaravi.jpg" alt="" /></div><div class="card-body"><h3>Dr. Azadeh Kermansaravi</h3><p>Postdoctoral researcher (alumni)</p></div></a><a class="card person-card" href="../team/debottam-mukherjee.html"><div class="card-media"><img src="../assets/team/debottam-mukherjee.jpg" alt="" /></div><div class="card-body"><h3>Dr. Debottam Mukherjee</h3><p>Postdoctoral researcher (alumni)</p></div></a><a class="card person-card" href="../team/dongyu-li.html"><div class="card-media"><img src="../assets/team/dongyu-li.jpg" alt="" /></div><div class="card-body"><h3>Dr. Dongyu Li</h3><p>Postdoctoral researcher (alumni)</p></div></a><a class="card person-card" href="../team/sounak-nandi.html"><div class="card-media"><img src="../assets/team/sounak-nandi.jpg" alt="" /></div><div class="card-body"><h3>Dr. Sounak Nandi</h3><p>Postdoctoral researcher (alumni)</p></div></a></div>
+      <div class="grid-3" style="margin-top:1rem" data-component="person-cards">
+<script type="application/json">
+[
+  {
+    "name": "Dr. Dipl.-Ing. Aleksandra Lekić",
+    "role": "Associate Professor",
+    "photo": "assets/team/aleksandra-lekic.jpg",
+    "url": "team/aleksandra-lekic.html",
+    "project": "Group lead"
+  },
+  {
+    "name": "Saif Alsarayreh",
+    "role": "PhD researcher",
+    "photo": "assets/team/saif-alsarayreh.jpg",
+    "url": "team/saif-alsarayreh.html"
+  },
+  {
+    "name": "Dr. Haixiao Li",
+    "role": "Postdoctoral researcher",
+    "photo": "assets/team/haixiao-li.jpg",
+    "url": "team/haixiao-li.html"
+  },
+  {
+    "name": "Dr. Robert Dimitrovski",
+    "role": "Postdoctoral researcher",
+    "photo": "assets/team/robert-dimitrovski.jpg",
+    "url": "team/robert-dimitrovski.html",
+    "project": "TenneT / TU Delft"
+  },
+  {
+    "name": "Dr. Azadeh Kermansaravi",
+    "role": "Postdoctoral researcher (alumni)",
+    "photo": "assets/team/azadeh-kermansaravi.jpg",
+    "url": "team/azadeh-kermansaravi.html"
+  },
+  {
+    "name": "Dr. Debottam Mukherjee",
+    "role": "Postdoctoral researcher (alumni)",
+    "photo": "assets/team/debottam-mukherjee.jpg",
+    "url": "team/debottam-mukherjee.html"
+  },
+  {
+    "name": "Dr. Dongyu Li",
+    "role": "Postdoctoral researcher (alumni)",
+    "photo": "assets/team/dongyu-li.jpg",
+    "url": "team/dongyu-li.html"
+  },
+  {
+    "name": "Dr. Sounak Nandi",
+    "role": "Postdoctoral researcher (alumni)",
+    "photo": "assets/team/sounak-nandi.jpg",
+    "url": "team/sounak-nandi.html"
+  }
+]
+</script>
+</div>
       <div class="link-row" style="margin-top:1.5rem">
-        <a class="btn btn-dark" href="../projects/index.html">All projects</a>
+        <a class="btn btn-outline" href="../projects/index.html">← All projects</a>
         <a class="btn btn-outline" href="../portfolio/index.html">Portfolio</a>
-        <a class="btn btn-outline" href="../news/index.html">News</a>
       </div>
     </div>
   </div></section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="brand-font">Control of HVDC/AC Power Systems</div>
-        Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="../team/index.html">Team</a></li>
-          <li><a href="../projects/index.html">Projects</a></li>
-          <li><a href="../publications/index.html">Publications</a></li>
-          <li><a href="../teaching.html">Teaching</a></li>
-          <li><a href="../portfolio/index.html">Open-source portfolio</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:A.Lekic@tudelft.nl">A.Lekic@tudelft.nl</a></li>
-          <li>+31 15 27 82461</li>
-          <li>Room 36.LB 03.210</li>
-          <li><a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/site.js"></script>
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
 </body>
 </html>

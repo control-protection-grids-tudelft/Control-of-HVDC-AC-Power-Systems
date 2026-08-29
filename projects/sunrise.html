@@ -10,17 +10,8 @@
   <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../index.html">Control of HVDC/AC Power Systems<span>TU Delft · IEPG</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <ul class="site-nav" id="site-nav">
-        <li><a href="../index.html">Home</a></li><li><a href="../team/index.html">Team</a></li><li><a href="../projects/index.html" aria-current="page">Projects</a></li><li><a href="../publications/index.html">Publications</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../news/index.html">News</a></li><li><a href="../awards.html">Awards</a></li><li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="page-hero"><div class="wrap">
+  <div id="site-header"></div>
+<section id="main-content" class="page-hero"><div class="wrap">
     <div class="breadcrumbs"><a href="../projects/index.html">Projects</a> / SUNRISE</div>
     <p class="sec-label">Completed · 2023–2025</p>
     <h1>SUNRISE</h1>
@@ -29,10 +20,10 @@
   <section class="block"><div class="wrap detail-grid">
     <aside>
       <div class="portrait logo-card">
-        <img src="../assets/projects/sunrise-picture.jpg" alt="SUNRISE logo" />
+        <img src="../assets/projects/sunrise-picture.jpg" alt="SUNRISE logo"  loading="lazy"/>
       </div>
       <dl class="side-meta">
-        <dt>Role at TU Delft</dt><dd>PI from TU Delft · WP3 lead</dd>
+        <dt>TU Delft contribution</dt><dd>PI from TU Delft · WP3 lead</dd>
         <dt>Funder</dt><dd>Horizon Europe WIDERA · Grant 101079200</dd>
         <dt>Period</dt><dd>2023–2025</dd>
       </dl>
@@ -51,42 +42,40 @@
       <p>Aleksandra Lekić: PI from TU Delft and WP3 lead. TU Delft team also includes Vaibhav Nougain and Aditya Shekhar (as listed on the official TU Delft SUNRISE page).</p>
       <h2>Related portfolio</h2><ul><li><a href="../portfolio/sunrise-mpc.html">SUNRISE MPC (RTDS)</a></li><li><a href="../portfolio/ieee-ies-mooc.html">IEEE IES MOOC model library</a></li><li><a href="../portfolio/hvdc-rtds-models.html">HVDC RTDS models</a></li></ul>
       <h2>Team on this project</h2>
-      <div class="grid-3" style="margin-top:1rem"><a class="card person-card" href="../team/aleksandra-lekic.html"><div class="card-media"><img src="../assets/team/aleksandra-lekic.jpg" alt="" /></div><div class="card-body"><h3>Dr. Dipl.-Ing. Aleksandra Lekić</h3><p>Associate Professor · Group lead</p></div></a><a class="card person-card" href="../team/vaibhav-nougain.html"><div class="card-media"><img src="../assets/team/vaibhav-nougain.jpg" alt="" /></div><div class="card-body"><h3>Dr. Vaibhav Nougain</h3><p>Postdoctoral researcher (alumni)</p></div></a><a class="card person-card" href="../team/aditya-shekhar.html"><div class="card-media"><img src="../assets/team/aditya-shekhar.jpg" alt="" /></div><div class="card-body"><h3>Dr.ir. Aditya Shekhar</h3><p>Assistant Professor · collaborator</p></div></a></div>
+      <div class="grid-3" style="margin-top:1rem" data-component="person-cards">
+<script type="application/json">
+[
+  {
+    "name": "Dr. Dipl.-Ing. Aleksandra Lekić",
+    "role": "Associate Professor",
+    "photo": "assets/team/aleksandra-lekic.jpg",
+    "url": "team/aleksandra-lekic.html",
+    "project": "Group lead"
+  },
+  {
+    "name": "Dr. Vaibhav Nougain",
+    "role": "Postdoctoral researcher (alumni)",
+    "photo": "assets/team/vaibhav-nougain.jpg",
+    "url": "team/vaibhav-nougain.html"
+  },
+  {
+    "name": "Dr.ir. Aditya Shekhar",
+    "role": "Assistant Professor",
+    "photo": "assets/team/aditya-shekhar.jpg",
+    "url": "team/aditya-shekhar.html",
+    "project": "collaborator"
+  }
+]
+</script>
+</div>
       <div class="link-row" style="margin-top:1.5rem">
-        <a class="btn btn-dark" href="../projects/index.html">All projects</a>
+        <a class="btn btn-outline" href="../projects/index.html">← All projects</a>
         <a class="btn btn-outline" href="../portfolio/index.html">Portfolio</a>
-        <a class="btn btn-outline" href="../news/index.html">News</a>
       </div>
     </div>
   </div></section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="brand-font">Control of HVDC/AC Power Systems</div>
-        Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="../team/index.html">Team</a></li>
-          <li><a href="../projects/index.html">Projects</a></li>
-          <li><a href="../publications/index.html">Publications</a></li>
-          <li><a href="../teaching.html">Teaching</a></li>
-          <li><a href="../portfolio/index.html">Open-source portfolio</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:A.Lekic@tudelft.nl">A.Lekic@tudelft.nl</a></li>
-          <li>+31 15 27 82461</li>
-          <li>Room 36.LB 03.210</li>
-          <li><a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/site.js"></script>
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
 </body>
 </html>

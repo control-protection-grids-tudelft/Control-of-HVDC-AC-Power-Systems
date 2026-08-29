@@ -10,17 +10,8 @@
   <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../index.html">Control of HVDC/AC Power Systems<span>TU Delft · IEPG</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <ul class="site-nav" id="site-nav">
-        <li><a href="../index.html">Home</a></li><li><a href="../team/index.html">Team</a></li><li><a href="../projects/index.html" aria-current="page">Projects</a></li><li><a href="../publications/index.html">Publications</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../teaching.html">Teaching</a></li><li><a href="../news/index.html">News</a></li><li><a href="../awards.html">Awards</a></li><li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="page-hero"><div class="wrap">
+  <div id="site-header"></div>
+<section id="main-content" class="page-hero"><div class="wrap">
     <div class="breadcrumbs"><a href="../projects/index.html">Projects</a> / InterOPERA</div>
     <p class="sec-label">Current · 2023–2027</p>
     <h1>InterOPERA</h1>
@@ -29,10 +20,10 @@
   <section class="block"><div class="wrap detail-grid">
     <aside>
       <div class="portrait logo-card">
-        <img src="../assets/projects/interopera.svg" alt="InterOPERA logo" />
+        <img src="../assets/projects/interopera.svg" alt="InterOPERA logo"  loading="lazy"/>
       </div>
       <dl class="side-meta">
-        <dt>Role at TU Delft</dt><dd>Co-lead from TU Delft</dd>
+        <dt>TU Delft contribution</dt><dd>Co-lead from TU Delft</dd>
         <dt>Funder</dt><dd>Horizon Europe · Grant 101095874 · CL5-2022-D3-01-09</dd>
         <dt>Period</dt><dd>2023–2027</dd>
       </dl>
@@ -51,42 +42,73 @@
       <p>TU Delft co-leads academic contributions, including offline and real-time SIL/HIL interaction studies of the multi-vendor demonstrator in PSCAD/EMTDC and RSCAD/RTDS, supporting future multi-vendor HVDC grid projects.</p>
       
       <h2>Team on this project</h2>
-      <div class="grid-3" style="margin-top:1rem"><a class="card person-card" href="../team/rohan-kamat-tarcar.html"><div class="card-media"><img src="../assets/team/rohan-kamat-tarcar.jpg" alt="" /></div><div class="card-body"><h3>Rohan Kamat Tarcar</h3><p>PhD researcher</p></div></a><a class="card person-card" href="../team/arjita-pal.html"><div class="card-media"><img src="../assets/team/arjita-pal.jpg" alt="" /></div><div class="card-body"><h3>Dr. Arjita Pal</h3><p>Postdoctoral researcher</p></div></a><a class="card person-card" href="../team/aleksandra-lekic.html"><div class="card-media"><img src="../assets/team/aleksandra-lekic.jpg" alt="" /></div><div class="card-body"><h3>Dr. Dipl.-Ing. Aleksandra Lekić</h3><p>Associate Professor · Group lead</p></div></a><a class="card person-card" href="../team/farzad-dehghan-marvasti.html"><div class="card-media"><img src="../assets/team/farzad-dehghan-marvasti.jpg" alt="" /></div><div class="card-body"><h3>Dr. Farzad Dehghan Marvasti</h3><p>Postdoctoral researcher (alumni)</p></div></a><a class="card person-card" href="../team/reza-bakhshi-jafarabadi.html"><div class="card-media"><img src="../assets/team/reza-bakhshi-jafarabadi.jpg" alt="" /></div><div class="card-body"><h3>Dr. Reza Bakhshi-Jafarabadi</h3><p>Postdoctoral researcher (alumni)</p></div></a><a class="card person-card" href="../team/ajay-shetgaonkar.html"><div class="card-media"><img src="../assets/team/ajay-shetgaonkar.jpg" alt="" /></div><div class="card-body"><h3>Dr. Ajay Shetgaonkar</h3><p>PhD graduate · Postdoc alumni</p></div></a><a class="card person-card" href="../team/marjan-popov.html"><div class="card-media"><img src="../assets/team/marjan-popov.jpg" alt="" /></div><div class="card-body"><h3>Prof. Dr. Marjan Popov</h3><p>Professor · collaborator</p></div></a><a class="card person-card" href="../team/remko-koornneef.html"><div class="card-media"><img src="../assets/team/remko-koornneef.jpg" alt="" /></div><div class="card-body"><h3>Remko Koornneef</h3><p>Laboratory engineer · collaborator</p></div></a></div>
+      <div class="grid-3" style="margin-top:1rem" data-component="person-cards">
+<script type="application/json">
+[
+  {
+    "name": "Dr. Dipl.-Ing. Aleksandra Lekić",
+    "role": "Associate Professor",
+    "photo": "assets/team/aleksandra-lekic.jpg",
+    "url": "team/aleksandra-lekic.html",
+    "project": "Group lead"
+  },
+  {
+    "name": "Rohan Kamat Tarcar",
+    "role": "PhD researcher",
+    "photo": "assets/team/rohan-kamat-tarcar.jpg",
+    "url": "team/rohan-kamat-tarcar.html"
+  },
+  {
+    "name": "Dr. Arjita Pal",
+    "role": "Postdoctoral researcher",
+    "photo": "assets/team/arjita-pal.jpg",
+    "url": "team/arjita-pal.html"
+  },
+  {
+    "name": "Dr. Farzad Dehghan Marvasti",
+    "role": "Postdoctoral researcher (alumni)",
+    "photo": "assets/team/farzad-dehghan-marvasti.jpg",
+    "url": "team/farzad-dehghan-marvasti.html"
+  },
+  {
+    "name": "Dr. Reza Bakhshi-Jafarabadi",
+    "role": "Postdoctoral researcher (alumni)",
+    "photo": "assets/team/reza-bakhshi-jafarabadi.jpg",
+    "url": "team/reza-bakhshi-jafarabadi.html"
+  },
+  {
+    "name": "Dr. Ajay Shetgaonkar",
+    "role": "PhD graduate",
+    "photo": "assets/team/ajay-shetgaonkar.jpg",
+    "url": "team/ajay-shetgaonkar.html",
+    "project": "Postdoctoral researcher (alumni)"
+  },
+  {
+    "name": "Prof. Dr. Marjan Popov",
+    "role": "Professor",
+    "photo": "assets/team/marjan-popov.jpg",
+    "url": "team/marjan-popov.html",
+    "project": "collaborator"
+  },
+  {
+    "name": "Remko Koornneef",
+    "role": "Laboratory engineer",
+    "photo": "assets/team/remko-koornneef.jpg",
+    "url": "team/remko-koornneef.html",
+    "project": "collaborator"
+  }
+]
+</script>
+</div>
+      
       <div class="link-row" style="margin-top:1.5rem">
-        <a class="btn btn-dark" href="../projects/index.html">All projects</a>
+        <a class="btn btn-outline" href="../projects/index.html">← All projects</a>
         <a class="btn btn-outline" href="../portfolio/index.html">Portfolio</a>
-        <a class="btn btn-outline" href="../news/index.html">News</a>
       </div>
     </div>
   </div></section>
 
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="brand-font">Control of HVDC/AC Power Systems</div>
-        Intelligent Electrical Power Grids · Electrical Sustainable Energy · TU Delft
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="../team/index.html">Team</a></li>
-          <li><a href="../projects/index.html">Projects</a></li>
-          <li><a href="../publications/index.html">Publications</a></li>
-          <li><a href="../teaching.html">Teaching</a></li>
-          <li><a href="../portfolio/index.html">Open-source portfolio</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:A.Lekic@tudelft.nl">A.Lekic@tudelft.nl</a></li>
-          <li>+31 15 27 82461</li>
-          <li>Room 36.LB 03.210</li>
-          <li><a href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">GitHub org</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/site.js"></script>
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
 </body>
 </html>
