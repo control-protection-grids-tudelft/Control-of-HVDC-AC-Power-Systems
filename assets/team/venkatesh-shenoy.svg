@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Venkatesh Shenoy">
+  <rect width="400" height="400" fill="#0d4f5c"/>
+  <circle cx="200" cy="155" r="70" fill="#e8f4f6"/>
+  <ellipse cx="200" cy="340" rx="120" ry="100" fill="#e8f4f6"/>
+  <text x="200" y="175" text-anchor="middle" fill="#0d4f5c" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="600">VS</text>
+</svg>
