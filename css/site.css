@@ -632,6 +632,9 @@ h2 {
 .prose h2 { margin-top: 2.25rem; }
 .prose h2:first-child { margin-top: 0; }
 .prose ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+.prose-figure { margin: 0 0 1.25rem; }
+.prose-figure img { display: block; max-width: min(100%, 560px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.prose-figure figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.92rem; }
 .link-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
 
 .milestone {

@@ -13,27 +13,35 @@
   <div id="site-header"></div>
 <section id="main-content" class="page-hero"><div class="wrap">
     <div class="breadcrumbs"><a href="../portfolio/index.html">Portfolio</a> / DC Grid Controller (DCGC)</div>
-    <p class="sec-label">Hardware · Product · Concept</p>
+    <p class="sec-label">Hardware · Product · Operational</p>
     <h1>DC Grid Controller (DCGC)</h1>
-    <p class="lede">Modular digital-substation concept for interoperable DC grid control (SCADA/EMS/LFC/scheduling functions).</p>
+    <p class="lede">Modular control-centre layer for interoperable DC grid control (SCADA/EMS/LFC/scheduling functions).</p>
   </div></section>
   <section class="block"><div class="wrap detail-grid">
     <aside>
       <div class="portfolio-hero-img" style="margin:0"><img src="../assets/portfolio/dcgc.jpg" alt="DC Grid Controller (DCGC)"  loading="lazy"/></div>
       <dl class="side-meta">
         <dt>Category</dt><dd>Hardware</dd>
-        <dt>Maturity</dt><dd>Concept</dd>
+        <dt>Maturity</dt><dd>Operational</dd>
       </dl>
-      <div class="link-row" style="margin-top:1rem;flex-direction:column;align-items:stretch"><span class="btn btn-ghost" style="cursor:default">Open-source release not yet public</span><a class="btn btn-outline" href="https://www.lfenergy.org/projects/seapath/" target="_blank" rel="noopener">Documentation ↗</a>
+      <div class="link-row" style="margin-top:1rem;flex-direction:column;align-items:stretch"><a class="btn btn-primary" href="https://github.com/control-protection-grids-tudelft/PMACDC-HD" target="_blank" rel="noopener">PMACDC-HD on GitHub ↗</a><a class="btn btn-outline" href="https://github.com/CRESYM/ACDC_OPF" target="_blank" rel="noopener">ACDC_OPF on GitHub ↗</a>
         <a class="btn btn-outline" href="../portfolio/index.html">All portfolio items</a>
         <a class="btn btn-outline" href="https://github.com/control-protection-grids-tudelft" target="_blank" rel="noopener">Org on GitHub ↗</a>
       </div>
     </aside>
     <div class="prose">
       <h2>Description</h2>
-      <p>DCGC aims to act as a digital substation / control-centre layer for DC grids: modular provision of SCADA, EMS-like grid calculations, load-frequency control, scheduling and related functions with interoperability by design.</p><p>Architecture builds on the LF Energy SEAPATH open-source substation stack with ACDC-OpFlow integrated — matching the RTDS–Ethernet–SEAPATH laboratory architecture already exercised in the group.</p>
+      <p>DCGC acts as a control-centre layer for DC grids: modular provision of SCADA, EMS-like grid calculations, load-frequency control, scheduling and related functions with interoperability by design.</p>
+      <h2>Implementation</h2>
+      <p>The grid-calculation layer is implemented as a closed optimal-power-flow (OPF) loop between the RTDS real-time simulator and Julia. Measured loads are streamed from RTDS, the OPF is solved with <a href="https://github.com/control-protection-grids-tudelft/PMACDC-HD" target="_blank" rel="noopener">PMACDC-HD</a> (a hybrid AC/DC OPF package based on PowerModelsACDC.jl), and the resulting generator and VSC set-points are returned to RTDS. Hybrid AC/DC OPF formulations from <a href="https://github.com/CRESYM/ACDC_OPF" target="_blank" rel="noopener">ACDC_OPF</a> (<a href="acdc-opflow.html">ACDC-OpFlow</a>) provide the grid models.</p>
+      <figure class="prose-figure">
+        <img src="../assets/portfolio/dcgc-working-design.png" alt="DCGC working design: RTDS sends load measurements to a Julia OPF loop (PowerModelsACDC.jl), which returns generator and VSC set-points to RTDS" loading="lazy"/>
+        <figcaption>Closed-loop OPF between RTDS and Julia: loads (P<sub>i</sub><sup>D</sup>, Q<sub>i</sub><sup>D</sup>) are received from RTDS, wind-farm output is set from predicted wind speed, the OPF is solved with PowerModelsACDC.jl, and generator and VSC set-points are sent back to RTDS.</figcaption>
+      </figure>
       <h2>Status &amp; upgrade plans</h2>
-      <ul><li>Modular DC grid control concept based on LF Energy SEAPATH</li><li>Integrates ACDC-OpFlow for grid calculation functions</li></ul>
+      <ul><li>Real-time OPF loop between RTDS and Julia (PMACDC-HD)</li><li>Integrates ACDC-OpFlow for grid calculation functions</li></ul>
+      <h2>Software</h2>
+      <ul><li><a href="https://github.com/control-protection-grids-tudelft/PMACDC-HD" target="_blank" rel="noopener">control-protection-grids-tudelft/PMACDC-HD</a> — hybrid AC/DC OPF package based on PowerModelsACDC.jl</li><li><a href="https://github.com/CRESYM/ACDC_OPF" target="_blank" rel="noopener">CRESYM/ACDC_OPF</a> — ACDC-OpFlow optimal power flow toolbox</li></ul>
       <h2>Related projects</h2><ul><li><a href="../projects/harmony.html">HARMONY</a></li></ul>
     </div>
   </div></section>
