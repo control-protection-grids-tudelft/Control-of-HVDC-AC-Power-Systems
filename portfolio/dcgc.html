@@ -35,7 +35,7 @@
       <h2>Implementation</h2>
       <p>The grid-calculation layer is implemented as a closed optimal-power-flow (OPF) loop between the RTDS real-time simulator and Julia. Measured loads are streamed from RTDS, the OPF is solved with <a href="https://github.com/control-protection-grids-tudelft/PMACDC-HD" target="_blank" rel="noopener">PMACDC-HD</a> (a hybrid AC/DC OPF package based on PowerModelsACDC.jl), and the resulting generator and VSC set-points are returned to RTDS. Hybrid AC/DC OPF formulations from <a href="https://github.com/CRESYM/ACDC_OPF" target="_blank" rel="noopener">ACDC_OPF</a> (<a href="acdc-opflow.html">ACDC-OpFlow</a>) provide the grid models.</p>
       <figure class="prose-figure">
-        <img src="../assets/portfolio/dcgc-working-design.png" alt="DCGC working design: RTDS sends load measurements to a Julia OPF loop (PowerModelsACDC.jl), which returns generator and VSC set-points to RTDS" loading="lazy"/>
+        <img src="../assets/portfolio/dcgc-working-design.png" alt="DCGC working design: RTDS sends load measurements to a Julia OPF loop (PowerModelsACDC.jl), which returns generator and VSC set-points to RTDS" loading="lazy" style="max-height:55vh;width:auto;max-width:100%"/>
         <figcaption>Closed-loop OPF between RTDS and Julia: loads (P<sub>i</sub><sup>D</sup>, Q<sub>i</sub><sup>D</sup>) are received from RTDS, wind-farm output is set from predicted wind speed, the OPF is solved with PowerModelsACDC.jl, and generator and VSC set-points are sent back to RTDS.</figcaption>
       </figure>
       <h2>Status &amp; upgrade plans</h2>
