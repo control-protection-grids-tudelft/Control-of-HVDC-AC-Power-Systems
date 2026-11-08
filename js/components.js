@@ -45,7 +45,7 @@
           '<li><a href="' + B + 'publications/index.html">Publications</a></li>' +
           '<li><a href="' + B + 'portfolio/index.html">Portfolio</a></li>' +
           '<li><a href="' + B + 'news/index.html">News</a></li>' +
-          '<li><a href="' + B + 'media.html">Media</a></li>' +
+          '<li><a href="' + B + 'demos.html">Demos</a></li>' +
           '<li><a href="' + B + 'contact.html">Contact</a></li>' +
         '</ul>' +
       '</div>' +
@@ -66,7 +66,7 @@
             '<li><a href="' + B + 'publications/index.html">Publications</a></li>' +
             '<li><a href="' + B + 'teaching.html">Teaching &amp; education</a></li>' +
             '<li><a href="' + B + 'portfolio/index.html">Open-source portfolio</a></li>' +
-            '<li><a href="' + B + 'media.html">Media</a></li>' +
+            '<li><a href="' + B + 'demos.html">Demos</a></li>' +
             '<li><a href="' + B + 'news/index.html">News</a></li>' +
           '</ul>' +
         '</div>' +
@@ -104,7 +104,7 @@
     links.forEach(function (a) {
       var href = a.getAttribute("href");
       var hrefTail = href.replace(/^(\.\.\/)+/, "").replace(/^\.\//, "");
-      var pathTail = path.replace(/.*?\/(?=(team|projects|publications|portfolio|news|index\.html|contact\.html|teaching\.html|awards\.html|media\.html))/, "");
+      var pathTail = path.replace(/.*?\/(?=(team|projects|publications|portfolio|news|index\.html|contact\.html|teaching\.html|awards\.html|demos\.html))/, "");
       pathTail = pathTail.replace(/^\//, "");
 
       if (pathTail === hrefTail ||
