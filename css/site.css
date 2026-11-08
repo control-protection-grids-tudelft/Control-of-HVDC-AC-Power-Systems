@@ -661,6 +661,34 @@ h2 {
   object-fit: cover;
 }
 
+.media-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 0.75rem;
+}
+.media-item {
+  margin: 0;
+  max-width: 420px;
+}
+.media-item video,
+.media-item img {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
+  background: var(--deep);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.media-item figcaption {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 /* Footer */
 .site-footer {
   background: var(--deep);
