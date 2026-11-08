@@ -631,6 +631,11 @@ h2 {
 .prose p { margin: 0 0 1rem; }
 .prose h2 { margin-top: 2.25rem; }
 .prose h2:first-child { margin-top: 0; }
+.prose h3 {
+  margin: 1.35rem 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
 .prose ul { margin: 0 0 1rem; padding-left: 1.2rem; }
 .prose-figure { margin: 0 0 1.25rem; }
 .prose-figure img { display: block; max-width: 100%; max-height: 55vh; width: auto; height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
